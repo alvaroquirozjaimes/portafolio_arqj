@@ -1,69 +1,153 @@
-.contact-form-container {
-    max-width: 600px;
-    margin: 0 auto;
+/* ====== CONTENEDOR ====== */
+.contact-form-container{
+  max-width: 720px;
+  margin: 0 auto;
+  background: rgba(30, 41, 59, 0.85);
+  border: 1px solid rgba(34, 197, 94, 0.22);
+  border-radius: 16px;
+  padding: 2.2rem;
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.35),
+    inset 0 0 0 1px rgba(255,255,255,0.04);
+  backdrop-filter: blur(8px);
 }
 
-#contactForm {
-    background: #1e293b;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+/* Honeypot oculto */
+.hp-wrap{
+  position: absolute;
+  left: -9999px;
+  width: 1px; height: 1px;
+  overflow: hidden;
 }
 
-.form-group {
-    margin-bottom: 1.5rem;
+/* ====== CAMPOS ====== */
+.form-group{
+  margin-bottom: 1.25rem;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: #e2e8f0;
+.form-group label{
+  display:block;
+  margin-bottom: .45rem;
+  color: #93e7b4;
+  font-weight: 600;
+  letter-spacing: .2px;
 }
 
 .form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border-radius: 8px;
-    border: 1px solid #475569;
-    background: #0f172a;
-    color: #e2e8f0;
-    font-size: 1rem;
+.form-group textarea{
+  width: 100%;
+  padding: 0.95rem 1rem;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(34, 197, 94, 0.28);
+  border-radius: 12px;
+  color: #e2e8f0;
+  font-size: 1rem;
+  transition: border-color .2s ease, box-shadow .2s ease, transform .05s ease;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.03);
 }
 
+.form-group textarea{
+  resize: vertical;
+  min-height: 140px;
+}
+
+/* Focus ring */
 .form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #22c55e;
-    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.3);
+.form-group textarea:focus{
+  outline: none;
+  border-color: #22c55e;
+  box-shadow:
+    0 0 0 3px rgba(34, 197, 94, 0.18),
+    0 8px 28px rgba(0,0,0,.25);
+  transform: translateY(-1px);
 }
 
-.submit-btn {
-    width: 100%;
-    padding: 1rem;
-    background: #22c55e;
-    border: none;
-    border-radius: 8px;
-    color: #0f172a;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, opacity 0.3s ease;
+/* Placeholder cómodo */
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+  color: #94a3b8;
+  opacity: .85;
 }
 
-.submit-btn:hover:not(:disabled) {
-    background: #15803d;
+/* ====== BOTÓN ENVIAR ====== */
+.submit-btn{
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: .6rem;
+  background: linear-gradient(135deg, #22c55e, #10b981);
+  color: white;
+  padding: 1rem 1.25rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .2s ease, filter .2s ease, opacity .2s;
+  box-shadow: 0 12px 28px rgba(16, 185, 129, .25);
 }
 
-.submit-btn:disabled {
-    opacity: 0.7;
-    cursor: not-allowed;
+.submit-btn:hover{
+  transform: translateY(-2px);
+  filter: brightness(1.04);
+  box-shadow: 0 16px 36px rgba(16, 185, 129, .35);
 }
 
-.form-status {
-    margin-top: 1rem;
-    text-align: center;
-    font-weight: bold;
-    color: #22c55e;
+.submit-btn:active{
+  transform: translateY(0);
+}
+
+.submit-btn:disabled{
+  opacity: .7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Loader del botón */
+.btn-loader{
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.6);
+  border-top-color: transparent;
+  display: inline-block;
+  animation: spin .8s linear infinite;
+}
+
+@keyframes spin{
+  to { transform: rotate(360deg); }
+}
+
+/* ====== ESTADOS ====== */
+.form-status{
+  margin-top: 1rem;
+  font-weight: 600;
+  padding: .8rem 1rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: rgba(15, 23, 42, 0.7);
+}
+
+.form-status.success{
+  color: #bbf7d0;
+  border-color: rgba(34,197,94,.35);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.03);
+}
+
+.form-status.error{
+  color: #fecaca;
+  border-color: rgba(239,68,68,.35);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.03);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 640px){
+  .contact-form-container{
+    padding: 1.4rem;
+    border-radius: 14px;
+  }
+  .submit-btn{
+    font-size: 1rem;
+    padding: .9rem 1rem;
+  }
 }

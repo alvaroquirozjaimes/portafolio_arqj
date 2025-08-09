@@ -1,11 +1,95 @@
-.footer {
-    background-color: #1e293b;
-    padding: 2rem 0;
-    text-align: center;
-    border-top: 1px solid rgba(34, 197, 94, 0.2);
+/* ====== Footer (con contador de vistas) ====== */
+.footer{
+  background: rgba(15, 23, 42, 0.95);
+  padding: 2rem 0;
+  border-top: 1px solid rgba(34, 197, 94, 0.2);
+  color: #e2e8f0;
 }
 
-.footer p {
-    color: #94a3b8;
-    font-size: 0.9rem;
+.footer-inner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem 1.25rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* Texto base */
+.footer p{
+  margin: 0;
+  font-size: .95rem;
+  line-height: 1.4;
+}
+
+/* Pill con el total de vistas */
+.footer-stats{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .35rem .75rem;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.08);
+  border: 1px solid rgba(34, 197, 94, 0.22);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.08);
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+/* Punto separador (•) */
+.footer-stats .dot{
+  opacity: .6;
+  margin: 0 .25rem 0 0;
+  user-select: none;
+}
+
+/* "👀 12,345 vistas" */
+.footer-stats .stat{
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  letter-spacing: .2px;
+}
+
+.footer-stats strong{
+  color: #22c55e;               /* verde acento */
+  font-weight: 800;
+}
+
+/* Hover sutil del pill (opcional) */
+@media (hover:hover){
+  .footer-stats:hover{
+    background: rgba(34, 197, 94, 0.12);
+    border-color: rgba(34, 197, 94, 0.35);
+  }
+}
+
+/* Responsive */
+@media (max-width: 640px){
+  .footer-inner{
+    flex-direction: column;
+    gap: .6rem;
+  }
+  .footer p{
+    font-size: .9rem;
+  }
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* o space-between si prefieres */
+  gap: 0.75rem;
+}
+
+.views-badge {
+  height: 22px;              /* ajusta tamaño */
+  display: inline-block;
+  vertical-align: middle;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,.25));
+}
+
+/* Oculta el badge al imprimir, por si acaso */
+@media print {
+  .views-badge { display: none; }
 }

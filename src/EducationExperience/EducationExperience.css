@@ -1,0 +1,205 @@
+/*
+  ==========================================
+  Variables de Diseño para la Línea de Tiempo
+  ==========================================
+*/
+:root {
+  --timeline-line-color: rgba(34, 197, 94, 0.85);
+  --timeline-node-color: #22c55e;
+  --timeline-card-bg: rgba(15, 23, 42, 0.95);
+  --timeline-card-border: rgba(34, 197, 94, 0.16);
+  --timeline-shadow-dark: rgba(2, 8, 23, 0.5);
+  --timeline-shadow-accent: rgba(34, 197, 94, 0.22);
+  --text-color-title: #e6edf6;
+  --text-color-subtitle: #9fb0c9;
+  --text-color-body: #cbd5e1;
+  --transition-speed: 0.25s ease;
+}
+
+/* ===== Timeline (ajustado y más limpio) ===== */
+
+/* Anclaje para la navegación, si tienes un header fijo */
+#formacion, #experiencia { 
+  scroll-margin-top: 90px; 
+}
+
+/* Eje principal y espaciado */
+.timeline {
+  position: relative;
+  margin-top: 2.5rem;
+  padding-left: 3.5rem; /* Ajustado para un mejor espaciado */
+}
+
+/* Línea vertical con gradiente y sombra */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 28px; /* Centra la línea respecto al punto */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    180deg,
+    var(--timeline-line-color) 0%,
+    rgba(34, 197, 94, 0.28) 45%,
+    rgba(34, 197, 94, 0.10) 100%
+  );
+  box-shadow: 0 0 12px var(--timeline-shadow-accent);
+}
+
+/* Cada bloque de la línea de tiempo */
+.timeline-item {
+  position: relative;
+  margin: 2.2rem 0; /* Mayor espaciado entre items */
+}
+
+/* Punto (node) */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 21px; /* Centrado con la línea */
+  top: 18px; /* Alinea con el título/fecha */
+  width: 16px; /* Tamaño del punto ligeramente mayor */
+  height: 16px;
+  border-radius: 50%;
+  background: var(--timeline-node-color);
+  box-shadow:
+    0 0 0 4px rgba(34, 197, 94, 0.15),
+    0 0 16px rgba(34, 197, 94, 0.65); /* Sombra más pronunciada */
+}
+
+/* Conector desde el punto hacia la tarjeta */
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  left: 29px; /* Arranca en la línea */
+  top: 25px; /* Mitad del punto */
+  height: 2px;
+  width: calc(3.5rem - 29px); /* Hasta el borde del card */
+  background: rgba(34, 197, 94, 0.5);
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.45); /* Sombra mejorada */
+}
+
+/* Tarjeta (el contenido) */
+.timeline-content {
+  background: var(--timeline-card-bg);
+  border: 1px solid var(--timeline-card-border);
+  border-radius: 18px; /* Bordes más redondeados */
+  padding: 1.5rem; /* Padding más generoso */
+  box-shadow:
+    0 12px 30px var(--timeline-shadow-dark),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.015);
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed), border-color var(--transition-speed);
+}
+
+/* Acento fino al borde izquierdo del card */
+.timeline-content {
+  background-image: linear-gradient(
+    90deg,
+    rgba(34, 197, 94, 0.18),
+    transparent 12%
+  );
+}
+
+/* Hover limpio y profesional */
+.timeline-item:hover .timeline-content,
+.timeline-item:focus-within .timeline-content {
+  transform: translateY(-4px); /* Elevación más notable */
+  border-color: rgba(34, 197, 94, 0.35);
+  box-shadow:
+    0 20px 45px var(--timeline-shadow-dark),
+    0 0 25px rgba(34, 197, 94, 0.12);
+}
+
+/* Tipografías */
+.timeline-date {
+  color: var(--timeline-node-color);
+  font-weight: 800;
+  letter-spacing: 0.5px; /* Espaciado de letras ajustado */
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.timeline-title {
+  font-size: 1.35rem; /* Tamaño de título ligeramente mayor */
+  font-weight: 900;
+  color: var(--text-color-title);
+  margin: 0.2rem 0 0.4rem;
+  text-wrap: balance;
+}
+
+.timeline-subtitle {
+  color: var(--text-color-subtitle);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.timeline-content p {
+  color: var(--text-color-body);
+  line-height: 1.8; /* Mayor interlineado para mejor legibilidad */
+  text-align: justify;
+}
+
+/* Listas dentro del card */
+.timeline-content ul {
+  margin: 0.6rem 0 0.4rem 1.2rem;
+  color: var(--text-color-body);
+}
+.timeline-content li { 
+  margin: 0.4rem 0; 
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .timeline { 
+    padding-left: 3rem; 
+  }
+  .timeline::before { 
+    left: 24px; 
+  }
+  .timeline-item::before { 
+    left: 17px; 
+  }
+  .timeline-item::after { 
+    left: 25px; 
+    width: calc(3rem - 25px); 
+  }
+  .timeline-title { 
+    font-size: 1.25rem; 
+  }
+  .timeline-content { 
+    padding: 1.25rem; 
+  }
+}
+
+@media (max-width: 640px) {
+  .timeline { 
+    padding-left: 2.5rem; 
+  }
+  .timeline::before { 
+    left: 20px; 
+  }
+  .timeline-item::before { 
+    left: 13px; 
+    top: 16px; 
+  }
+  .timeline-item::after { 
+    left: 21px; 
+    top: 22px; 
+    width: calc(2.5rem - 21px); 
+  }
+  .timeline-title { 
+    font-size: 1.1rem; 
+  }
+  .timeline-content { 
+    padding: 1rem; 
+  }
+}
+
+/* Accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .timeline-content { 
+    transition: none; 
+  }
+}

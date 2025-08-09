@@ -6,7 +6,7 @@ import Technologies from './Technologies/Technologies';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
-
+import EducationExperience from './EducationExperience/EducationExperience';
 // Importar los estilos globales
 import './styles/global.css'; 
 
@@ -18,6 +18,7 @@ function App() {
         <Hero />
         <About />
         <Technologies />
+        <EducationExperience />
         <Projects />
         <Contact />
       </main>
