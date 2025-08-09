@@ -1,0 +1,55 @@
+.tech-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tech-buttons button {
+    padding: 0.6rem 1.2rem;
+    background: #1e293b;
+    border: none;
+    color: #cbd5e1;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tech-buttons button:hover,
+.tech-buttons button.active {
+    background: #22c55e;
+    color: #0f172a;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.5rem;
+}
+
+.tech-item {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.tech-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.5);
+}
+
+.tech-icon {
+    font-size: 3rem;
+    margin-bottom: 0.6rem;
+}
+
+.tech-item div:last-child {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
