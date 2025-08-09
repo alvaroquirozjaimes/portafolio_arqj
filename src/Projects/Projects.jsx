@@ -2,6 +2,28 @@ import React, { useMemo, useState, useEffect } from 'react';
 import './Projects.css';
 
 const projects = [
+    {
+  id: 5,
+  title: 'ACTUALIZACIÓN PORTAFOLIO - CAMBIO A REACT VITE',
+  image: './gif/portafolio2.gif',      // pon tu GIF en public/gif/portafolio.gif
+  alt: 'Portafolio Personal',
+  descriptionHTML: `
+    <p style="text-align: justify; margin-bottom: .5rem;">
+      Portafolio personal con secciones de inicio, tecnologías, formación, experiencia, proyectos y contacto.
+      Migrado de HTML/CSS a React + Vite manteniendo el estilo original.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin: .2rem 0 .8rem; line-height: 1.5;">
+      <li>SPA con anclas (#) y scroll suave.</li>
+      <li>Proyectos con buscador y paginación.</li>
+      <li>Formulario de contacto (opcional) con Google Apps Script.</li>
+    </ul>
+  `,
+  tags: ['React.js','Vite','CSS','JavaScript'],
+  links: [
+    { type: 'demo',   href: 'https://<tu-usuario>.github.io/<tu-repo>/',        label: 'Ver Demo' },
+    { type: 'github', href: 'https://github.com/<tu-usuario>/<tu-repo>',        label: 'Ver en GitHub' },
+  ],
+},
   {
     title: 'TIENDA STYLEHUB - E-Commerce con Visualizador 3D de Productos',
     image: './gif/e-commerce2.gif',
