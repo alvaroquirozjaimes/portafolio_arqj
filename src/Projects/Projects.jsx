@@ -2,65 +2,204 @@ import React, { useMemo, useState, useEffect } from 'react';
 import './Projects.css';
 
 const projects = [
-    {
-  id: 5,
-  title: 'ACTUALIZACIÓN PORTAFOLIO - CAMBIO A REACT VITE',
-  image: './gif/portafolio2.gif',      // pon tu GIF en public/gif/portafolio.gif
-  alt: 'Portafolio Personal',
-  descriptionHTML: `
-    <p style="text-align: justify; margin-bottom: .5rem;">
-      Portafolio personal con secciones de inicio, tecnologías, formación, experiencia, proyectos y contacto.
-      Migrado de HTML/CSS a React + Vite manteniendo el estilo original.
-    </p>
-    <ul style="text-align: justify; padding-left: 1.2rem; margin: .2rem 0 .8rem; line-height: 1.5;">
-      <li>SPA con anclas (#) y scroll suave.</li>
-      <li>Proyectos con buscador y paginación.</li>
-      <li>Formulario de contacto (opcional) con Google Apps Script.</li>
-    </ul>
-  `,
-  tags: ['React.js','Vite','CSS','JavaScript'],
-  links: [
-    { type: 'demo',   href: 'https://<tu-usuario>.github.io/<tu-repo>/',        label: 'Ver Demo' },
-    { type: 'github', href: 'https://github.com/<tu-usuario>/<tu-repo>',        label: 'Ver en GitHub' },
-  ],
-},
+  /* =========================
+     NUEVOS PROYECTOS
+     ========================= */
+
+  {
+    title: 'EMPRESA APRENDE PERÚ - Módulo de Certificación Inteligente',
+    image: './gif/cert-inteligente.gif',
+    alt: 'Módulo de Certificación Inteligente',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Sistema avanzado para gestión y generación de certificados: plantillas, emisión automática en PDF con QR, catálogo de cursos/temarios y autocompletado.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; line-height: 1.5; margin: .2rem 0 .8rem;">
+        <li><strong>Plantillas personalizadas:</strong> sube múltiples plantillas y elige por curso.</li>
+        <li><strong>PDF + QR:</strong> emisión automática con validación pública.</li>
+        <li><strong>Catálogo y temarios:</strong> registra, guarda y autocompleta programas.</li>
+        <li><strong>Optimización:</strong> al emitir basta cambiar el nombre del estudiante.</li>
+        <li><strong>IA integrada:</strong> genera temarios con asistencia de IA e integra al módulo.</li>
+      </ul>
+      <p style="text-align: justify; margin:0;">
+        <em>Reduce tiempos, evita errores y profesionaliza el proceso de certificación.</em>
+      </p>
+    `,
+    tags: ['React','Node.js','Express.js','PostgreSQL','Sequelize','PDF-lib','QRCode','Google Drive API','IA Generativa'],
+    links: [
+      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'github', href: '#', label: 'Ver Código' },
+    ],
+  },
+
+  {
+    title: 'EMPRESA APRENDE PERÚ - Plataforma de Gestión Integral',
+    image: './gif/e-learning-v2.gif',
+    alt: 'Plataforma de Gestión Integral Aprende Perú',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Optimiza todo el ciclo de la formación virtual: desde el alta de cursos hasta la emisión/validación de certificados oficiales. UI y lógica de negocio renovadas.
+      </p>
+      <p style="text-align: justify; margin-bottom:.3rem;"><strong>Funcionalidades Clave</strong></p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin-top:0; line-height:1.5;">
+        <li><strong>Cursos y Contenido:</strong> CRUD de cursos, módulos, paquetes y asignación a estudiantes.</li>
+        <li><strong>Certificación:</strong> generación de PDF con QR validable; almacenamiento en Google Drive.</li>
+        <li><strong>Experiencia:</strong> inscripción y pagos; validación por nombre/DNI; soporte por WhatsApp.</li>
+        <li><strong>Administración:</strong> roles (admin, asesor, estudiante), panel con métricas.</li>
+      </ul>
+   
+    `,
+    tags: ['React','Tailwind','Node.js','Express.js','PostgreSQL','Sequelize','JWT','QRCode','Google Drive API'],
+    links: [
+      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'github', href: '#', label: 'Ver Código' },
+    ],
+  },
+
+  {
+    title: 'EMPRESA JG4 CONTRATISTAS GENERALES - Sitio Web Corporativo',
+    image: './gif/jg4.gif',
+    alt: 'Sitio Web Corporativo JG4',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Plataforma corporativa para el sector construcción: muestra servicios, proyectos y certificaciones; refuerza reputación y facilita el contacto comercial.
+      </p>
+      <p style="text-align: justify; margin-bottom:.3rem;"><strong>Objetivos</strong></p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin-top:0; line-height:1.5;">
+        <li>Presentar servicios, proyectos y certificaciones de forma profesional.</li>
+        <li>Acceso rápido a información clave para clientes y socios.</li>
+        <li>Mejorar conversiones con CTAs claros a cotización y contacto.</li>
+      </ul>
+
+    `,
+    tags: ['React','Vite','React Router','CSS Modules','SEO'],
+    links: [
+      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'github', href: '#', label: 'Ver Código' },
+    ],
+  },
+
+  {
+    title: 'EMPRESA DE TRANSPORTES MUÑOZ - Sistema de Gestión de Envíos',
+    image: './gif/envios.gif',
+    alt: 'Sistema de Gestión de Envíos',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Plataforma logística integral: registro de envíos, cálculo de tarifas por peso/destino, seguimiento, pagos y facturación electrónica (SUNAT).
+      </p>
+      <p style="text-align: justify; margin-bottom:.3rem;"><strong>Funciones clave</strong></p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin-top:0; line-height:1.5;">
+        <li>Dashboard, gestión de guías, filtros por estado/fecha/sucursal.</li>
+        <li>Registro de paquetes con costo automático; rastreo de estados.</li>
+        <li>Pagos: efectivo, POS, Yape, Plin, transferencias; reportes.</li>
+        <li>Factor peso y tarifas dinámicas.</li>
+        <li>Facturación con <strong>Nubefact</strong>; operaciones gravadas/exoneradas/inafectas.</li>
+        <li>Clientes con autocompletado RUC/DNI (APISNET), multi-sucursal y roles.</li>
+      </ul>
+    
+    `,
+    tags: ['React','Vite','Node.js','Express','PostgreSQL','Sequelize','Nubefact','APISNET','JWT'],
+    links: [
+      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'github', href: '#', label: 'Ver Código' },
+    ],
+  },
+
+  {
+    title: 'EMPRESA MEXICANA - Cotizaciones IA – Comparador inteligente de proveedores',
+    image: './gif/cotizaciones-ia.gif',
+    alt: 'Cotizaciones con IA',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Automatiza la comparación de precios entre proveedores desde PDF, imágenes y Excel. Estructura productos y resalta la opción más económica por item.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; line-height:1.5; margin:.2rem 0 .8rem;">
+        <li>Ingesta multiformato con OCR.</li>
+        <li>Extracción de nombre, cantidad, PU y total.</li>
+        <li>Comparación por producto y buscador de mejor opción.</li>
+        <li>Historial de cotizaciones y panel de resultados.</li>
+      </ul>
+      
+      <p style="text-align: justify; margin:.2rem 0 0;">
+        Desarrollado para una empresa en México; pensado para ferreterías y retail.
+      </p>
+    `,
+    tags: ['React','Vite','Node.js','Express','PostgreSQL','Sequelize','OCR','PDF','Excel'],
+    links: [
+      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'github', href: '#', label: 'Ver Código' },
+    ],
+  },
+
+  {
+    title: 'PROYECTO PERSONAL - Asistente Inteligente de Desarrollo (Multi-IA)',
+    image: './gif/asistente-dev.gif',
+    alt: 'Asistente Inteligente de Desarrollo',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Analiza proyectos, detecta errores, documenta funciones y sugiere mejoras. Soporta múltiples proveedores de IA con fallback y <em>streaming</em> (SSE).
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; line-height:1.5; margin:.2rem 0 .8rem;">
+        <li>Escaneo de carpeta local y vista árbol de archivos.</li>
+        <li>Acciones: <strong>Errores</strong>, <strong>Documentar</strong>, <strong>Sugerencias</strong>.</li>
+        <li>Análisis holístico entre archivos; explica razón, cambios y notas.</li>
+        <li>Streaming SSE y <em>jobs</em> recientes.</li>
+        <li>Agentes IA: OpenAI, Gemini, Claude con normalización de salida y reintentos.</li>
+      </ul>
+  
+    `,
+    tags: ['React','Vite','Node.js','Express','PostgreSQL','Sequelize','SSE','OpenAI','Gemini','Claude'],
+    links: [
+      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'github', href: '#', label: 'Ver Código' },
+    ],
+  },
+
+  /* =========================
+     TUS PROYECTOS EXISTENTES
+     ========================= */
+
+  {
+    id: 5,
+    title: 'ACTUALIZACIÓN PORTAFOLIO - CAMBIO A REACT VITE',
+    image: './gif/portafolio2.gif',
+    alt: 'Portafolio Personal',
+    descriptionHTML: `
+      <p style="text-align: justify; margin-bottom: .5rem;">
+        Portafolio personal con secciones de inicio, tecnologías, formación, experiencia, proyectos y contacto.
+        Migrado de HTML/CSS a React + Vite manteniendo el estilo original.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin: .2rem 0 .8rem; line-height: 1.5;">
+        <li>SPA con anclas (#) y scroll suave.</li>
+        <li>Proyectos con buscador y paginación.</li>
+        <li>Formulario de contacto (opcional) con Google Apps Script.</li>
+      </ul>
+    `,
+    tags: ['React.js','Vite','CSS','JavaScript'],
+    links: [
+      { type: 'demo',   href: 'https://<tu-usuario>.github.io/<tu-repo>/',        label: 'Ver Demo' },
+      { type: 'github', href: 'https://github.com/<tu-usuario>/<tu-repo>',        label: 'Ver en GitHub' },
+    ],
+  },
+
   {
     title: 'TIENDA STYLEHUB - E-Commerce con Visualizador 3D de Productos',
     image: './gif/e-commerce2.gif',
     alt: 'E-commerce con visualizador 3D',
     descriptionHTML: `
       <p style="text-align: justify;">
-        <strong>E-Commerce 3D</strong> es una plataforma moderna que combina la venta online de productos con la posibilidad de visualizarlos en <strong>modelos 3D interactivos</strong>, ofreciendo una experiencia de compra inmersiva y realista.
+        <strong>E-Commerce 3D</strong> es una plataforma moderna que combina la venta online con visualización de <strong>modelos 3D interactivos</strong>.
       </p>
       <p style="text-align: justify;">
         <strong>🛒 Funcionalidades principales:</strong><br>
-        - Catálogo dinámico de productos con filtros por categoría.<br>
-        - Carga de productos desde el panel admin con imágenes y modelos <code>.glb</code>.<br>
-        - Visualizador 3D interactivo con rotación automática y zoom.<br>
-        - Carrito de compras con persistencia de datos y cálculo de totales.<br>
-        - Proceso de checkout para registrar órdenes en la base de datos.<br>
-        - Panel de administración con reportes de ventas y gestión de stock.
+        - Catálogo con filtros, admin de productos con imágenes y <code>.glb</code>.<br>
+        - Visualizador 3D (rotación y zoom).<br>
+        - Carrito con persistencia y checkout a BD.<br>
+        - Panel admin con reportes.<br>
+        - Login con Google (OAuth 2.0) y roles.
       </p>
       <p style="text-align: justify;">
-        <strong>💳 Proceso de compra:</strong><br>
-        - Añade productos al carrito y selecciona variantes u opciones.<br>
-        - Completa la información de envío y selecciona método de pago.<br>
-        - El sistema guarda la orden y actualiza el panel de reportes.
-      </p>
-      <p style="text-align: justify;">
-        <strong>📊 Dashboard de administración:</strong><br>
-        - Resumen de ventas totales y por categoría.<br>
-        - Listado de pedidos recientes.<br>
-        - Integración con endpoints optimizados para estadísticas.
-      </p>
-      <p style="text-align: justify;">
-        <strong>🔐 Inicio de sesión con Google:</strong><br>
-        - Acceso rápido y seguro con OAuth 2.0.<br>
-        - Creación automática de perfil de usuario.<br>
-        - Roles para administración y clientes.
-      </p>
-      <p style="text-align: justify;">
-        <strong>🚀 Impacto:</strong> Esta plataforma moderniza la experiencia de compra, mejora la conversión al permitir visualizar los productos en 3D y ofrece herramientas de gestión eficientes para vendedores.
+        <strong>🚀 Impacto:</strong> Mejora conversión al previsualizar en 3D y facilita la gestión.
       </p>
     `,
     tags: ['React','Vite','Node.js','Express.js','PostgreSQL','Sequelize','React Router','Axios','Three.js','@react-three/fiber','OAuth Google'],
@@ -76,31 +215,14 @@ const projects = [
     alt: 'Guía turística de hoteles y lugares',
     descriptionHTML: `
       <p style="text-align: justify;">
-        <strong>Viaja y Explora</strong> es una plataforma web moderna que ayuda a los viajeros a descubrir <strong>lugares turísticos</strong>, <strong>hoteles</strong> y <strong>restaurantes</strong> con toda la información que necesitan: imágenes, precios, filtros avanzados y contacto directo.
+        <strong>Viaja y Explora</strong> ayuda a descubrir <strong>lugares</strong>, <strong>hoteles</strong> y <strong>restaurantes</strong> con filtros avanzados y un <strong>chatbot IA</strong>.
       </p>
-      <p style="text-align: justify;">
-        <strong>🗺️ Funcionalidades principales:</strong><br>
-        - Explora destinos y negocios turísticos de forma organizada y atractiva.<br>
-        - Filtra resultados por categoría, ciudad, precio o popularidad.<br>
-        - Marca tus lugares favoritos con likes para apoyar a los mejores.<br>
-        - Accede a fichas completas con horarios, descripciones, galería de fotos, habitaciones o menús.<br>
-        - Módulo de avisos para que los negocios publiquen promociones o noticias.
-      </p>
-      <p style="text-align: justify;">
-        <strong>🤖 Asistente Inteligente:</strong><br>
-        - Un chatbot con IA te acompaña durante tu navegación.<br>
-        - Puedes consultarle sobre hoteles, actividades, restaurantes o cómo usar la plataforma.<br>
-        - Mejora la experiencia del usuario actuando como guía personalizada en tiempo real.
-      </p>
-      <p style="text-align: justify;">
-        <strong>🔐 Inicio de sesión con Google:</strong><br>
-        - Accede rápidamente usando tu cuenta de Google sin necesidad de registrar un nuevo usuario.<br>
-        - Autenticación segura e integrada con OAuth 2.0.<br>
-        - Tu perfil se crea automáticamente con tu nombre y correo.
-      </p>
-      <p style="text-align: justify;">
-        <strong>💚 Impacto:</strong> Esta plataforma impulsa la visibilidad de negocios turísticos, promueve el turismo local y ayuda a los viajeros a planificar experiencias únicas con comodidad y seguridad.
-      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; line-height:1.5;">
+        <li>Explora destinos con fichas completas y galería.</li>
+        <li>Likes, filtros por ciudad/precio/popularidad.</li>
+        <li>Bot IA como guía y ayuda contextual.</li>
+        <li>Login con Google (OAuth 2.0).</li>
+      </ul>
     `,
     tags: ['React','Vite','Node.js','Express.js','PostgreSQL','Sequelize','React Router','Axios','Chatbot IA','OAuth Google'],
     links: [
@@ -115,10 +237,7 @@ const projects = [
     alt: 'Plataforma Aprende Perú',
     descriptionHTML: `
       <p style="text-align: justify;">
-        Sistema web desarrollado para gestionar de forma integral cursos virtuales de la empresa Aprende Perú. Desde la publicación del curso hasta la emisión y validación de certificados, la plataforma automatiza y centraliza todo el proceso educativo en línea. Este sistema cuenta con 3 usuarios: Estudiante, asesor y administrador, cada uno con diferentes accesos y permisos.
-      </p>
-      <p style="text-align: justify;">
-        <strong>Funcionalidades:</strong> Gestión completa de cursos, módulos y paquetes, asignación personalizada de contenidos a estudiantes, generación automática de certificados PDF con código QR validable y almacenamiento seguro en Google Drive. Además, cuenta con inscripción y pagos en línea, validación pública de certificados por nombre o DNI y contacto directo vía WhatsApp.
+        Gestión integral de cursos virtuales: publicación, asignación a estudiantes y emisión de certificados PDF con QR y almacenamiento en Drive.
       </p>
     `,
     tags: ['React','Tailwind CSS','Node.js','Express.js','PostgreSQL','Sequelize','PDF-lib','QRCode','Google Drive API'],
@@ -134,24 +253,12 @@ const projects = [
     alt: 'Integración de IA y certificados personalizados',
     descriptionHTML: `
       <p style="text-align: justify;">
-        Este módulo complementa el sistema desarrollado para Aprende Perú, integrando nuevas capacidades basadas en inteligencia artificial. Ahora, el sistema puede generar automáticamente temarios personalizados y agregar datos completos del estudiante en los certificados emitidos.
+        Genera temarios personalizados y completa datos de estudiante. Guarda PDF en Google Drive con autenticación de servicio y QR de validación.
       </p>
-      <p style="text-align: justify;">
-        <strong>¿Qué incluye el certificado generado?</strong><br>
-        - Nombre del estudiante<br>
-        - Curso realizado<br>
-        - Nota final<br>
-        - Duración y modalidad<br>
-        - Temario detallado generado por IA<br>
-        - Firma digital, código único, DNI<br>
-        - Código QR para validación pública
-      </p>
-      <p style="text-align: justify;">
-        <strong>☁️ Almacenamiento en la nube:</strong> Una vez generado, el certificado PDF se guarda automáticamente en Google Drive mediante la API oficial y autenticación con cuentas de servicio. Esto asegura una gestión centralizada y segura.
-      </p>
-      <p style="text-align: justify;">
-        <strong>🛠️ Beneficios:</strong> Esta integración optimiza la generación de certificados, minimiza errores humanos y ofrece una personalización más profunda para cada estudiante.
-      </p>
+      <ul style="text-align: justify; padding-left:1.2rem; line-height:1.5;">
+        <li>Nombre, curso, nota, duración, modalidad.</li>
+        <li>Temario por IA, firma digital, DNI, código único y QR.</li>
+      </ul>
     `,
     tags: ['IA Generativa','PDF-lib','QRCode','Google Drive API','Node.js','Express.js','React','Sequelize'],
     links: [
@@ -166,23 +273,7 @@ const projects = [
     alt: 'Sistema de gestión inmobiliaria Matisse',
     descriptionHTML: `
       <p style="text-align: justify;">
-        Este proyecto fue desarrollado como parte de mi colaboración con Inmobiliaria Matisse, con el objetivo de implementar una plataforma web eficiente para la gestión integral de sus propiedades. El sistema se encuentra actualmente en fase funcional avanzada, y continúa evolucionando según nuevos requerimientos de la empresa.
-      </p>
-      <p style="text-align: justify;">
-        <strong>Funcionalidades Implementadas:</strong><br>
-        - Gestión de Inmuebles (CRUD completo)<br>
-        - Subida de imágenes con vista previa<br>
-        - Filtros y búsqueda avanzada por múltiples criterios<br>
-        - Propiedades destacadas en la página principal<br>
-        - Página de detalle con galería interactiva<br>
-        - Autenticación segura con roles (admin, agente, cliente)<br>
-        - Dashboards personalizados por tipo de usuario<br>
-        - Formulario de contacto validado con anti-spam<br>
-        - Diseño totalmente responsivo<br>
-        - Mapa de sedes con información de contacto
-      </p>
-      <p style="text-align: justify;">
-        <strong>⚙️ Estado:</strong> En funcionamiento, con nuevas funcionalidades en desarrollo según las necesidades de la empresa.
+        CRUD de inmuebles, subida de imágenes, búsquedas avanzadas, roles y dashboards personalizados. Diseño 100% responsivo.
       </p>
     `,
     tags: ['React.js','React Router DOM','Tailwind CSS','Axios','Lucide React','React Icons','Node.js','Express.js','PostgreSQL','Sequelize','JWT','Bcrypt','Multer','Dotenv','path','fs'],
@@ -198,28 +289,7 @@ const projects = [
     alt: 'Intercambio ecológico entre recicladores y ayudantes',
     descriptionHTML: `
       <p style="text-align: justify;">
-        “Recicla y Gana” es una plataforma ecológica que conecta a <strong>recicladores</strong> con <strong>ayudantes</strong> (dueños de tiendas o negocios locales) para fomentar un sistema de recompensas sostenibles mediante el reciclaje.
-      </p>
-      <p style="text-align: justify;">
-        <strong>♻️ ¿Cómo funciona?</strong><br>
-        - El reciclador sube fotos de residuos recolectados (botellas, latas, etc.) mediante el chat.<br>
-        - El ayudante verifica el material recibido y asigna puntos escribiendo mensajes como <code>+10</code>.<br>
-        - Los puntos acumulados se muestran en el perfil del reciclador.<br>
-        - El reciclador puede canjear puntos por productos en la tienda del ayudante.
-      </p>
-      <p style="text-align: justify;">
-        <strong>👤 Perfiles personalizados:</strong><br>
-        - Registro con rol: Reciclador o Ayudante.<br>
-        - Subida de foto de perfil (galería o cámara).<br>
-        - Visualización de puntos acumulados (solo para recicladores).<br>
-        - Edición de nombre y foto.
-      </p>
-      <p style="text-align: justify;">
-        <strong>💬 Chat en tiempo real:</strong><br>
-        - Interacción fluida y directa entre ambos roles.
-      </p>
-      <p style="text-align: justify;">
-        <strong>💚 Impacto:</strong> Esta app promueve el reciclaje responsable, fortalece vínculos comunitarios y recompensa acciones ecológicas.
+        Conecta <strong>recicladores</strong> y <strong>ayudantes</strong> con puntos por residuos; chat, roles, perfiles y canje.
       </p>
     `,
     tags: ['React','Vite','Node.js','Express.js','Socket.IO','Multer','PostgreSQL','Sequelize','JWT'],
@@ -235,10 +305,7 @@ const projects = [
     alt: 'Aplicación de Gestión de Tareas Inteligente',
     descriptionHTML: `
       <p style="text-align: justify;">
-        Aplicación web creada a medida para organizar de forma eficiente mis actividades diarias y mensuales. Diseñé esta herramienta desde cero, integrando inteligencia artificial para mejorar la planificación y productividad personal.
-      </p>
-      <p style="text-align: justify;">
-        <strong>Funcionalidades:</strong> Autenticación segura con JWT, gestión completa de tareas (crear, editar, eliminar, completar), vistas por fecha (hoy, semana, atrasadas), calendario interactivo, barra de progreso diaria, y un asistente IA llamado <strong>ZENDO</strong>.
+        Autenticación JWT, CRUD de tareas, vistas por fecha, calendario, progreso diario y asistente IA <strong>ZENDO</strong>.
       </p>
     `,
     tags: ['React.js','Tailwind CSS','JavaScript (ES6+)','React-datepicker','Moment.js','Axios','Node.js','Express.js','PostgreSQL','JWT','Bcrypt.js','Dotenv'],
@@ -254,15 +321,8 @@ const projects = [
     alt: 'APP Consulta Socios',
     descriptionHTML: `
       <p style="text-align: justify;">
-        Es una aplicación web que permite a los usuarios consultar de forma segura sus cuentas y movimientos desde cualquier dispositivo. Está integrada con la app de cobranza, mostrando en tiempo real los pagos registrados por los trabajadores en campo.
+        Consulta segura de cuentas y movimientos; integra en tiempo real la app de cobranza usada en campo.
       </p>
-      <p style="text-align: justify; margin-bottom: 0.1rem; line-height: 1.4;"><strong>Características Principales:</strong></p>
-      <ul style="text-align: justify; padding-left: 1.2rem; margin-top: 0; line-height: 1.4;">
-        <li>Inicio de sesión seguro con tipo y número de documento (JWT).</li>
-        <li>Registro de nuevos usuarios con credenciales personales.</li>
-        <li>Consulta de cuentas y movimientos actualizados.</li>
-        <li>Interfaz moderna y responsive para móviles y escritorios.</li>
-      </ul>
     `,
     tags: ['React.js','Vite','React Router DOM','Tailwind CSS','Axios/Fetch','Node.js','Express','JWT','PostgreSQL'],
     links: [
@@ -277,17 +337,8 @@ const projects = [
     alt: 'Aplicación Web de Gestión de Cobranza',
     descriptionHTML: `
       <p style="text-align: justify;">
-        Aplicación web desarrollada para optimizar el proceso de cobranza en campo. Permite a los cobradores autenticar su sesión, gestionar zonas asignadas, buscar socios, registrar movimientos y visualizar resúmenes detallados diarios y mensuales.
+        Gestión de zonas, socios, movimientos y resúmenes de cobranza diaria/mensual. Pensado para móviles.
       </p>
-      <p style="text-align: justify;"><strong>Características Principales:</strong></p>
-      <ul style="text-align: justify; padding-left: 1.5rem;">
-        <li>Autenticación segura con JWT y Bcrypt.</li>
-        <li>Gestión de socios y zonas por cobrador.</li>
-        <li>Registro de movimientos con cálculo automático del total a cobrar.</li>
-        <li>Resumen diario y mensual de cobranza por zona.</li>
-        <li>Diseño responsivo adaptado a dispositivos móviles.</li>
-        <li>Arquitectura modular separada en frontend y backend.</li>
-      </ul>
     `,
     tags: ['React.js','Tailwind CSS','JavaScript (ES6+)','Node.js','Express.js','PostgreSQL','JWT','Bcrypt.js','Dotenv'],
     links: [
@@ -301,16 +352,13 @@ const projects = [
     image: './gif/cob_consul.gif',
     alt: 'Sistema de Gestión Financiera',
     descriptionHTML: `
-      <p style="text-align: justify; margin-bottom: 0.5rem;">
-        Proyecto full-stack compuesto por dos aplicaciones integradas para la gestión y visualización de movimientos financieros.
+      <p style="text-align: justify; margin-bottom: .5rem;">
+        Dos apps integradas para visualizar y registrar movimientos financieros en tiempo real.
       </p>
       <ul style="text-align: justify; padding-left: 1.2rem; margin-top: 0; margin-bottom: 0.8rem; line-height: 1.5;">
-        <li><strong>APP Consulta Socios:</strong> consulta de cuentas y movimientos en tiempo real.</li>
-        <li><strong>APP Cobranza:</strong> registra pagos y transacciones, sincronizados con la app de socios.</li>
+        <li><strong>Socios:</strong> consulta de cuentas y movimientos.</li>
+        <li><strong>Cobranza:</strong> registro de pagos sincronizado.</li>
       </ul>
-      <p style="text-align: justify; margin-top: 0;">
-        <strong>Logros:</strong> Arquitectura modular, APIs seguras, UI responsive, sincronización en tiempo real y unificación de la base de datos para ambas apps.
-      </p>
     `,
     tags: ['React.js','Vite','React Router DOM','Tailwind CSS','Axios/Fetch','Node.js','Express.js','JWT','PostgreSQL','Docker'],
     links: [
@@ -325,10 +373,7 @@ const projects = [
     alt: 'Sistema de Gestión de Biblioteca',
     descriptionHTML: `
       <p style="text-align: justify;">
-        Sistema web completo desarrollado para gestionar eficientemente libros de una biblioteca. Facilita el registro, búsqueda, edición y eliminación de ejemplares mediante una interfaz moderna, clara y totalmente responsiva.
-      </p>
-      <p style="text-align: justify;">
-        <strong>Funcionalidades:</strong> Gestión integral de libros (título, autor, año, ISBN), búsqueda rápida en tiempo real, eliminación con confirmación, validaciones completas y control de errores tanto en el frontend como en el backend.
+        Gestión de libros con búsqueda en tiempo real, validaciones y control de errores frontend/backend.
       </p>
     `,
     tags: ['Java 17','Spring Boot','JDBC','MySQL','React','Axios','CSS Personalizado','Maven','DBngin'],
@@ -344,14 +389,8 @@ const projects = [
     alt: 'Chat Pro',
     descriptionHTML: `
       <p style="text-align: justify;">
-        Aplicación de mensajería en tiempo real con experiencia fluida, segura y dinámica.
+        Mensajería en tiempo real con Socket.IO, Firebase Auth, chat global/privado, modo oscuro y notificaciones.
       </p>
-      <p style="text-align: justify;"><strong>Arquitectura:</strong> Backend en Node.js/Express y comunicación en tiempo real con Socket.IO.</p>
-      <ul style="text-align: justify; padding-left: 1.5rem;">
-        <li>Firebase Authentication</li>
-        <li>Chat global y privado, indicador de escritura y lectura</li>
-        <li>Modo claro/oscuro, emojis y notificaciones</li>
-      </ul>
     `,
     tags: ['HTML5','CSS3','JavaScript (ESM)','emoji-picker-element','Node.js','Express','Socket.IO','MySQL','Firebase Authentication','DBngin'],
     links: [
@@ -366,7 +405,7 @@ const projects = [
     alt: 'Mi Portafolio Personal',
     descriptionHTML: `
       <p style="text-align: justify;">
-        Este es el portafolio personal que estás visualizando, diseñado y desarrollado desde cero para mostrar mis habilidades, experiencia y proyectos de desarrollo web.
+        Portafolio diseñado y desarrollado desde cero para mostrar habilidades, experiencia y proyectos.
       </p>
     `,
     tags: ['HTML','CSS','JavaScript'],
@@ -382,10 +421,7 @@ const projects = [
     alt: 'Visor de Pokemons',
     descriptionHTML: `
       <p style="text-align: justify;">
-        App que consume una API externa para listar Pokémons con búsqueda y filtros por nombre o tipo.
-      </p>
-      <p style="text-align: justify;">
-        Enfatiza integración con APIs REST y rendimiento sin frameworks.
+        Consumo de API pública para listar y filtrar Pokémons por nombre o tipo.
       </p>
     `,
     tags: ['HTML','CSS','JavaScript','API Externa (Pokemon API)'],
@@ -401,7 +437,7 @@ const projects = [
     alt: 'Sitio Web de Restaurante',
     descriptionHTML: `
       <p style="text-align: justify;">
-        Página moderna y responsiva con menú, contacto y galería de imágenes.
+        Landing moderna y responsiva con menú, contacto y galería.
       </p>
     `,
     tags: ['HTML','CSS','JavaScript'],
@@ -417,7 +453,7 @@ const projects = [
     alt: 'E-Commerce para Tienda de Ropa',
     descriptionHTML: `
       <p style="text-align: justify;">
-        Plataforma con catálogo, carrito y gestión de pedidos para una tienda de ropa.
+        Catálogo, carrito y gestión de pedidos base para retail.
       </p>
     `,
     tags: ['HTML','CSS','JavaScript'],
@@ -433,7 +469,7 @@ const projects = [
     alt: 'Gestor de Presupuesto Mensual y Suscripciones',
     descriptionHTML: `
       <p style="text-align: justify;">
-        App para controlar presupuesto mensual y servicios de suscripción.
+        Control de presupuesto mensual y servicios de suscripción.
       </p>
     `,
     tags: ['Vite.js','React 18','Vercel'],
@@ -449,7 +485,7 @@ const projects = [
     alt: 'Catálogo de Películas',
     descriptionHTML: `
       <p style="text-align: justify;">
-        CRUD de películas con backend Node.js y MySQL, manejo de rutas y persistencia.
+        CRUD de películas con Node.js y MySQL.
       </p>
     `,
     tags: ['Node.js','MySQL','HTML','CSS','JavaScript','DBngin'],
@@ -480,8 +516,8 @@ const PAGE_SIZE = 3;
 
 export default function Projects() {
   const [page, setPage] = useState(1);
-  const [expanded, setExpanded] = useState({}); // { [index]: true|false }
-  const [openProject, setOpenProject] = useState(null); // ← modal
+  const [expanded, setExpanded] = useState({});
+  const [openProject, setOpenProject] = useState(null);
 
   const totalPages = Math.ceil(projects.length / PAGE_SIZE);
 
@@ -500,7 +536,6 @@ export default function Projects() {
   const openModal = (project) => setOpenProject(project);
   const closeModal = () => setOpenProject(null);
 
-  // Cerrar con Esc y bloquear scroll del body cuando el modal está abierto
   useEffect(() => {
     const onKey = (e) => e.key === 'Escape' && closeModal();
     document.addEventListener('keydown', onKey);
@@ -516,7 +551,6 @@ export default function Projects() {
       <div className="container">
         <h2 className="section-title">Proyectos</h2>
 
-        {/* Controles de paginación arriba */}
         <div id="pagination" className="pagination-controls">
           <button
             onClick={() => setPage((p) => Math.max(1, p - 1))}
@@ -548,7 +582,6 @@ export default function Projects() {
 
             return (
               <div className="project-card" key={p.title}>
-                {/* Imagen clickeable para abrir modal */}
                 <button
                   className="project-image-btn"
                   onClick={() => openModal(p)}
@@ -601,12 +634,8 @@ export default function Projects() {
             );
           })}
         </div>
-
-        {/* Controles de paginación abajo (opcional) */}
-        
       </div>
 
-      {/* MODAL */}
       {openProject && (
         <div
           className="modal-overlay"
@@ -628,7 +657,6 @@ export default function Projects() {
             <div className="modal-body">
               <h3 className="project-title">{openProject.title}</h3>
 
-              {/* Descripción completa sin 'collapsed' */}
               <div
                 className="project-description"
                 dangerouslySetInnerHTML={{ __html: openProject.descriptionHTML }}
