@@ -6,6 +6,34 @@ const projects = [
      NUEVOS PROYECTOS
      ========================= */
 
+     {
+    title: 'EMPRESA EDUCA.TE PERÚ - Plataforma de Gestión Integral',
+    image: './gif/educate-peru.gif',
+    alt: 'Plataforma de Gestión Integral Educa.te Perú',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Plataforma diseñada para la empresa <strong>Educa.te Perú</strong> con la <u>misma arquitectura y funcionalidades</u> que la solución de Aprende Perú.
+        Mantiene certificación con PDF + QR y almacenamiento en Google Drive, gestión de cursos/módulos, roles y panel administrativo.
+      </p>
+
+        
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Certificación:</strong> PDF con QR validable y código único.</li>
+        <li><strong>Google Drive:</strong> almacenamiento de certificados con cuenta de servicio.</li>
+        <li><strong>Catálogo:</strong> cursos, módulos, paquetes y temarios autocompletables.</li>
+        <li><strong>IA opcional:</strong> generación de temarios asistida por IA.</li>
+        <li><strong>Operación:</strong> inscripción, pagos, validación por nombre/DNI, soporte por WhatsApp.</li>
+        <li><strong>Admin:</strong> roles (admin/asesor/estudiante), métricas y seguridad con JWT.</li>
+      </ul>
+
+    `,
+    tags: ['React','Tailwind','Node.js','Express.js','PostgreSQL','Sequelize','JWT','QRCode','Google Drive API','IA Generativa'],
+    links: [
+      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'github', href: '#', label: 'Ver Código' },
+    ],
+  },
   {
     title: 'EMPRESA APRENDE PERÚ - Módulo de Certificación Inteligente',
     image: './gif/cert-inteligente.gif',
