@@ -41,13 +41,26 @@ const projects = [
     <p style="text-align: justify;">
       Nuestro sistema integró un chatbot inteligente, diseñado para responder exclusivamente sobre el tema del reto, junto con otras funcionalidades que pueden verse en el video de demostración. Gracias al esfuerzo y la sinergia del equipo, ganamos el concurso a nivel local y ahora representamos a Perú en la etapa global del desafío de la NASA. Fue una experiencia que combinó ciencia, tecnología y creatividad, demostrando el poder de la colaboración interdisciplinaria.
     </p>
+    <p style="text-align: justify;">
+      Tecnologías y Lenguajes utilizados:
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>React:</strong> Framework utilizado para construir la interfaz de usuario del sistema.</li>
+      <li><strong>Vite:</strong> Herramienta de construcción y desarrollo utilizada para mejorar el rendimiento y la velocidad de la aplicación.</li>
+      <li><strong>JavaScript:</strong> Lenguaje principal utilizado para la programación del proyecto y la integración de funcionalidades interactivas.</li>
+      <li><strong>API de Gemini:</strong> Usada para integrar el procesamiento de datos y análisis de información, aportando potencia de procesamiento en tiempo real.</li>
+      <li><strong>APIs de Terra MORDIS:</strong> Integración con los datos satelitales del satélite Terra para proporcionar información precisa sobre el medio ambiente y la relación con las comunidades humanas.</li>
+      <li><strong>Google Forms:</strong> Utilizado para la recopilación de información y la gestión de respuestas durante el proceso de la hackatón.</li>
+      <li><strong>Chatbot:</strong> Un sistema inteligente integrado en el proyecto para responder preguntas relacionadas con el reto de la NASA y proporcionar una experiencia interactiva.</li>
+    </ul>
   `,
-  tags: ['Hackatón', 'NASA', 'Interactividad', 'Datos Satelitales', 'Ciencia', 'Tecnología', 'Chatbot', 'Colaboración Interdisciplinaria'],
+  tags: ['Hackatón', 'NASA', 'Interactividad', 'Datos Satelitales', 'Ciencia', 'Tecnología', 'Chatbot', 'Colaboración Interdisciplinaria', 'React', 'Vite', 'JavaScript', 'Gemini API', 'Terra MORDIS', 'Google Forms'],
   links: [
     { type: 'demo', href: '#', label: 'Ver Demo' }, // Agrega el enlace al video de demostración o presentación
     { type: 'github', href: '#', label: 'Ver Código' }, // Agrega el enlace al repositorio si está disponible
   ],
-},
+}
+,
 
      {
     title: 'EMPRESA EDUCA.TE PERÚ - Plataforma de Gestión Integral',
