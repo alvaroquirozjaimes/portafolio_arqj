@@ -28,7 +28,7 @@ const projects = [
   ],
 },
 {
-  title: 'Hackatón - Ganadores Locales: Pensadores en Órbita – Perú',
+  title: 'NASA SPACE APP CHALLENG - Hackatón - Ganadores Locales: Pensadores en Órbita – Perú',
   image: './gif/hackathon.gif',
   alt: 'Hackatón Pensadores en Órbita – Perú',
   descriptionHTML: `
