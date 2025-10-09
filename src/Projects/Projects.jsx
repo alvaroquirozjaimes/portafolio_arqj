@@ -7,7 +7,7 @@ const projects = [
      ========================= */
 {
   title: 'Empresa Boliviana - Sueños Tranquilos - Guía Digital para el Descanso Infantil',
-  image: '/gif/sueno.gif',
+  image: './gif/sueno.gif',
   alt: 'Guía paso a paso para mejorar el descanso nocturno infantil',
   descriptionHTML: `
     <p style="text-align: justify;">
@@ -29,7 +29,7 @@ const projects = [
 },
 {
   title: 'Hackatón - Ganadores Locales: Pensadores en Órbita – Perú',
-  image: './images/hackathon.jpg', // Agrega la ruta de la imagen de la hackatón
+  image: './gif/hackathon.gif',
   alt: 'Hackatón Pensadores en Órbita – Perú',
   descriptionHTML: `
     <p style="text-align: justify;">
@@ -58,7 +58,6 @@ const projects = [
         Plataforma diseñada para la empresa <strong>Educa.te Perú</strong> con la <u>misma arquitectura y funcionalidades</u> que la solución de Aprende Perú.
         Mantiene certificación con PDF + QR y almacenamiento en Google Drive, gestión de cursos/módulos, roles y panel administrativo.
       </p>
-
         
       </p>
       <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
