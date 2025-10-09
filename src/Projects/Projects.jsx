@@ -5,6 +5,49 @@ const projects = [
   /* =========================
      NUEVOS PROYECTOS
      ========================= */
+{
+  title: 'Empresa Boliviana - Sueños Tranquilos - Guía Digital para el Descanso Infantil',
+  image: '/gif/sueno.gif',
+  alt: 'Guía paso a paso para mejorar el descanso nocturno infantil',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      "Sueños Tranquilos" es una plataforma digital diseñada y desarrollada para una empresa de Bolivia, que tiene como objetivo ayudar a los padres a establecer rutinas nocturnas efectivas y saludables para sus bebés. Este sistema fue construido utilizando React y Vite para garantizar una experiencia de usuario rápida y fluida, y se integró con herramientas de marketing digital como el evento CAPI para el seguimiento de conversiones.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Plataforma interactiva:</strong> Desarrollada con React y Vite para asegurar un rendimiento óptimo y tiempos de carga rápidos.</li>
+      <li><strong>Diseño responsivo:</strong> Uso de Tailwind CSS para garantizar que la página se adapte a diferentes tamaños de pantalla y dispositivos, brindando una experiencia agradable en móviles, tabletas y escritorios.</li>
+      <li><strong>Eventos de marketing:</strong> Integración con Facebook CAPI, permitiendo el seguimiento preciso de conversiones y la mejora continua de las campañas publicitarias.</li>
+      <li><strong>Botón de WhatsApp flotante:</strong> Implementación de un botón flotante para facilitar la comunicación directa con los usuarios interesados en la guía, creando una experiencia más interactiva y personalizada.</li>
+      <li><strong>Acceso digital inmediato:</strong> Los usuarios pueden comprar y descargar la guía digital al instante, mejorando la experiencia de compra sin esperas innecesarias.</li>
+    
+  `,
+  tags: ['React', 'Vite', 'Tailwind CSS', 'Facebook CAPI', 'WhatsApp API', 'Generación de leads', 'Landing Page', 'Tecnología Web', 'Empresa Boliviana'],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+{
+  title: 'Hackatón - Ganadores Locales: Pensadores en Órbita – Perú',
+  image: './images/hackathon.jpg', // Agrega la ruta de la imagen de la hackatón
+  alt: 'Hackatón Pensadores en Órbita – Perú',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Participar por primera vez en una hackatón fue una experiencia emocionante y desafiante. En solo 48 horas, nuestro equipo interdisciplinario de 5 integrantes, formado por físicos, ingenieros agroindustriales, topógrafos y un ingeniero de sistemas, asumió el reto propuesto por la NASA: "Animation Celebration of Terra Data!", en conmemoración del 25.º aniversario del satélite Terra.
+    </p>
+    <p style="text-align: justify;">
+      El desafío consistió en desarrollar un sistema interactivo con datos reales de la Tierra obtenidos por los cinco instrumentos del satélite Terra, con el objetivo de contar una historia científica que reflejara la relación entre el planeta, el medio ambiente y las comunidades humanas.
+    </p>
+    <p style="text-align: justify;">
+      Nuestro sistema integró un chatbot inteligente, diseñado para responder exclusivamente sobre el tema del reto, junto con otras funcionalidades que pueden verse en el video de demostración. Gracias al esfuerzo y la sinergia del equipo, ganamos el concurso a nivel local y ahora representamos a Perú en la etapa global del desafío de la NASA. Fue una experiencia que combinó ciencia, tecnología y creatividad, demostrando el poder de la colaboración interdisciplinaria.
+    </p>
+  `,
+  tags: ['Hackatón', 'NASA', 'Interactividad', 'Datos Satelitales', 'Ciencia', 'Tecnología', 'Chatbot', 'Colaboración Interdisciplinaria'],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver Demo' }, // Agrega el enlace al video de demostración o presentación
+    { type: 'github', href: '#', label: 'Ver Código' }, // Agrega el enlace al repositorio si está disponible
+  ],
+},
 
      {
     title: 'EMPRESA EDUCA.TE PERÚ - Plataforma de Gestión Integral',
