@@ -6,6 +6,55 @@ const projects = [
      NUEVOS PROYECTOS
      ========================= */
 {
+  title: 'GR MINING COMPONENTS — Sistema de Control de Inventarios',
+  image: './gif/mining.gif',
+  alt: 'Sistema digital de control de inventarios y cotizaciones',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Sistema desarrollado para <strong>GR MINING COMPONENTS S.A.C.</strong> con el propósito de optimizar la gestión de repuestos, cotizaciones y movimientos logísticos, brindando una plataforma moderna, centralizada y accesible para el equipo y los clientes.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Gestión automatizada:</strong> Control en tiempo real de inventarios, cotizaciones y pedidos.</li>
+      <li><strong>Paneles visuales:</strong> Reportes y estadísticas dinámicas para una toma de decisiones eficiente.</li>
+      <li><strong>Acceso para clientes:</strong> Consulta de stock y estado de pedidos en línea.</li>
+      <li><strong>Arquitectura escalable:</strong> Desarrollado con <strong>React</strong>, <strong>Node.js</strong> y <strong>PostgreSQL</strong>, adaptado al flujo operativo de la empresa.</li>
+    </ul>
+  `,
+  tags: [
+    'React', 'Node.js', 'PostgreSQL', 'Express', 'Dashboard', 'Inventarios', 'Cotizaciones', 'Logística', 'B2B'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver Plataforma' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+{
+  title: 'QUE SUERTE — Plataforma Digital de Sorteos y Premios',
+  image: './gif/suerte.gif',
+  alt: 'Plataforma moderna para sorteos y premios en Perú',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      <strong>"QUE SUERTE"</strong> es una plataforma digital desarrollada para <strong>Huánuco de Boleto</strong>, enfocada en ofrecer sorteos seguros, divertidos y transparentes desde cualquier dispositivo.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Tecnología moderna:</strong> React, Node.js, Sequelize y PostgreSQL para alto rendimiento.</li>
+      <li><strong>Pagos integrados:</strong> Participación mediante <strong>Yape</strong> y <strong>Plin</strong>.</li>
+      <li><strong>Validación instantánea:</strong> Códigos únicos para verificar tickets en tiempo real.</li>
+      <li><strong>Transparencia total:</strong> Sorteos transmitidos en <strong>YouTube Live</strong>.</li>
+      <li><strong>Gestión completa:</strong> Dashboard administrativo para sorteos, pagos y ganadores.</li>
+    </ul>
+  `,
+  tags: [
+    'React', 'Node.js', 'PostgreSQL', 'Tailwind CSS', 'Yape', 'Plin', 'Twilio API', 'YouTube Live', 'Dashboard'
+  ],
+  links: [
+    { type: 'demo', href: 'https://www.quesuertee.com', label: 'Ver Plataforma' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+     
+{
   title: 'Empresa Boliviana - Sueños Tranquilos - Guía Digital para el Descanso Infantil',
   image: './gif/sueno.gif',
   alt: 'Guía paso a paso para mejorar el descanso nocturno infantil',
