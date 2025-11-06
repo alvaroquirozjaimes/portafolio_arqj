@@ -354,3 +354,10 @@
 @media (min-width: 1400px){
   .modal-image{ max-height: 75vh; }
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* 👈 controla el ancho */
+  gap: 1.5rem;
+  justify-content: center; /* centra las tarjetas */
+}
