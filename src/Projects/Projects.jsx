@@ -5,8 +5,68 @@ const projects = [
   /* =========================
      NUEVOS PROYECTOS
      ========================= */
+
+     {
+  title: 'MAZE COMPRESS — Optimización de imágenes DE 3 MB A 30 KB',
+  image: './gif/compress.gif',
+  alt: 'Sistema web para comprimir y optimizar imágenes',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Herramienta web diseñada para <strong>comprimir y optimizar imágenes</strong> de forma rápida, sencilla y sin perder calidad percibida. 
+      Ideal para desarrolladores, emprendedores y creadores de contenido que necesitan reducir el peso de sus archivos para 
+      usarlos en webs, apps o campañas digitales.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Compresión configurable:</strong> Control del nivel de calidad para encontrar el equilibrio ideal entre peso y definición.</li>
+      <li><strong>Vista previa en tiempo real:</strong> Comparación antes y después, mostrando tamaño original versus tamaño optimizado.</li>
+      <li><strong>Soporte para múltiples formatos:</strong> Procesamiento de imágenes en <strong>JPG</strong>, <strong>PNG</strong> y <strong>WEBP</strong>, entre otros.</li>
+      <li><strong>Subida simple:</strong> Carga mediante <em>drag &amp; drop</em> o selección de archivos, con manejo de múltiples imágenes.</li>
+      <li><strong>Arquitectura moderna:</strong> Frontend en <strong>React</strong> y backend en <strong>Node.js</strong> con procesamiento en servidor, 
+          pensado para integrarse en otros proyectos o paneles administrativos.</li>
+    </ul>
+  `,
+  tags: [
+    'React', 'Node.js', 'Optimización de imágenes', 'Frontend', 'Compresión',
+    'Performance web', 'Herramienta interna', 'Productividad'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Probar herramienta' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+     {
+  title: 'PROYECTO PERSONAL - MAZE BOOK — Historias, tráilers y aventuras a tu estilo',
+  image: './gif/mazebook.gif',
+  alt: 'Plataforma digital de historias, tráilers y aventuras interactivas',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Historias cortas, tráilers y aventuras para todos los gustos. Creamos este espacio para que leer sea simple, cómodo y entretenido, 
+      y para descubrir las películas más recomendadas según tu estilo. 
+      <br /><br />
+      <strong>MAZE BOOK</strong> no se limita solo a cuentos infantiles: reúne relatos breves, leyendas, adaptaciones de clásicos, 
+      reseñas y tráilers para disfrutar desde cualquier dispositivo.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Biblioteca variada:</strong> Historias cortas, fábulas, leyendas, reseñas y contenido para diferentes edades y gustos.</li>
+      <li><strong>Tráilers y películas:</strong> Sección para descubrir tráilers y fichas de películas con sinopsis, géneros y recomendaciones.</li>
+      <li><strong>Experiencia de lectura cómoda:</strong> Modo lectura, navegación fluida, organización por categorías y duración.</li>
+      <li><strong>Interacción con el usuario:</strong> Sistema de favoritos, vista detallada de cada historia y enfoque en usabilidad móvil y desktop.</li>
+      <li><strong>Arquitectura moderna:</strong> Desarrollado con <strong>React</strong> y <strong>Node.js</strong> (API REST), preparado para escalar en número de historias, tráilers y usuarios.</li>
+    </ul>
+  `,
+  tags: [
+    'React', 'Node.js', 'Express', 'Historias cortas', 'Tráilers',
+    'Películas', 'Storytelling', 'UI/UX', 'Responsive'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver Plataforma' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
 {
-  title: 'GR MINING COMPONENTS — Sistema de Control de Inventarios',
+  title: 'EMPRESA GR MINING COMPONENTS — Sistema de Control de Inventarios',
   image: './gif/mining.gif',
   alt: 'Sistema digital de control de inventarios y cotizaciones',
   descriptionHTML: `
@@ -30,7 +90,7 @@ const projects = [
 },
 
 {
-  title: 'QUE SUERTE — Plataforma Digital de Sorteos y Premios',
+  title: 'EMPRESA HUÁNUCO DE BOLETO - QUE SUERTE — Plataforma Digital de Sorteos y Premios',
   image: './gif/suerte.gif',
   alt: 'Plataforma moderna para sorteos y premios en Perú',
   descriptionHTML: `
