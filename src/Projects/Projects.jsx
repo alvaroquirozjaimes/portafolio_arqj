@@ -7,7 +7,163 @@ const projects = [
      ========================= */
 
      {
-  title: 'MAZE COMPRESS — Optimización de imágenes DE 3 MB A 30 KB',
+  title: 'PROYECTO PERSONAL - MAZE BOT — Asistentes IA para negocios y proyectos',
+  image: './gif/mazebot.gif',
+  alt: 'Plataforma web para crear y gestionar asistentes virtuales con IA',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      MAZE BOT es una plataforma web que permite crear y administrar <strong>asistentes virtuales con IA</strong> 
+      para distintos negocios y proyectos desde un solo lugar. La idea nace de la necesidad de tener un “cerebro central” 
+      que responda dudas de clientes, explique servicios y atienda consultas frecuentes sin depender siempre de una persona.
+    </p>
+    <p style="text-align: justify;">
+      Desde un panel administrativo puedes configurar asistentes para diferentes marcas, cargar información que deben conocer 
+      (servicios, horarios, políticas, etc.) y probar cómo responden antes de publicarlos. Luego, cada asistente se puede 
+      integrar en la web del cliente mediante un pequeño código de inserción, funcionando como un chat flotante 
+      o embebido en la página.
+    </p>
+    
+  `,
+  tags: [
+    'IA', 'Chatbot', 'Asistentes virtuales', 'Atención al cliente',
+    'Automatización', 'Plataforma web', 'Multi-negocio'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Probar MAZE BOT' },
+    { type: 'github', href: '#', label: 'Más detalles del proyecto' },
+  ],
+},
+
+{
+  title: 'EMPRESA APRENDE PERÚ - LANDING PAGE',
+  image: './gif/landingapp.gif',
+  alt: 'Landing page de Aprende Perú para promoción de cursos y certificados con QR',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Esta landing de <strong>APRENDE PERÚ</strong> está diseñada como página principal de captación 
+      para una corporación de educación especializada en cursos, diplomados y certificaciones con 
+      <strong>código QR de verificación</strong>. El objetivo es mostrar de forma clara los beneficios, 
+      modelos de certificados, áreas de formación y promociones para motivar al usuario a solicitar información.
+    </p>
+    <p style="text-align: justify;">
+      La estructura combina un hero enfocado en certificación profesional, carruseles de 
+      <strong>modelos de certificados</strong> y <strong>carreras por área</strong>, una sección de 
+      <strong>convenios y respaldos institucionales</strong>, planes promocionales y un footer completo con datos legales. 
+      Todo el diseño respeta la identidad visual de Aprende Perú (rojos corporativos, fondos oscuros y tarjetas blancas) 
+      y está implementado con <strong>React + Vite</strong>, listo para integrarse con el ecosistema actual de la marca.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+     
+    </ul>
+  `,
+  tags: [
+    'Landing page',
+    'Educación',
+    'Certificados con QR',
+    'React',
+    'Vite',
+    'UI/UX',
+    'Marketing educativo'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver landing de Aprende Perú' },
+    { type: 'github', href: '#', label: 'Ver código del proyecto' },
+  ],
+},
+
+
+{
+  title: 'PROYECTO PERSONAL - MAZE DB — Chat con tu Base de Datos usando IA',
+  image: './gif/ia_bd.gif',
+  alt: 'Sistema web para consultar y gestionar bases de datos con IA',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      MAZE DB es una herramienta web que permite <strong>conectarse a bases de datos PostgreSQL</strong> y 
+      consultarlas usando <strong>lenguaje natural</strong>. Nació de la necesidad de explorar y modificar datos 
+      de proyectos como MAZE TOUR sin depender siempre de clientes SQL tradicionales o recordar consultas complejas.
+    </p>
+    <p style="text-align: justify;">
+      El sistema integra <strong>IA (Gemini)</strong> para transformar lo que escribes en español (o inglés) 
+      en <strong>consultas SQL reales</strong>, mostrando tanto el código generado como los resultados en una 
+      interfaz clara y visual. Ideal para desarrolladores, analistas y equipos que quieren trabajar sus datos 
+      de forma más rápida, intuitiva y controlada.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Conexión dinámica a PostgreSQL:</strong> Configuración de host, puerto, base de datos, usuario y contraseña directamente desde la interfaz.</li>
+      <li><strong>Chat con la base de datos:</strong> Escribe preguntas como <em>“qué tablas tengo”</em> o 
+          <em>“muéstrame los hoteles con más reservas”</em> y la IA genera el <strong>SQL correspondiente</strong>.</li>
+      <li><strong>Consultas avanzadas:</strong> Soporta <strong>JOINs</strong>, filtros, agregaciones, subconsultas y 
+          lógica compleja para análisis de datos reales.</li>
+      <li><strong>Modo lectura y modo escritura:</strong> Permite trabajar solo con <strong>SELECT</strong> 
+          o habilitar de forma controlada <strong>INSERT / UPDATE / DELETE</strong>, con validaciones de seguridad.</li>
+      <li><strong>SQL visible y copiable:</strong> Cada respuesta muestra la <strong>consulta generada</strong> 
+          y un botón para copiarla y reutilizarla en otros entornos o clientes SQL.</li>
+      <li><strong>Detección inteligente de tablas:</strong> La IA puede entender peticiones en español aunque las 
+          tablas y columnas estén en inglés, apoyándose en el catálogo de <code>information_schema</code>.</li>
+      <li><strong>Arquitectura moderna:</strong> Frontend en <strong>React + Vite</strong> con interfaz tipo chat, 
+          y backend en <strong>Node.js + Express</strong> integrado con <strong>PostgreSQL</strong> y la API de <strong>Gemini</strong>.</li>
+    </ul>
+  `,
+  tags: [
+    'React', 'Node.js', 'PostgreSQL', 'Inteligencia Artificial', 'SQL',
+    'Gemini', 'Fullstack', 'Herramienta interna', 'Productividad', 'Data'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Probar MAZE DB' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+{
+  title: 'EMPRESA - SALFER CRÉDITOS – SISTEMA INTEGRAL DE CRÉDITOS Y COBRANZA',
+  image: './gif/salfer.gif',
+  alt: 'Panel interno de gestión de créditos y cobranzas de SALFER CRÉDITOS',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      <strong>SALFER CRÉDITOS</strong> es un sistema interno para la gestión completa del ciclo de 
+      préstamos personales: desde el registro del cliente y la creación del crédito, hasta el seguimiento 
+      de cuotas, pagos, estados y reportes para el área de cobranzas. Incluye un 
+      <strong>panel administrativo moderno</strong> con tarjetas de resumen, listado de préstamos recientes, 
+      últimos pagos y métricas clave de la cartera activa.
+    </p>
+    <p style="text-align: justify;">
+      El sistema permite gestionar clientes, préstamos, cronogramas de pago e historial de cobranzas con 
+      <strong>roles y permisos</strong> (ADMIN, OPERADOR, CLIENTE), generación de 
+      <strong>PDFs profesionales</strong> para resúmenes de cliente y cronogramas, filtros y paginación en 
+      tablas, así como un portal cliente para consultar sus créditos y registrar pagos. Toda la interfaz 
+      está diseñada con un estilo <strong>financiero nocturno</strong> (fondos oscuros, acentos dorados) y se 
+      integra con un backend seguro y escalable.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li>Panel interno con dashboard de cartera, préstamos recientes y últimos pagos.</li>
+      <li>Módulo de clientes con filtros, paginación y exportación de resumen en PDF.</li>
+      <li>Gestión de préstamos con generación automática de cronogramas de cuotas.</li>
+      <li>Exportación de cronogramas de pago en PDF por préstamo, con diseño tipo estado de cuenta.</li>
+      <li>Portal cliente para consultar préstamos, cuotas y registrar pagos con distintos métodos.</li>
+      <li>Backend con Node.js, Express y Sequelize (PostgreSQL/MySQL) y frontend en React + Vite.</li>
+      <li>Autenticación JWT, middleware de roles y diseño UI/UX adaptado al rubro financiero.</li>
+    </ul>
+  `,
+  tags: [
+    'Sistema interno',
+    'Finanzas',
+    'Gestión de créditos',
+    'Cronogramas de pago',
+    'React',
+    'Node.js',
+    'Express',
+    'Sequelize',
+    'UI/UX'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver panel de SALFER CRÉDITOS' },
+    { type: 'github', href: '#', label: 'Ver código del proyecto' },
+  ],
+},
+
+
+
+     {
+  title: ' PROYECTO PERSONAL - MAZE COMPRESS — Optimización de imágenes DE 3 MB A 30 KB',
   image: './gif/compress.gif',
   alt: 'Sistema web para comprimir y optimizar imágenes',
   descriptionHTML: `
