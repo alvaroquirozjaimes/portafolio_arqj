@@ -5,6 +5,172 @@ const projects = [
   /* =========================
      NUEVOS PROYECTOS
      ========================= */
+{
+  title: 'PROYECTO PERSONAL — Asistente Inteligente para Windows (Multi-Versión)',
+  image: './gif/prueba.gif',
+  alt: 'Asistente inteligente local para Windows con automatizaciones por lenguaje natural',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      <strong>Proyecto personal de gran escala.</strong> Por la magnitud del sistema, no se incluyen todas las imágenes ni funcionalidades.
+      Para ver el funcionamiento completo, demostraciones y avances, se puede acceder a mi perfil de <strong>LinkedIn</strong>.
+    </p>
+    <p style="text-align: justify;">
+      Asistente inteligente local para <strong>Windows</strong> capaz de interpretar instrucciones en lenguaje natural y ejecutar acciones
+      del sistema de forma segura, controlada y progresiva.
+    </p>
+
+    <p style="text-align: justify; margin-bottom:.2rem;"><strong>Versión 3 (actual)</strong></p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.2rem 0 .6rem; line-height:1.5;">
+      <li><strong>Modo Chatbot:</strong> automatizaciones usando lenguaje normal (“abre”, “copia”, “haz…”).</li>
+      <li><strong>Ejecución por tareas:</strong> instrucciones numeradas desde bloc de notas y ejecución por comando.</li>
+      <li><strong>Modo Asistente:</strong> lectura de código o texto seleccionado para explicar, optimizar, corregir bugs o proponer mejoras.</li>
+      <li><strong>Sesión persistente:</strong> el asistente mantiene contexto hasta recibir el comando <em>“SALIR”</em>.</li>
+    </ul>
+
+    <p style="text-align: justify; margin-bottom:.2rem;"><strong>Versión 2</strong></p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.2rem 0 .6rem; line-height:1.5;">
+      <li>Apertura de programas y carpetas por nombre.</li>
+      <li>Copiado y movimiento de archivos mediante texto o voz.</li>
+      <li>Escritura automática en la ventana activa.</li>
+      <li>Búsquedas en Google y reproducción de música en YouTube.</li>
+      <li>Control de volumen del sistema.</li>
+      <li>Respuestas en español e inglés.</li>
+    </ul>
+
+    <p style="text-align: justify; margin-bottom:.2rem;"><strong>Seguridad y control</strong></p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.2rem 0 .6rem; line-height:1.5;">
+      <li>Confirmación previa antes de ejecutar acciones.</li>
+      <li>Restricción por rutas permitidas.</li>
+      <li>Protección contra operaciones no autorizadas o accidentales.</li>
+    </ul>
+
+    
+  `,
+  tags: [
+    'Asistente IA',
+    'Automatización',
+    'Lenguaje Natural',
+    'Windows',
+    'Chatbot',
+    'Seguridad',
+    'Control del Sistema',
+    'Proyecto Personal'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver Demo (LinkedIn)' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+{
+  title: 'EMPRESA - COOPAC San Francisco — Sistema de Cartera Legal (SF Legal)',
+  image: './gif/csf.gif',
+  alt: 'Sistema web para gestión y control de cartera judicial',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      <strong>SF Legal</strong> es un sistema web desarrollado para el área legal de <strong>COOPAC San Francisco</strong>, orientado a centralizar,
+      controlar y dar seguimiento a la cartera judicial, facilitando la consulta, actualización y auditoría de casos de forma segura y ordenada.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Búsqueda avanzada:</strong> filtros por agencia, analista, estado, fechas y responsables.</li>
+      <li><strong>Edición controlada:</strong> modificación de campos según rol del usuario.</li>
+      <li><strong>Auditoría completa:</strong> registro de quién modificó, qué cambió y cuándo.</li>
+      <li><strong>Reportes:</strong> módulo de seguimiento con exportación de modificaciones.</li>
+      <li><strong>Roles y dashboard:</strong> accesos diferenciados (admin, editor, vista) y navegación rápida.</li>
+    </ul>
+    <p style="text-align: justify; margin:0;">
+      <em>En desarrollo:</em> módulo para el área de Recuperaciones e integración con el Core Financiero actual y el nuevo Core Financiero,
+      garantizando continuidad de datos y procesos entre sistemas.
+    </p>
+  `,
+  tags: [
+    'Sistema Legal',
+    'Cartera Judicial',
+    'Búsquedas Avanzadas',
+    'Auditoría',
+    'Reportes',
+    'Roles y Permisos',
+    'Dashboard',
+    'Integración de Sistemas'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+{
+  title: 'EMPRESA - FERRETERÍA GAMARRA — Sistema de Ventas y Facturación',
+  image: './gif/gamarra.gif',
+  alt: 'Sistema de ventas, cotizaciones y facturación electrónica para ferretería',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Sistema desarrollado a medida para <strong>Ferretería Gamarra</strong>, orientado a agilizar la atención al cliente desde el catálogo hasta la
+      cotización o facturación, integrando herramientas clave en una sola plataforma. Incluye versión de <strong>escritorio con Electron</strong> y un
+      <strong>chatbot</strong> para guiar al usuario ante dudas del sistema.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Catálogo centralizado:</strong> productos, categorías y control interno.</li>
+      <li><strong>Búsqueda y carrito:</strong> filtros y armado rápido de pedidos.</li>
+      <li><strong>Cotizaciones:</strong> generación imprimible y envío directo por <strong>WhatsApp</strong>.</li>
+      <li><strong>Facturación electrónica:</strong> emisión de <strong>boletas y facturas</strong> con <strong>Nubefact</strong>.</li>
+      <li><strong>Validación de clientes:</strong> consultas a <strong>RENIEC/SUNAT</strong> para autocompletar y verificar datos.</li>
+      <li><strong>Panel administrativo:</strong> dashboard para gestión de ventas y operaciones.</li>
+      <li><strong>Chatbot integrado:</strong> asistencia rápida para resolver dudas dentro del sistema.</li>
+    </ul>
+  `,
+  tags: [
+    'Ventas',
+    'Catálogo',
+    'Cotizaciones',
+    'WhatsApp',
+    'Facturación Electrónica',
+    'Nubefact',
+    'RENIEC',
+    'SUNAT',
+    'Dashboard',
+    'Electron',
+    'Chatbot'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+{
+  title: 'EMPRESA - CLÍNICA DR. VITOR — Sistema Integral de Gestión Clínica',
+  image: './gif/vitor.gif',
+  alt: 'Sistema integral para gestión clínica: pacientes, citas, historias, caja e inventario',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Sistema desarrollado a medida para la <strong>Clínica Dr. Vitor</strong>, con el objetivo de organizar de forma centralizada la operación diaria:
+      registro de pacientes, atención médica, cobranza y control de medicamentos. Nace para reemplazar procesos manuales, reducir errores de facturación
+      y mantener la información clínica ordenada, segura y accesible para todo el equipo (administración, asistentes, médicos y caja).
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Centralización total:</strong> pacientes, historias clínicas, citas y pagos en un solo lugar.</li>
+      <li><strong>Flujo optimizado:</strong> asistente → doctor → caja, reduciendo tiempos de espera y errores humanos.</li>
+      <li><strong>Facturación electrónica:</strong> emisión automatizada de boletas y facturas.</li>
+      <li><strong>Inventario médico:</strong> control de medicamentos/productos vinculados a las atenciones.</li>
+      <li><strong>Paneles y reportes:</strong> métricas para decisiones administrativas y financieras.</li>
+    </ul>
+  `,
+  tags: [
+    'Sistema Clínico',
+    'Gestión de Pacientes',
+    'Historias Clínicas',
+    'Citas Médicas',
+    'Caja y Cobranza',
+    'Facturación Electrónica',
+    'Inventario',
+    'Reportes y Dashboard'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
 
      {
   title: 'PROYECTO PERSONAL - MAZE BOT — Asistentes IA para negocios y proyectos',
