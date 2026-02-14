@@ -5,6 +5,127 @@ const projects = [
   /* =========================
      NUEVOS PROYECTOS
      ========================= */
+
+     {
+  title: 'HIDROMAX S.A.C. — ERP de Manufactura y Facturación Electrónica',
+  image: './gif/hidromax.gif',
+  alt: 'ERP de manufactura, inventario y facturación electrónica',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Sistema ERP desarrollado a medida para <strong>HIDROMAX S.A.C.</strong>, diseñado para ordenar y agilizar
+      toda la operación empresarial integrando <strong>Almacén, Compras, Ventas, Producción, Planta y Facturación</strong>
+      en una sola plataforma centralizada.
+    </p>
+
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Catálogo centralizado:</strong> gestión de categorías y productos como base estructural del sistema.</li>
+      <li><strong>Inventario con Kardex:</strong> control de stock real por movimientos (entradas, salidas y ajustes).</li>
+      <li><strong>Requerimientos automáticos:</strong> generación de solicitudes cuando el stock es insuficiente desde Ventas o Producción.</li>
+      <li><strong>Compras integradas:</strong> flujo completo desde requerimiento → orden de compra → recepción con ingreso automático a almacén.</li>
+      <li><strong>Producción:</strong> órdenes de trabajo (OT), consumo de materiales, control de tiempos por trabajador y cierre técnico.</li>
+      <li><strong>Módulo Planta:</strong> aprobación de horas y producción antes del ingreso final a stock.</li>
+      <li><strong>Facturación electrónica:</strong> emisión de guías y comprobantes, gestión de pendientes por facturar (flujo preparado para integración real).</li>
+      <li><strong>Usuarios y permisos:</strong> control de roles, accesos por perfil y rutas protegidas.</li>
+    </ul>
+
+    <p style="text-align: justify; margin:0;">
+      Actualmente el sistema continúa evolucionando con nuevas automatizaciones, reportes personalizados
+      y adecuaciones específicas al flujo operativo real de la empresa.
+    </p>
+  `,
+  tags: [
+    'ERP',
+    'Manufactura',
+    'Inventario',
+    'Kardex',
+    'Compras',
+    'Producción',
+    'Facturación Electrónica',
+    'Roles y Permisos',
+    'Dashboard',
+    'Sistema Empresarial'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+{
+  title: 'IESCO GROUP — Sistema Integral de Control de Ingresos, Acreditación y Gestión de Contratistas con IA',
+  image: './gif/iesco.gif',
+  alt: 'Gestión documentaria con inteligencia artificial para control de contratistas',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Proyecto desarrollado para <strong>IESCO GROUP</strong>, enfocado en la modernización del control de contratistas
+      y la gestión de accesos mediante <strong>Inteligencia Artificial</strong>. Esta versión inicial se trabaja de forma
+      independiente y experimental, con el objetivo de integrarse posteriormente al sistema principal de acreditación,
+      seguridad y control de ingresos de la empresa.
+    </p>
+
+    <p style="text-align: justify; margin-bottom:.3rem;"><strong>Versión 1 — Gestión Documentaria con IA</strong></p>
+
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.2rem 0 .8rem; line-height:1.5;">
+      <li><strong>Lectura automatizada:</strong> análisis y validación de documentos clave (DNI, SCTR, Vida Ley, antecedentes, entre otros).</li>
+      <li><strong>Reducción de tiempos:</strong> disminuye revisión manual y errores humanos en la verificación documental.</li>
+      <li><strong>Plantillas IA configurables:</strong> estandarización de categorías de documentos según reglas definidas por el usuario.</li>
+      <li><strong>Memoria documental:</strong> creación de historial inteligente por persona, reutilizable sin necesidad de releer los PDFs.</li>
+      <li><strong>Base para integración futura:</strong> preparado para conectarse al sistema integral de acreditación y control de accesos.</li>
+    </ul>
+  `,
+  tags: [
+    'Inteligencia Artificial',
+    'Gestión Documentaria',
+    'OCR',
+    'Automatización',
+    'Control de Contratistas',
+    'Seguridad Empresarial',
+    'Sistema de Acreditación',
+    'IA Aplicada'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+     {
+  title: 'PROYECTO PERSONAL — Agenda Inteligente + Automatización (WhatsApp/Email)',
+  image: './gif/agenda.gif',
+  alt: 'Sistema web de agenda con automatización de mensajes y chatbot',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Sistema web desarrollado para uso personal, enfocado en la gestión inteligente de agenda y la automatización
+      de comunicaciones vía <strong>Email y WhatsApp</strong>. Permite programar mensajes para enviarse automáticamente
+      en una fecha y hora específicas, optimizando la organización y evitando olvidos.
+    </p>
+    <p style="text-align: justify;">
+      El sistema ayuda a controlar disponibilidad, prevenir choques de horarios y automatizar recordatorios o mensajes
+      sin perder contexto ni seguridad.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Gestión de agenda:</strong> control de eventos con validación de solapamientos.</li>
+      <li><strong>Programación automática:</strong> envío de mensajes por Email o WhatsApp en fecha y hora definida.</li>
+      <li><strong>Chatbot orientado a tareas:</strong> interpreta solicitudes, propone acciones y solicita confirmación antes de ejecutar.</li>
+      <li><strong>Control y seguridad:</strong> ejecución validada para evitar envíos accidentales.</li>
+    </ul>
+  `,
+  tags: [
+    'Agenda Inteligente',
+    'Automatización',
+    'WhatsApp API',
+    'Email',
+    'Chatbot',
+    'Programación de Tareas',
+    'Sistema Web',
+    'Proyecto Personal'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
 {
   title: 'PROYECTO PERSONAL — Asistente Inteligente para Windows (Multi-Versión)',
   image: './gif/prueba.gif',
