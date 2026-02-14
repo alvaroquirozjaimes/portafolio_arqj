@@ -7,7 +7,7 @@ const projects = [
      ========================= */
 
      {
-  title: 'HIDROMAX S.A.C. — ERP de Manufactura y Facturación Electrónica',
+  title: 'EMPRESA - HIDROMAX S.A.C. — ERP de Manufactura y Facturación Electrónica',
   image: './gif/hidromax.gif',
   alt: 'ERP de manufactura, inventario y facturación electrónica',
   descriptionHTML: `
@@ -52,7 +52,7 @@ const projects = [
 },
 
 {
-  title: 'IESCO GROUP — Sistema Integral de Control de Ingresos, Acreditación y Gestión de Contratistas con IA',
+  title: 'EMPRESA - IESCO GROUP — Sistema Integral de Control de Ingresos, Acreditación y Gestión de Contratistas con IA',
   image: './gif/iesco.gif',
   alt: 'Gestión documentaria con inteligencia artificial para control de contratistas',
   descriptionHTML: `
