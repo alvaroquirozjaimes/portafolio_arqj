@@ -5,7 +5,185 @@ const projects = [
   /* =========================
      NUEVOS PROYECTOS
      ========================= */
+{
+  title: 'EMPRESA EDUCA.TE — Landing Page Corporativa',
+  image: './gif/educate.gif',
+  alt: 'Landing page corporativa para captación de alumnos y promoción de certificaciones',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Landing page desarrollada para <strong>EDUCA.TE</strong>, enfocada en la captación de nuevos usuarios interesados
+      en cursos, diplomados y certificaciones con código QR de verificación. Su objetivo principal es presentar de forma clara
+      los beneficios, áreas de formación, modelos de certificados y promociones disponibles.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Hero principal:</strong> enfoque visual en certificación profesional y conversión de leads.</li>
+      <li><strong>Carruseles dinámicos:</strong> modelos de certificados y áreas/carreras de formación.</li>
+      <li><strong>Convenios y respaldos:</strong> sección orientada a reforzar confianza institucional.</li>
+      <li><strong>Promociones:</strong> planes y ofertas presentadas de forma clara y atractiva.</li>
+      <li><strong>Diseño corporativo:</strong> identidad visual alineada a la marca con colores corporativos, fondos oscuros y tarjetas claras.</li>
+      <li><strong>Tecnología moderna:</strong> implementada con <strong>React + Vite</strong>, lista para integrarse al ecosistema digital actual.</li>
+    </ul>
+  `,
+  tags: [
+    'Landing Page',
+    'React',
+    'Vite',
+    'Educación',
+    'Certificaciones',
+    'QR',
+    'Diseño Corporativo',
+    'Captación de Leads',
+    'UI/UX'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+     {
+  title: 'EMPRESA - SDI Maquinarias SAC — Sistema ERP Interno de Gestión Industrial',
+  image: './gif/sdi.gif',
+  alt: 'ERP interno para gestión industrial, logística, ventas y producción',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Plataforma desarrollada a medida para <strong>SDI Maquinarias SAC</strong>, orientada a reemplazar procesos manuales y centralizar
+      la operación completa de la empresa en un solo sistema. La solución conecta áreas como almacén, producción, ventas y contabilidad,
+      permitiendo mayor trazabilidad, control operativo y reducción de errores.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Módulo de logística:</strong> inventario, kardex, compras, reservas de almacén y productos observados.</li>
+      <li><strong>Ciclo de ventas:</strong> cotizaciones, órdenes de venta, despachos y seguimiento de envíos.</li>
+      <li><strong>Contabilidad operativa:</strong> emisión y gestión de guías de remisión y facturas.</li>
+      <li><strong>Hojas de costo:</strong> cálculo de materia prima, manufactura, tratamientos y ruta de fabricación.</li>
+      <li><strong>Producción:</strong> órdenes de trabajo, tiempos por operario y reportes de planta.</li>
+      <li><strong>Panel operario:</strong> uso en tablet para registrar actividades en tiempo real desde planta.</li>
+      <li><strong>Roles y accesos:</strong> control por perfil para Admin, Almacén, Compras, Ventas, Producción, RRHH y Operario.</li>
+    </ul>
+  `,
+  tags: [
+    'ERP',
+    'Gestión Industrial',
+    'Logística',
+    'Inventario',
+    'Kardex',
+    'Ventas',
+    'Producción',
+    'Facturación',
+    'Panel Operario',
+    'Roles y Permisos'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+{
+  title: 'PROYECTO PERSONAL — Plataforma de Mensajería Empresarial con IA Integrada',
+  image: './gif/chat2.gif',
+  alt: 'Plataforma de mensajería empresarial en tiempo real con inteligencia artificial',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Plataforma de mensajería empresarial desarrollada como proyecto personal, diseñada para ofrecer una experiencia
+      moderna, intuitiva y familiar, inspirada en funcionalidades tipo <strong>WhatsApp</strong>, pero orientada a negocios
+      que desean integrar comunicación en tiempo real con atención automatizada mediante <strong>Inteligencia Artificial</strong>.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Mensajería en tiempo real:</strong> chats con <strong>Socket.IO</strong>, estados online/offline y confirmación de lectura.</li>
+      <li><strong>Gestión completa:</strong> búsqueda de mensajes, contactos y perfiles empresariales personalizados.</li>
+      <li><strong>Experiencia familiar:</strong> interfaz inspirada en WhatsApp para facilitar el uso y la adopción.</li>
+      <li><strong>IA entrenable por negocio:</strong> cada empresa puede alimentar su asistente con información propia para responder de forma más precisa.</li>
+      <li><strong>Atención automatizada:</strong> recomendaciones de productos y respuestas según las necesidades del cliente.</li>
+      <li><strong>Catálogo integrado:</strong> visualización de productos dentro de la misma plataforma.</li>
+      <li><strong>Estados y privacidad:</strong> publicación de estados con control de visibilidad.</li>
+      <li><strong>Interacción flexible:</strong> el cliente puede elegir si conversar con el negocio o con su agente inteligente.</li>
+    </ul>
+  `,
+  tags: [
+    'Mensajería en Tiempo Real',
+    'Socket.IO',
+    'Inteligencia Artificial',
+    'Chat Empresarial',
+    'Catálogo de Productos',
+    'Estados',
+    'Privacidad',
+    'Proyecto Personal',
+    'WhatsApp-like UI'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
 
+     {
+  title: 'EMPRESA - Visión Sur Televisión 12.1 — Sistema Web de Noticias y Gestión de Contenido',
+  image: './gif/vision.gif',
+  alt: 'Sistema web de noticias, programación y gestión de contenido audiovisual',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Plataforma desarrollada para <strong>Visión Sur Televisión 12.1</strong>, orientada a fortalecer su presencia digital y optimizar
+      la gestión de contenido informativo y audiovisual. La solución integra un sitio público para noticias, videos, programación
+      y señal en vivo, junto con un panel administrativo para la gestión interna del contenido.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Módulo de noticias:</strong> publicación y actualización de contenido informativo.</li>
+      <li><strong>Contenido multimedia:</strong> gestión de videos y recursos audiovisuales.</li>
+      <li><strong>Panel administrativo:</strong> control interno de publicaciones y contenido.</li>
+      <li><strong>Programación televisiva:</strong> configuración y actualización de la parrilla del canal.</li>
+      <li><strong>Señal en vivo:</strong> integración para transmisión online.</li>
+      <li><strong>Usuarios y accesos:</strong> gestión de cuentas y permisos según rol.</li>
+    </ul>
+  `,
+  tags: [
+    'Sistema Web',
+    'Noticias',
+    'Gestión de Contenido',
+    'CMS',
+    'Panel Administrativo',
+    'Streaming',
+    'Programación TV',
+    'Usuarios y Permisos'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+{
+  title: 'EMPRESA - COOPAC San Francisco — Sistema de Cartera Legal',
+  image: './gif/csf2.gif',
+  alt: 'Sistema web para control de cartera judicial y gestión legal',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Sistema web desarrollado para <strong>COOPAC San Francisco</strong>, orientado a centralizar y controlar la cartera judicial del área legal,
+      facilitando la consulta, actualización y seguimiento de casos de manera más segura, ordenada y eficiente.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Búsqueda avanzada:</strong> filtros por agencia, analista, estados, fechas y responsables.</li>
+      <li><strong>Gestión por roles:</strong> control de usuarios, permisos y acceso según perfil.</li>
+      <li><strong>Flujo de aprobaciones:</strong> validación de cambios antes de aplicarlos en el sistema.</li>
+      <li><strong>Auditoría completa:</strong> registro de quién cambió, qué modificó y cuándo lo hizo.</li>
+      <li><strong>Reportes y exportación:</strong> seguimiento de modificaciones con exportación a Excel.</li>
+      <li><strong>Optimización de rendimiento:</strong> uso de vista materializada y procedimientos almacenados para mejorar carga y reportes.</li>
+    </ul>
+  `,
+  tags: [
+    'Sistema Legal',
+    'Cartera Judicial',
+    'Búsquedas Avanzadas',
+    'Roles y Permisos',
+    'Auditoría',
+    'Reportes',
+    'Excel',
+    'Vista Materializada',
+    'Procedimientos Almacenados',
+    'Optimización'
+  ],
+  links: [
+    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
      {
   title: 'EMPRESA - HIDROMAX S.A.C. — ERP de Manufactura y Facturación Electrónica',
   image: './gif/hidromax.gif',
