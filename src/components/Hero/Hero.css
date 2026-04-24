@@ -181,7 +181,7 @@
 @media (max-width: 820px) {
   .hero-content { grid-template-columns:1fr; text-align:center; }
   .hero-photo { order:-1; }
-  .hero-text p { text-align:center; margin:0.3rem auto 0; }
+  .hero-text p { text-align: justify; margin:0.3rem auto 0; }
   .hero-stats { justify-content:center; }
   .contact-info { justify-content:center; }
   .social-buttons { justify-content:center; }

@@ -1450,6 +1450,12 @@ export default function Projects() {
   const closeModal = () => setOpenProject(null);
 
   useEffect(() => {
+    const onHashChange = () => closeModal();
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
+
+  useEffect(() => {
     const onKey = (e) => e.key === 'Escape' && closeModal();
     document.addEventListener('keydown', onKey);
     document.body.style.overflow = openProject ? 'hidden' : '';
@@ -1561,23 +1567,24 @@ export default function Projects() {
       </div>
 
       {openProject && (
-        <div
-          className="modal-overlay"
-          onClick={closeModal}
-          role="dialog"
-          aria-modal="true"
-        >
-          <div className="project-modal" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close" onClick={closeModal} aria-label="Cerrar">
-              ✕
-            </button>
+        <>
+          <div className="modal-overlay" role="dialog" aria-modal="true">
+            <div className="project-modal">
+            {/* PANTALLA 1: imagen clickeable para cerrar */}
+            <div className="modal-hero" onClick={closeModal} title="Toca para cerrar">
+              <img
+                src={openProject.image}
+                alt={openProject.alt || openProject.title}
+                className="modal-hero-img"
+              />
+              {/* Flecha "bajar para ver más" */}
+              <div className="modal-scroll-hint">
+                <span>Ver detalles</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+            </div>
 
-            <img
-              src={openProject.image}
-              alt={openProject.alt || openProject.title}
-              className="modal-image"
-            />
-
+            {/* PANTALLA 2: contenido al hacer scroll */}
             <div className="modal-body">
               <h3 className="project-title">{openProject.title}</h3>
 
@@ -1588,9 +1595,7 @@ export default function Projects() {
 
               <div className="project-tech">
                 {openProject.tags.map((t) => (
-                  <span className="tech-tag" key={t}>
-                    {t}
-                  </span>
+                  <span className="tech-tag" key={t}>{t}</span>
                 ))}
               </div>
 
@@ -1609,7 +1614,8 @@ export default function Projects() {
               </div>
             </div>
           </div>
-        </div>
+          </div>
+        </>
       )}
     </section>
   );
