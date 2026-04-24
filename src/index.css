@@ -1,0 +1,6 @@
+/* Vite default reset - cleaned up */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

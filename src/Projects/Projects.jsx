@@ -2,10 +2,111 @@ import React, { useMemo, useState, useEffect } from 'react';
 import './Projects.css';
 
 const projects = [
-  /* =========================
-     NUEVOS PROYECTOS
-     ========================= */
-{
+  {
+  title: 'EMPRESA - SDI Maquinarias S.A.C. — Ampliación y Automatización del Sistema ERP',
+  image: './gif/sdi2.gif',
+  alt: 'Ampliación del sistema ERP de SDI Maquinarias con nuevos módulos y automatizaciones',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Ampliación del sistema ERP previamente desarrollado para <strong>SDI Maquinarias S.A.C.</strong>,
+      incorporando nuevos módulos y automatizaciones para ventas, producción, compras, logística, despacho,
+      contabilidad y administración.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Cotizaciones:</strong> generación automática con reserva de productos en stock.</li>
+      <li><strong>Producción por calendario:</strong> gestión de órdenes de trabajo con seguimiento de labores del personal.</li>
+      <li><strong>Logística:</strong> reprogramaciones, solicitudes adicionales, envíos parciales y validación de guías de remisión.</li>
+      <li><strong>Automatización de avances:</strong> procesos finalizados avanzan automáticamente sin aprobaciones manuales innecesarias.</li>
+      <li><strong>Trazabilidad total:</strong> cada área mantiene control y visibilidad del flujo operativo completo.</li>
+    </ul>
+  `,
+  tags: ['ERP', 'Automatización', 'Producción', 'Logística', 'Ventas', 'Compras', 'Contabilidad', 'React', 'Node.js', 'PostgreSQL'],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+  {
+  title: 'EMPRESA — Fibertel Valle S.C.R.L — Sistema de Gestión de Red e Internet',
+  image: './gif/fibertel.gif',
+  alt: 'Sistema web de gestión de red e internet para proveedor ISP',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Sistema web completo para <strong>Fibertel Valle S.C.R.L</strong>, orientado a administrar clientes,
+      técnicos e infraestructura de red de un proveedor de internet.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Control de clientes:</strong> activar, cortar y dar de baja conectado a servidor de administración de red en tiempo real.</li>
+      <li><strong>Mapa interactivo de Cajas NAP:</strong> visualización de puertos ocupados, clientes asignados y alertas de averías activas.</li>
+      <li><strong>Módulo de averías:</strong> flujo por rol — el administrador reporta y el técnico actualiza estados en campo.</li>
+      <li><strong>Medición de tendido de cable:</strong> cálculo de distancia acumulada por tramo directamente sobre el mapa.</li>
+      <li><strong>Control de pagos:</strong> registro por cliente, generación de tickets, envío por WhatsApp y reporte de pendientes.</li>
+      <li><strong>Dashboard en tiempo real:</strong> KPIs de clientes, recaudación, averías y estado de servicios por sede.</li>
+    </ul>
+  `,
+  tags: ['ISP', 'Gestión de Red', 'Mapa Interactivo', 'WhatsApp', 'Dashboard', 'Roles y Permisos', 'Tiempo Real', 'React', 'Node.js', 'PostgreSQL'],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+  {
+  title: 'PROYECTO PERSONAL — Plataforma de Personalización Visual con IA',
+  image: './gif/personalizacion.gif',
+  alt: 'Plataforma de personalización visual asistida por inteligencia artificial',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Plataforma web de personalización visual asistida por <strong>Inteligencia Artificial</strong>,
+      donde el usuario puede cargar su propia foto y visualizar de forma referencial cómo se vería
+      un diseño aplicado sobre ella, teniendo una idea más cercana del resultado final antes de aprobarlo,
+      descargarlo o seguir editándolo.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Vista previa visual con IA:</strong> el sistema muestra cómo quedaría el diseño sobre la foto del usuario.</li>
+      <li><strong>Edición por instrucciones de texto:</strong> ajustes rápidos e intuitivos sobre la propuesta inicial.</li>
+      <li><strong>Experiencia dinámica:</strong> personalización práctica y cercana al resultado real.</li>
+      <li><strong>Descarga y aprobación:</strong> el usuario puede descargar o seguir iterando el diseño.</li>
+    </ul>
+  `,
+  tags: ['Inteligencia Artificial', 'Personalización Visual', 'React', 'Node.js', 'IA Aplicada', 'Diseño', 'Proyecto Personal'],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+  {
+  title: 'PROYECTO PERSONAL — MISHEL — Asistente Virtual Inteligente con Avatar 3D',
+  image: './gif/mishel.gif',
+  alt: 'Asistente virtual inteligente con avatar 3D, voz e IA',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      <strong>MISHEL</strong> es una plataforma que integra avatar 3D, interacción por voz, conversación asistida con
+      <strong>Inteligencia Artificial</strong> y automatización de acciones dentro de la computadora,
+      ofreciendo una experiencia más natural, visual y funcional.
+    </p>
+    <p style="text-align: justify;">
+      Evolución e integración de funcionalidades desarrolladas en proyectos previos. Mishel puede conversar de forma fluida,
+      interpretar instrucciones por voz o texto, responder con expresiones visuales y ejecutar acciones locales
+      como búsquedas, escritura, creación de carpetas y gestión de archivos.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Avatar 3D interactivo:</strong> presencia visual con expresiones dinámicas.</li>
+      <li><strong>Interacción por voz y texto:</strong> conversación fluida y natural.</li>
+      <li><strong>Automatización local:</strong> ejecuta acciones reales en el sistema.</li>
+      <li><strong>IA integrada:</strong> respuestas inteligentes y contextuales.</li>
+    </ul>
+  `,
+  tags: ['Asistente Virtual', 'Avatar 3D', 'Inteligencia Artificial', 'Voz', 'Automatización', 'Windows', 'Proyecto Personal'],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+  {
   title: 'EMPRESA EDUCA.TE — Landing Page Corporativa',
   image: './gif/educate.gif',
   alt: 'Landing page corporativa para captación de alumnos y promoción de certificaciones',
@@ -36,11 +137,12 @@ const projects = [
     'UI/UX'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
-     {
+
+  {
   title: 'EMPRESA - SDI Maquinarias SAC — Sistema ERP Interno de Gestión Industrial',
   image: './gif/sdi.gif',
   alt: 'ERP interno para gestión industrial, logística, ventas y producción',
@@ -73,11 +175,12 @@ const projects = [
     'Roles y Permisos'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
-{
+
+  {
   title: 'PROYECTO PERSONAL — Plataforma de Mensajería Empresarial con IA Integrada',
   image: './gif/chat2.gif',
   alt: 'Plataforma de mensajería empresarial en tiempo real con inteligencia artificial',
@@ -110,12 +213,12 @@ const projects = [
     'WhatsApp-like UI'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
-     {
+  {
   title: 'EMPRESA - Visión Sur Televisión 12.1 — Sistema Web de Noticias y Gestión de Contenido',
   image: './gif/vision.gif',
   alt: 'Sistema web de noticias, programación y gestión de contenido audiovisual',
@@ -145,11 +248,12 @@ const projects = [
     'Usuarios y Permisos'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
-{
+
+  {
   title: 'EMPRESA - COOPAC San Francisco — Sistema de Cartera Legal',
   image: './gif/csf2.gif',
   alt: 'Sistema web para control de cartera judicial y gestión legal',
@@ -180,11 +284,12 @@ const projects = [
     'Optimización'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
-     {
+
+  {
   title: 'EMPRESA - HIDROMAX S.A.C. — ERP de Manufactura y Facturación Electrónica',
   image: './gif/hidromax.gif',
   alt: 'ERP de manufactura, inventario y facturación electrónica',
@@ -224,12 +329,12 @@ const projects = [
     'Sistema Empresarial'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
-{
+  {
   title: 'EMPRESA - IESCO GROUP — Sistema Integral de Control de Ingresos, Acreditación y Gestión de Contratistas con IA',
   image: './gif/iesco.gif',
   alt: 'Gestión documentaria con inteligencia artificial para control de contratistas',
@@ -262,12 +367,12 @@ const projects = [
     'IA Aplicada'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
-     {
+  {
   title: 'PROYECTO PERSONAL — Agenda Inteligente + Automatización (WhatsApp/Email)',
   image: './gif/agenda.gif',
   alt: 'Sistema web de agenda con automatización de mensajes y chatbot',
@@ -299,12 +404,12 @@ const projects = [
     'Proyecto Personal'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
-{
+  {
   title: 'PROYECTO PERSONAL — Asistente Inteligente para Windows (Multi-Versión)',
   image: './gif/prueba.gif',
   alt: 'Asistente inteligente local para Windows con automatizaciones por lenguaje natural',
@@ -356,12 +461,12 @@ const projects = [
     'Proyecto Personal'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Ver Demo (LinkedIn)' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
-{
+  {
   title: 'EMPRESA - COOPAC San Francisco — Sistema de Cartera Legal (SF Legal)',
   image: './gif/csf.gif',
   alt: 'Sistema web para gestión y control de cartera judicial',
@@ -393,12 +498,12 @@ const projects = [
     'Integración de Sistemas'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
-{
+  {
   title: 'EMPRESA - FERRETERÍA GAMARRA — Sistema de Ventas y Facturación',
   image: './gif/gamarra.gif',
   alt: 'Sistema de ventas, cotizaciones y facturación electrónica para ferretería',
@@ -432,11 +537,12 @@ const projects = [
     'Chatbot'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
-{
+
+  {
   title: 'EMPRESA - CLÍNICA DR. VITOR — Sistema Integral de Gestión Clínica',
   image: './gif/vitor.gif',
   alt: 'Sistema integral para gestión clínica: pacientes, citas, historias, caja e inventario',
@@ -465,13 +571,12 @@ const projects = [
     'Reportes y Dashboard'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
-
-     {
+  {
   title: 'PROYECTO PERSONAL - MAZE BOT — Asistentes IA para negocios y proyectos',
   image: './gif/mazebot.gif',
   alt: 'Plataforma web para crear y gestionar asistentes virtuales con IA',
@@ -494,12 +599,12 @@ const projects = [
     'Automatización', 'Plataforma web', 'Multi-negocio'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Probar MAZE BOT' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Más detalles del proyecto' },
   ],
 },
 
-{
+  {
   title: 'EMPRESA APRENDE PERÚ - LANDING PAGE',
   image: './gif/landingapp.gif',
   alt: 'Landing page de Aprende Perú para promoción de cursos y certificados con QR',
@@ -531,13 +636,12 @@ const projects = [
     'Marketing educativo'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Ver landing de Aprende Perú' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver código del proyecto' },
   ],
 },
 
-
-{
+  {
   title: 'PROYECTO PERSONAL - MAZE DB — Chat con tu Base de Datos usando IA',
   image: './gif/ia_bd.gif',
   alt: 'Sistema web para consultar y gestionar bases de datos con IA',
@@ -574,11 +678,12 @@ const projects = [
     'Gemini', 'Fullstack', 'Herramienta interna', 'Productividad', 'Data'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Probar MAZE DB' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
-{
+
+  {
   title: 'EMPRESA - SALFER CRÉDITOS – SISTEMA INTEGRAL DE CRÉDITOS Y COBRANZA',
   image: './gif/salfer.gif',
   alt: 'Panel interno de gestión de créditos y cobranzas de SALFER CRÉDITOS',
@@ -620,14 +725,12 @@ const projects = [
     'UI/UX'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Ver panel de SALFER CRÉDITOS' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver código del proyecto' },
   ],
 },
 
-
-
-     {
+  {
   title: ' PROYECTO PERSONAL - MAZE COMPRESS — Optimización de imágenes DE 3 MB A 30 KB',
   image: './gif/compress.gif',
   alt: 'Sistema web para comprimir y optimizar imágenes',
@@ -651,12 +754,12 @@ const projects = [
     'Performance web', 'Herramienta interna', 'Productividad'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Probar herramienta' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
-     {
+  {
   title: 'PROYECTO PERSONAL - MAZE BOOK — Historias, tráilers y aventuras a tu estilo',
   image: './gif/mazebook.gif',
   alt: 'Plataforma digital de historias, tráilers y aventuras interactivas',
@@ -681,12 +784,12 @@ const projects = [
     'Películas', 'Storytelling', 'UI/UX', 'Responsive'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Ver Plataforma' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
-{
+  {
   title: 'EMPRESA GR MINING COMPONENTS — Sistema de Control de Inventarios',
   image: './gif/mining.gif',
   alt: 'Sistema digital de control de inventarios y cotizaciones',
@@ -705,12 +808,12 @@ const projects = [
     'React', 'Node.js', 'PostgreSQL', 'Express', 'Dashboard', 'Inventarios', 'Cotizaciones', 'Logística', 'B2B'
   ],
   links: [
-    { type: 'demo', href: '#', label: 'Ver Plataforma' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
-{
+  {
   title: 'EMPRESA HUÁNUCO DE BOLETO - QUE SUERTE — Plataforma Digital de Sorteos y Premios',
   image: './gif/suerte.gif',
   alt: 'Plataforma moderna para sorteos y premios en Perú',
@@ -730,12 +833,12 @@ const projects = [
     'React', 'Node.js', 'PostgreSQL', 'Tailwind CSS', 'Yape', 'Plin', 'Twilio API', 'YouTube Live', 'Dashboard'
   ],
   links: [
-    { type: 'demo', href: 'https://www.quesuertee.com', label: 'Ver Plataforma' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
-     
-{
+
+  {
   title: 'Empresa Boliviana - Sueños Tranquilos - Guía Digital para el Descanso Infantil',
   image: './gif/sueno.gif',
   alt: 'Guía paso a paso para mejorar el descanso nocturno infantil',
@@ -753,11 +856,12 @@ const projects = [
   `,
   tags: ['React', 'Vite', 'Tailwind CSS', 'Facebook CAPI', 'WhatsApp API', 'Generación de leads', 'Landing Page', 'Tecnología Web', 'Empresa Boliviana'],
   links: [
-    { type: 'demo', href: '#', label: 'Ver Demo' },
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
     { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
-{
+
+  {
   title: 'NASA SPACE APP CHALLENG - Hackatón - Ganadores Locales: Pensadores en Órbita – Perú',
   image: './gif/hackathon.gif',
   alt: 'Hackatón Pensadores en Órbita – Perú',
@@ -786,13 +890,12 @@ const projects = [
   `,
   tags: ['Hackatón', 'NASA', 'Interactividad', 'Datos Satelitales', 'Ciencia', 'Tecnología', 'Chatbot', 'Colaboración Interdisciplinaria', 'React', 'Vite', 'JavaScript', 'Gemini API', 'Terra MORDIS', 'Google Forms'],
   links: [
-    { type: 'demo', href: '#', label: 'Ver Demo' }, // Agrega el enlace al video de demostración o presentación
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' }, // Agrega el enlace al video de demostración o presentación
     { type: 'github', href: '#', label: 'Ver Código' }, // Agrega el enlace al repositorio si está disponible
   ],
-}
-,
+},
 
-     {
+  {
     title: 'EMPRESA EDUCA.TE PERÚ - Plataforma de Gestión Integral',
     image: './gif/educate-peru.gif',
     alt: 'Plataforma de Gestión Integral Educa.te Perú',
@@ -815,10 +918,11 @@ const projects = [
     `,
     tags: ['React','Tailwind','Node.js','Express.js','PostgreSQL','Sequelize','JWT','QRCode','Google Drive API','IA Generativa'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
+
   {
     title: 'EMPRESA APRENDE PERÚ - Módulo de Certificación Inteligente',
     image: './gif/cert-inteligente.gif',
@@ -840,7 +944,7 @@ const projects = [
     `,
     tags: ['React','Node.js','Express.js','PostgreSQL','Sequelize','PDF-lib','QRCode','Google Drive API','IA Generativa'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
@@ -864,7 +968,7 @@ const projects = [
     `,
     tags: ['React','Tailwind','Node.js','Express.js','PostgreSQL','Sequelize','JWT','QRCode','Google Drive API'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
@@ -887,7 +991,7 @@ const projects = [
     `,
     tags: ['React','Vite','React Router','CSS Modules','SEO'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
@@ -913,7 +1017,7 @@ const projects = [
     `,
     tags: ['React','Vite','Node.js','Express','PostgreSQL','Sequelize','Nubefact','APISNET','JWT'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
@@ -939,7 +1043,7 @@ const projects = [
     `,
     tags: ['React','Vite','Node.js','Express','PostgreSQL','Sequelize','OCR','PDF','Excel'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
@@ -963,14 +1067,10 @@ const projects = [
     `,
     tags: ['React','Vite','Node.js','Express','PostgreSQL','Sequelize','SSE','OpenAI','Gemini','Claude'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
-
-  /* =========================
-     TUS PROYECTOS EXISTENTES
-     ========================= */
 
   {
     id: 5,
@@ -990,7 +1090,7 @@ const projects = [
     `,
     tags: ['React.js','Vite','CSS','JavaScript'],
     links: [
-      { type: 'demo',   href: 'https://<tu-usuario>.github.io/<tu-repo>/',        label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: 'https://github.com/<tu-usuario>/<tu-repo>',        label: 'Ver en GitHub' },
     ],
   },
@@ -1017,7 +1117,7 @@ const projects = [
     `,
     tags: ['React','Vite','Node.js','Express.js','PostgreSQL','Sequelize','React Router','Axios','Three.js','@react-three/fiber','OAuth Google'],
     links: [
-      { type: 'demo',   href: 'https://tu-demo-ecommerce3d.com', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: 'https://github.com/tuusuario/ecommerce-3d', label: 'Ver Código' },
     ],
   },
@@ -1039,7 +1139,7 @@ const projects = [
     `,
     tags: ['React','Vite','Node.js','Express.js','PostgreSQL','Sequelize','React Router','Axios','Chatbot IA','OAuth Google'],
     links: [
-      { type: 'demo',   href: 'https://tu-demo-viaja-y-explora.com', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: 'https://github.com/tuusuario/viaja-y-explora', label: 'Ver Código' },
     ],
   },
@@ -1055,7 +1155,7 @@ const projects = [
     `,
     tags: ['React','Tailwind CSS','Node.js','Express.js','PostgreSQL','Sequelize','PDF-lib','QRCode','Google Drive API'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
@@ -1075,7 +1175,7 @@ const projects = [
     `,
     tags: ['IA Generativa','PDF-lib','QRCode','Google Drive API','Node.js','Express.js','React','Sequelize'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
@@ -1091,7 +1191,7 @@ const projects = [
     `,
     tags: ['React.js','React Router DOM','Tailwind CSS','Axios','Lucide React','React Icons','Node.js','Express.js','PostgreSQL','Sequelize','JWT','Bcrypt','Multer','Dotenv','path','fs'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
@@ -1107,7 +1207,7 @@ const projects = [
     `,
     tags: ['React','Vite','Node.js','Express.js','Socket.IO','Multer','PostgreSQL','Sequelize','JWT'],
     links: [
-      { type: 'demo', href: 'https://reciclapp-demo.netlify.app', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: 'https://github.com/tuusuario/recicla-y-gana', label: 'Ver Código' },
     ],
   },
@@ -1123,7 +1223,7 @@ const projects = [
     `,
     tags: ['React.js','Tailwind CSS','JavaScript (ES6+)','React-datepicker','Moment.js','Axios','Node.js','Express.js','PostgreSQL','JWT','Bcrypt.js','Dotenv'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: 'https://github.com/alvaroquirozjaimes/INTELLIGENT-TASK-MANAGER', label: 'Ver Código' },
     ],
   },
@@ -1139,7 +1239,7 @@ const projects = [
     `,
     tags: ['React.js','Vite','React Router DOM','Tailwind CSS','Axios/Fetch','Node.js','Express','JWT','PostgreSQL'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: '#', label: 'ESTE CODIGO NO LO ESTOY SUBIENDO A GITHUB' },
     ],
   },
@@ -1155,7 +1255,7 @@ const projects = [
     `,
     tags: ['React.js','Tailwind CSS','JavaScript (ES6+)','Node.js','Express.js','PostgreSQL','JWT','Bcrypt.js','Dotenv'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: '#', label: 'ESTE CODIGO NO LO ESTOY SUBIENDO A GITHUB' },
     ],
   },
@@ -1175,7 +1275,7 @@ const projects = [
     `,
     tags: ['React.js','Vite','React Router DOM','Tailwind CSS','Axios/Fetch','Node.js','Express.js','JWT','PostgreSQL','Docker'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: '#', label: 'ESTE CODIGO NO LO ESTOY SUBIENDO A GITHUB' },
     ],
   },
@@ -1191,7 +1291,7 @@ const projects = [
     `,
     tags: ['Java 17','Spring Boot','JDBC','MySQL','React','Axios','CSS Personalizado','Maven','DBngin'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: 'https://github.com/alvaroquirozjaimes/BIBLIOTECA', label: 'Ver Código' },
     ],
   },
@@ -1207,7 +1307,7 @@ const projects = [
     `,
     tags: ['HTML5','CSS3','JavaScript (ESM)','emoji-picker-element','Node.js','Express','Socket.IO','MySQL','Firebase Authentication','DBngin'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: 'https://github.com/alvaroquirozjaimes/CHAT-PRO', label: 'Ver Código' },
     ],
   },
@@ -1223,7 +1323,7 @@ const projects = [
     `,
     tags: ['HTML','CSS','JavaScript'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Portafolio' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: 'https://github.com/alvaroquirozjaimes/mi-portafolio', label: 'Ver Código' },
     ],
   },
@@ -1239,7 +1339,7 @@ const projects = [
     `,
     tags: ['HTML','CSS','JavaScript','API Externa (Pokemon API)'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: 'https://github.com/alvaroquirozjaimes/pokedex', label: 'Ver Código' },
     ],
   },
@@ -1255,7 +1355,7 @@ const projects = [
     `,
     tags: ['HTML','CSS','JavaScript'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: 'https://github.com/alvaroquirozjaimes/restaurante', label: 'Ver Código' },
     ],
   },
@@ -1271,7 +1371,7 @@ const projects = [
     `,
     tags: ['HTML','CSS','JavaScript'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: 'https://github.com/alvaroquirozjaimes/e-commerce', label: 'Ver Código' },
     ],
   },
@@ -1287,7 +1387,7 @@ const projects = [
     `,
     tags: ['Vite.js','React 18','Vercel'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: 'https://github.com/alvaroquirozjaimes/suscripciones-streaming', label: 'Ver Código' },
     ],
   },
@@ -1303,7 +1403,7 @@ const projects = [
     `,
     tags: ['Node.js','MySQL','HTML','CSS','JavaScript','DBngin'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: 'https://github.com/alvaroquirozjaimes/catalogo_peliculas', label: 'Ver Código' },
     ],
   },
@@ -1319,10 +1419,10 @@ const projects = [
     `,
     tags: ['React','JavaScript','API de GIFs','HTML','CSS'],
     links: [
-      { type: 'demo', href: '#', label: 'Ver Demo' },
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
       { type: 'github', href: 'https://github.com/alvaroquirozjaimes/BuscarGif', label: 'Ver Código' },
     ],
-  },
+  }
 ];
 
 const PAGE_SIZE = 3;
@@ -1371,15 +1471,26 @@ export default function Projects() {
           >
             ← Anterior
           </button>
-          {Array.from({ length: totalPages }, (_, i) => i + 1).map((n) => (
-            <button
-              key={n}
-              className={n === page ? 'active' : ''}
-              onClick={() => setPage(n)}
-            >
-              {n}
-            </button>
-          ))}
+          {(() => {
+            const pages = [];
+            const delta = 2;
+            const left = Math.max(1, page - delta);
+            const right = Math.min(totalPages, page + delta);
+            if (left > 1) {
+              pages.push(<button key={1} onClick={() => setPage(1)}>1</button>);
+              if (left > 2) pages.push(<span key="l-dots" className="page-dots">…</span>);
+            }
+            for (let n = left; n <= right; n++) {
+              pages.push(
+                <button key={n} className={n === page ? 'active' : ''} onClick={() => setPage(n)}>{n}</button>
+              );
+            }
+            if (right < totalPages) {
+              if (right < totalPages - 1) pages.push(<span key="r-dots" className="page-dots">…</span>);
+              pages.push(<button key={totalPages} onClick={() => setPage(totalPages)}>{totalPages}</button>);
+            }
+            return pages;
+          })()}
           <button
             onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
             disabled={page === totalPages}

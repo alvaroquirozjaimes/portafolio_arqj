@@ -40,6 +40,7 @@ const techItems = [
   { name: 'Heroku',   category: 'deployment', icon: 'fas fa-cloud' },
   { name: 'Firebase', category: 'deployment', icon: 'fas fa-fire' },
   { name: 'Vercel',   category: 'deployment', icon: 'fas fa-rocket' },
+  { name: 'VPS',      category: 'deployment', icon: 'fas fa-server' },
 
   // Otros
   { name: 'Docker',      category: 'others', icon: 'fab fa-docker' },

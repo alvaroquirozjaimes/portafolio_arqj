@@ -1,126 +1,102 @@
-/* ========= TECNOLOGÍAS ========= */
-#tecnologias.section{
+/* ─── Technologies ─── */
+#tecnologias { overflow: hidden; }
+
+.tech-buttons {
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+  justify-content: center; margin-bottom: 2rem;
+}
+
+.tech-buttons button {
+  appearance: none; border: none; cursor: pointer;
+  padding: 0.5rem 1.1rem; border-radius: 999px;
+  font-weight: 600; font-size: 0.85rem; letter-spacing: 0.2px;
+  color: var(--ink-dim);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  transition: all var(--transition);
+  font-family: var(--font-body);
+}
+.tech-buttons button:hover { color: var(--ink); border-color: var(--border-green); transform: translateY(-1px); }
+.tech-buttons button.active {
+  color: #031a13; background: linear-gradient(135deg, var(--green-dim), var(--green));
+  border-color: transparent;
+  box-shadow: 0 6px 20px rgba(34,197,94,0.35);
+}
+
+/* ─── Grid ─── */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 1rem;
+}
+
+/* ─── Card ─── */
+.tech-item {
+  --accent: #22c55e;
   position: relative;
-  padding: 5rem 0;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 0.9rem;
+  text-align: center;
+  color: var(--ink-dim);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: default;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
   overflow: hidden;
+  opacity: 0;
+  animation: cardIn 0.4s ease forwards;
 }
 
-/* Glows de fondo */
-#tecnologias.section::before,
-#tecnologias.section::after{
-  content:"";
-  position:absolute; inset:auto;
-  width:520px; height:320px; filter:blur(40px); pointer-events:none; z-index:0;
-}
-#tecnologias.section::before{ top:-70px; left:-120px;
-  background:radial-gradient(closest-side, rgba(34,197,94,.16), transparent 70%);
-}
-#tecnologias.section::after{ bottom:-90px; right:-140px;
-  background:radial-gradient(closest-side, rgba(56,189,248,.14), transparent 70%);
+.tech-item::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(circle at 50% 0%, color-mix(in oklab, var(--accent) 12%, transparent), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-/* Título con acento */
-#tecnologias .section-title{
-  position: relative;
-  background: linear-gradient(180deg,#7cf6d6 0%, #33d606 70%);
-  -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
-  text-shadow: 0 10px 24px rgba(0,0,0,.30);
-  margin-bottom: 1.75rem;
+.tech-item:hover {
+  transform: translateY(-6px) scale(1.03);
+  border-color: color-mix(in oklab, var(--accent) 45%, transparent);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.35), 0 0 24px color-mix(in oklab, var(--accent) 20%, transparent);
+  color: var(--ink);
 }
-#tecnologias .section-title::after{
-  content:""; display:block; width:96px; height:3px; margin:12px auto 0;
-  border-radius:999px; background:linear-gradient(90deg,#22c55e,#38bdf8);
-  box-shadow:0 0 24px rgba(34,197,94,.45);
-}
+.tech-item:hover::before { opacity: 1; }
 
-/* ===== Filtros ===== */
-.tech-buttons{
-  display:flex; flex-wrap:wrap; gap:.6rem; justify-content:center; margin-bottom:1.75rem;
-}
-.tech-buttons button{
-  appearance:none; border:none; cursor:pointer; position:relative;
-  padding:.55rem 1rem; border-radius:999px; font-weight:700; letter-spacing:.2px;
-  color:#cfe6f3; background:rgba(15,23,42,.65);
-  border:1px solid rgba(56,189,248,.18);
-  transition:transform .15s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
-  backdrop-filter: blur(6px);
-}
-.tech-buttons button:hover{ transform:translateY(-1px); }
-.tech-buttons button.active{
-  color:#031a13; background:linear-gradient(135deg,#22c55e,#10b981);
-  box-shadow:0 8px 20px rgba(34,197,94,.35);
-}
-.tech-buttons button:focus-visible{
-  outline: 3px solid rgba(56,189,248,.45);
-  outline-offset: 2px;
-}
-
-/* ===== Grid ===== */
-.tech-grid{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap:1.25rem;
-  perspective:900px;             /* para el 3D del hover */
-  z-index:1;
-}
-
-/* ===== Tarjeta ===== */
-.tech-item{
-  --accent:#22c55e;              /* color por defecto */
-  position:relative;
-  background:linear-gradient(180deg, rgba(15,23,42,.65), rgba(15,23,42,.55));
-  border:1px solid rgba(56,189,248,.18);
-  border-radius:14px;
-  padding:1.2rem .9rem;
-  text-align:center;
-  color:#d7eef9;
-  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease;
-  box-shadow: 0 10px 26px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.03);
-  overflow:hidden;
-  opacity:0; transform: translateY(12px) scale(.98);
-  animation: cardIn .45s ease forwards;
-}
-.tech-item::after{                /* brillo diagonal sutil */
-  content:""; position:absolute; inset:-1px;
-  background:linear-gradient(120deg, var(--accent) 0%, transparent 35%, transparent 65%, var(--accent) 100%);
-  opacity:.08; pointer-events:none;
-}
-.tech-item:hover{
-  transform: translateY(-6px) rotateX(3deg) rotateY(-2deg);
-  box-shadow: 0 16px 34px rgba(0,0,0,.36), 0 0 36px color-mix(in oklab, var(--accent) 35%, transparent);
-  border-color: color-mix(in oklab, var(--accent) 45%, rgba(56,189,248,.18));
-}
-
-/* icono + nombre */
-.tech-icon{
-  font-size:2.15rem; margin-bottom:.55rem; line-height:1;
+.tech-icon {
+  font-size: 2.1rem; margin-bottom: 0.55rem; line-height: 1;
   color: var(--accent);
-  filter: drop-shadow(0 6px 14px color-mix(in oklab, var(--accent) 55%, transparent));
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 4px 10px color-mix(in oklab, var(--accent) 40%, transparent));
 }
-.tech-item > div:last-child{
-  font-weight:700; letter-spacing:.3px;
-}
+.tech-item:hover .tech-icon { transform: scale(1.15) translateY(-2px); }
 
-/* Colores por categoría */
-.tech-item.frontend  { --accent:#38bdf8; }
-.tech-item.backend   { --accent:#22c55e; }
-.tech-item.database  { --accent:#f59e0b; }
-.tech-item.deployment{ --accent:#c084fc; }
-.tech-item.others    { --accent:#94a3b8; }
+/* Category colors */
+.tech-item.frontend  { --accent: #38bdf8; }
+.tech-item.backend   { --accent: #22c55e; }
+.tech-item.database  { --accent: #f59e0b; }
+.tech-item.deployment{ --accent: #a78bfa; }
+.tech-item.others    { --accent: #94a3b8; }
 
-/* Animación de entrada */
-@keyframes cardIn{
-  to{ opacity:1; transform: translateY(0) scale(1); }
-}
+@keyframes cardIn { to { opacity:1; transform: translateY(0) scale(1); } }
 
-/* Responsive tweaks */
-@media (max-width:768px){
-  .tech-grid{ grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap:1rem; }
-  .tech-item{ padding:1rem .75rem; }
+@media (max-width: 768px) {
+  .tech-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 0.75rem; }
+  .tech-item { padding: 1rem 0.7rem; }
 }
 
-/* Accesibilidad: reducir movimiento */
-@media (prefers-reduced-motion:reduce){
-  .tech-item{ animation:none; transform:none; }
-  .tech-item:hover{ transform:none; }
+@media (prefers-reduced-motion: reduce) {
+  .tech-item { animation: none; opacity: 1; }
+  .tech-item:hover { transform: none; }
+}
+
+/* ─── Mobile technologies ─── */
+@media (max-width: 480px) {
+  .tech-grid { grid-template-columns: repeat(3, 1fr); gap: 0.6rem; }
+  .tech-item { padding: 0.9rem 0.5rem; font-size: 0.75rem; }
+  .tech-icon { font-size: 1.7rem; margin-bottom: 0.4rem; }
+  .tech-buttons button { padding: 0.4rem 0.8rem; font-size: 0.78rem; }
 }
