@@ -1,0 +1,113 @@
+/* ─── GitHub Contributions ─── */
+
+.gh-contrib-card {
+  max-width: 880px;
+  margin: 0 auto;
+  background: var(--surface-2);
+  border: 1px solid var(--border-green);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+.gh-contrib-card:hover {
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(34,197,94,0.35);
+}
+
+/* ─── Header barra tipo ventana ─── */
+.gh-contrib-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--surface-3);
+  border-bottom: 1px solid var(--border-green);
+}
+
+.gh-contrib-dot {
+  width: 11px; height: 11px;
+  border-radius: 50%;
+  background: var(--border);
+}
+.gh-contrib-dot:nth-child(1) { background: #ff5f57; }
+.gh-contrib-dot:nth-child(2) { background: #febc2e; }
+.gh-contrib-dot:nth-child(3) { background: #28c840; }
+
+.gh-contrib-username {
+  margin-left: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--ink-dim);
+  font-family: monospace;
+  transition: color var(--transition);
+}
+.gh-contrib-username:hover { color: var(--green); }
+
+/* ─── Body con imagen ─── */
+.gh-contrib-body {
+  padding: 1.5rem 1.75rem;
+  position: relative;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gh-contrib-skeleton {
+  position: absolute;
+  inset: 1.5rem 1.75rem;
+  border-radius: var(--radius-md);
+  background: linear-gradient(90deg, var(--surface-3) 25%, var(--surface-2) 50%, var(--surface-3) 75%);
+  background-size: 200% 100%;
+  animation: gh-shimmer 1.5s infinite;
+}
+
+@keyframes gh-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.gh-contrib-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  filter: saturate(1.1);
+}
+.gh-contrib-img.visible { opacity: 1; }
+
+.gh-contrib-error {
+  font-size: 0.9rem;
+  color: var(--ink-dim);
+  text-align: center;
+}
+.gh-contrib-error a { color: var(--green); }
+
+/* ─── Footer leyenda ─── */
+.gh-contrib-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding: 0.6rem 1.75rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.78rem;
+  color: var(--ink-dim);
+}
+
+.gh-contrib-legend {
+  display: flex;
+  gap: 3px;
+}
+.gh-contrib-legend span {
+  width: 13px; height: 13px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+/* ─── Mobile ─── */
+@media (max-width: 600px) {
+  .gh-contrib-body { padding: 1rem; }
+  .gh-contrib-footer { padding: 0.6rem 1rem; }
+}

@@ -79,6 +79,36 @@
 .nav-links a:hover::after, .nav-links a.active::after { left: 12px; right: 12px; }
 .nav-links a.active { color: var(--green); background: rgba(34,197,94,0.09); }
 
+/* ─── Nav CTA (Contáctame) ─── */
+.nav-links a.nav-cta {
+  color: var(--surface-0);
+  background: var(--green);
+  border-radius: var(--radius-sm);
+  padding: 0.42rem 1rem;
+  font-weight: 600;
+  margin-left: 0.4rem;
+  transition: background var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+.nav-links a.nav-cta::after { display: none; }
+.nav-links a.nav-cta:hover {
+  background: #16a34a;
+  box-shadow: 0 0 16px rgba(34,197,94,0.4);
+  transform: translateY(-1px);
+  color: #fff;
+}
+.nav-links a.nav-cta.active {
+  background: #16a34a;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .nav-links a.nav-cta {
+    margin-left: 0;
+    color: var(--surface-0);
+    text-align: center;
+  }
+}
+
 /* ─── Hamburger ─── */
 .hamburger {
   display: none;

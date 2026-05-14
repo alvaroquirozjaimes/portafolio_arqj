@@ -4,11 +4,11 @@ import Hero from './components/Hero/Hero';
 import About from './About/About';
 import Technologies from './Technologies/Technologies';
 import Projects from './Projects/Projects';
+import GitHubContributions from './GitHubContributions/GitHubContributions';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import EducationExperience from './EducationExperience/EducationExperience';
-// Importar los estilos globales
-import './styles/global.css'; 
+import './styles/global.css';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
         <Technologies />
         <EducationExperience />
         <Projects />
+        <GitHubContributions />
         <Contact />
       </main>
       <Footer />

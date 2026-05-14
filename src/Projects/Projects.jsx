@@ -2,6 +2,146 @@ import React, { useMemo, useState, useEffect } from 'react';
 import './Projects.css';
 
 const projects = [
+  
+
+  {
+  title: 'EMPRESA - COOPAC San Francisco — Sistema Integrado de Gestión Judicial (Versión Ampliada)',
+  image: './gif/csf3.gif',
+  alt: 'Sistema Integrado de Gestión Judicial para COOPAC San Francisco con dashboard, cartera, reportes y módulos avanzados',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Versión ampliada del sistema de cartera legal para <strong>COOPAC San Francisco Ltda. 289</strong>,
+      incorporando nuevos módulos, dashboards avanzados, gestión de garantías y rendición de gastos judiciales.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Dashboard Matriz de Créditos:</strong> KPIs de mora, cartera atrasada y TPC en tiempo real, con filtros multi-criterio y detalle exportable por tramo.</li>
+      <li><strong>Reporte de Abogados:</strong> desglose por analista/agencia (judicial, protesto, sin acciones) con impresión PDF y reasignación de analista.</li>
+      <li><strong>Cartera de Créditos:</strong> búsqueda y filtros avanzados sobre +10,000 registros con exportación completa o filtrada a Excel.</li>
+      <li><strong>Gestión de Garantías:</strong> registro y actualización de garantías por crédito (tipo, propietario, partida, valor, tasador).</li>
+      <li><strong>Liquidación de Cargos GJ:</strong> control de gastos judiciales con rendición en PDF por período, agencia y usuario.</li>
+      <li><strong>Historial y Validaciones:</strong> auditoría completa de cambios, flujo de aprobación/rechazo por Gerencia Legal y exportación Excel/PDF.</li>
+      <li><strong>Usuarios y Carga de Cartera:</strong> permisos granulares por módulo y ejecución del proceso Oracle por fecha de cierre.</li>
+    </ul>
+  `,
+  tags: [
+    'Sistema Legal', 'Cartera Judicial', 'Dashboard', 'Matriz de Créditos', 'Reporte de Abogados',
+    'Gastos Judiciales', 'Gestión de Garantías', 'Historial de Modificaciones', 'Flujo de Aprobaciones',
+    'Auditoría', 'Exportación Excel', 'PDF', 'Oracle', 'Vista Materializada', 'Roles y Permisos', 'React', 'Node.js'
+  ],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+  {
+  title: 'PROYECTO PERSONAL — MISHEL — Nueva Funcionalidad: Biblioteca Local Inteligente',
+  image: './gif/mishel2.gif',
+  alt: 'MISHEL con funcionalidad de lectura, análisis y consulta de archivos locales',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Como parte de la evolución de <strong>MISHEL</strong>, nueva funcionalidad enfocada en la
+      <strong>lectura, análisis y consulta de archivos locales</strong>.
+      Ahora MISHEL puede revisar una carpeta local del usuario, identificar documentos como
+      Excel, PDF, Word, TXT, entre otros, y responder preguntas basadas en la información encontrada.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Lectura de documentos locales:</strong> identifica y analiza archivos Excel, PDF, Word, TXT y más desde una carpeta del usuario.</li>
+      <li><strong>Consulta inteligente:</strong> calcula montos desde hojas de cálculo, busca datos específicos, resume documentos y ubica fragmentos relevantes.</li>
+      <li><strong>Registros administrativos:</strong> analiza y consulta información organizada de forma rápida y práctica.</li>
+      <li><strong>Memoria local:</strong> la información revisada queda registrada en la memoria de MISHEL para reconocer documentos disponibles y responder con mayor rapidez en futuras consultas.</li>
+      <li><strong>Multi-escenario:</strong> adaptable a facturación, gestión documental, análisis legal, registros internos o entornos clínicos.</li>
+    </ul>
+  `,
+  tags: ['Asistente Virtual', 'Biblioteca Local', 'Lectura de Documentos', 'PDF', 'Excel', 'Word', 'IA Aplicada', 'Automatización', 'Windows', 'Proyecto Personal'],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+{
+  title: 'EMPRESA — Hydromaq Solutions S.A.C. — Adecuación y Ampliación de ERP Industrial',
+  image: './gif/hydromaq.gif',
+  alt: 'Adecuación y ampliación del ERP para Hydromaq Solutions S.A.C. con módulos de producción, ventas, compras y logística',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Adecuación y ampliación del ERP desarrollado inicialmente para <strong>SDI Maquinarias S.A.C.</strong>,
+      adaptándolo al flujo operativo de <strong>Hydromaq Solutions S.A.C.</strong>
+      El trabajo se enfocó en ajustar la lógica del sistema, incorporar nuevos módulos, mejorar funcionalidades
+      existentes y automatizar procesos entre las áreas de producción, ventas, compras, logística, despacho y administración.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Adaptación del flujo operativo:</strong> lógica del sistema reajustada al modelo de trabajo propio de Hydromaq Solutions.</li>
+      <li><strong>Nuevos módulos:</strong> incorporación de funcionalidades adicionales según las necesidades específicas de la empresa.</li>
+      <li><strong>Automatización de procesos:</strong> reducción de tareas manuales y mejora de la coordinación entre áreas.</li>
+      <li><strong>Producción, ventas y compras:</strong> flujos optimizados para mayor trazabilidad y control operativo.</li>
+      <li><strong>Logística y despacho:</strong> seguimiento de envíos, guías y estados de entrega integrados al sistema.</li>
+      <li><strong>Facturación:</strong> módulo de guías y facturas relacionadas con control de estado (emitido, cobrado) y acceso a documentos.</li>
+    </ul>
+    <p style="text-align: justify; margin:0;">
+      <em>Pendiente:</em> adecuación completa de estilos visuales, colores, marca e identidad corporativa de la empresa.
+      El objetivo principal fue optimizar procesos, reducir tareas manuales y mejorar la coordinación entre las diferentes áreas.
+    </p>
+  `,
+  tags: ['ERP', 'Adaptación de Sistema', 'Automatización', 'Producción', 'Ventas', 'Compras', 'Logística', 'Despacho', 'Facturación', 'React', 'Node.js', 'PostgreSQL'],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+{
+  title: 'EMPRESA — Explorer Perú — Sistema Integral de Atención Comercial Multiempresa con IA',
+  image: './gif/explorerperu.gif',
+  alt: 'Sistema multiempresa de atención al cliente, gestión comercial y control de pagos vía WhatsApp con IA',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Sistema desarrollado para <strong>Explorer Perú</strong> que centraliza la atención al cliente,
+      gestión comercial y control de pagos desde un solo número de <strong>WhatsApp</strong>.
+      La plataforma permite operar múltiples unidades de negocio de forma independiente dentro de un mismo sistema,
+      manteniendo separados clientes, conversaciones, respuestas automáticas y métricas, sin mezclar información.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Multi-empresa:</strong> cada unidad de negocio opera de forma independiente con sus propios clientes, conversaciones y métricas.</li>
+      <li><strong>Respuestas automáticas:</strong> configuración de respuestas por empresa con prioridades y estados activo/inactivo.</li>
+      <li><strong>Control y confirmación de pagos:</strong> flujo de validación de pagos con notificación automática al cliente una vez procesado.</li>
+      <li><strong>Dashboards en tiempo real:</strong> KPIs y métricas por empresa actualizados en tiempo real.</li>
+      <li><strong>Automatización de notificaciones:</strong> el cliente es informado automáticamente cuando su pago ha sido validado o procesado por el responsable.</li>
+      <li><strong>IA Conversacional:</strong> integración de inteligencia artificial para ofrecer atención más fluida, contextual y orientada al cierre comercial.</li>
+    </ul>
+  `,
+  tags: ['WhatsApp API', 'Multi-empresa', 'Atención al Cliente', 'Gestión Comercial', 'Control de Pagos', 'Respuestas Automáticas', 'Dashboard', 'Tiempo Real', 'Inteligencia Artificial', 'React', 'Node.js', 'PostgreSQL'],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+  {
+  title: 'PROYECTO PERSONAL — MISHEL — Nueva Funcionalidad: Aprendizaje de Acciones',
+  image: './gif/mishel1.gif',
+  alt: 'MISHEL con funcionalidad de aprendizaje y repetición de flujos de trabajo del usuario',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Como parte de la evolución de <strong>MISHEL</strong>, nueva funcionalidad enfocada en el
+      <strong>aprendizaje de acciones</strong>. MISHEL ya no solo puede conversar, interpretar instrucciones
+      y ejecutar tareas dentro de la computadora. Ahora también puede <strong>aprender procesos realizados
+      por el usuario</strong>, guardarlos como flujos reutilizables y ejecutarlos nuevamente cuando se le solicite.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Aprendizaje de flujos:</strong> MISHEL observa y registra una acción o flujo de trabajo realizado por el usuario una sola vez.</li>
+      <li><strong>Reutilización inteligente:</strong> el flujo aprendido puede ejecutarse nuevamente cuando se solicite, de forma más práctica y autónoma.</li>
+      <li><strong>Adaptación progresiva:</strong> el asistente se adapta poco a poco a la forma de trabajo del usuario.</li>
+      <li><strong>Experiencia personalizada:</strong> acerca a MISHEL a una experiencia más autónoma, personalizada y funcional.</li>
+    </ul>
+  `,
+  tags: ['Asistente Virtual', 'Aprendizaje de Acciones', 'Automatización', 'Avatar 3D', 'Inteligencia Artificial', 'Voz', 'Windows', 'Proyecto Personal'],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+
   {
   title: 'EMPRESA - SDI Maquinarias S.A.C. — Ampliación y Automatización del Sistema ERP',
   image: './gif/sdi2.gif',

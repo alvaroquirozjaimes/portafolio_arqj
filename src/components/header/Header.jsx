@@ -56,12 +56,12 @@ const Header = () => {
             <li key={id}>
               <a
                 href={`#${id}`}
-                className={activeId === id ? 'active' : ''}
+                className={`${activeId === id ? 'active' : ''} ${id === 'contacto' ? 'nav-cta' : ''}`}
                 onClick={() => onLinkClick(id)}
               >
                 {{ 'inicio':'Inicio','sobre-mi':'Sobre mí','tecnologias':'Tecnologías',
                    'formacion':'Formación','experiencia':'Experiencia',
-                   'proyectos':'Proyectos','contacto':'Contacto' }[id]}
+                   'proyectos':'Proyectos','contacto':'Contáctame' }[id]}
               </a>
             </li>
           ))}
