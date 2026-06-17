@@ -1,8 +1,217 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import './Projects.css';
+import mishelMazeIntegracionImg from '../assets/projects/mishel-maze-integracion.png';
+import mazeBotAvanceImg from '../assets/projects/maze-bot-avance.png';
+import mishelVisionTiempoRealImg from '../assets/projects/mishel-vision-tiempo-real.png';
+import apexStProImg from '../assets/projects/apex-st-pro.png';
+import fibertelLandingImg from '../assets/projects/fibertel-landing.png';
+import mazeBotLandingImg from '../assets/projects/maze-bot-landing.png';
+import controlAsistenciaQrImg from '../assets/projects/control-asistencia-qr.png';
+import sdiAutomatizacionProcesosImg from '../assets/projects/sdi-automatizacion-procesos.png';
 
 const projects = [
   
+  {
+  title: 'EMPRESA — APEX ST PRO — Plataforma de cursos y certificación digital con IA',
+  image: './gif/apex.gif',
+  alt: 'Plataforma APEX ST PRO para cursos, estudiantes, certificados y temarios generados con IA',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Sistema web desarrollado para <strong>APEX ST PRO</strong>, orientado a gestionar cursos virtuales,
+      estudiantes, inscripciones, certificados y catálogo académico desde una sola plataforma.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Gestión de cursos:</strong> creación y edición de cursos, módulos, evaluaciones, precios, imágenes y paquetes.</li>
+      <li><strong>Temarios inteligentes:</strong> al ingresar el nombre del curso, el sistema genera automáticamente un temario editable.</li>
+      <li><strong>Catálogo reutilizable:</strong> cursos y módulos guardados para evitar crear plantillas repetidas.</li>
+      <li><strong>Certificados en PDF:</strong> generación con plantillas seleccionables y código QR único de validación.</li>
+      <li><strong>Portal del estudiante:</strong> búsqueda por nombre o DNI, visualización, validación y descarga de certificados.</li>
+      <li><strong>Roles y diseño responsive:</strong> administración, aula virtual, catálogo público y adaptación a móvil.</li>
+    </ul>
+  `,
+  tags: ['APEX ST PRO', 'E-learning', 'Certificados QR', 'IA', 'Temarios Automáticos', 'Google Drive', 'React', 'Node.js', 'PostgreSQL'],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+  {
+  title: 'INSTITUCIÓN EDUCATIVA — I.E.E. Juan José Crespo y Castillo de Ambo — Control de Asistencia con QR',
+  image: './gif/crespoycastillo.gif',
+  alt: 'Sistema de control de asistencia escolar con QR para la Institución Educativa Emblemática Juan José Crespo y Castillo de Ambo',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Sistema web desarrollado para la <strong>Institución Educativa Emblemática Juan José Crespo y Castillo de Ambo</strong>,
+      orientado a registrar y consultar la asistencia de alumnos mediante escaneo de código QR desde fotocheck,
+      con reportes por nivel, grado, sección, turno y fecha.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Marcación por QR:</strong> registro rápido de asistencia, tardanza o salida sin ingreso manual.</li>
+      <li><strong>Niveles completos:</strong> gestión para inicial, primaria y secundaria, con grados, secciones y turnos.</li>
+      <li><strong>Panel administrativo:</strong> alumnos, aulas, horarios, calendarios, justificaciones y usuarios.</li>
+      <li><strong>Reportes filtrados:</strong> asistencia diaria e histórica por alumno, aula, fecha o rango de fechas.</li>
+      <li><strong>Acceso para padres:</strong> consulta web del historial de asistencia del estudiante.</li>
+      <li><strong>Arquitectura multiusuario:</strong> frontend React, backend Node/Express y datos persistidos en PostgreSQL.</li>
+    </ul>
+  `,
+  tags: ['I.E.E. Juan José Crespo y Castillo', 'Ambo', 'Control de Asistencia', 'QR', 'Institución Educativa', 'Reportes', 'Padres', 'React', 'Node.js', 'PostgreSQL'],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+  {
+  title: 'PROYECTO PERSONAL — MISHEL — Visión en tiempo real y control contextual',
+  image: './gif/mishel_vista.png',
+  alt: 'MISHEL observando la pantalla y apoyando tareas con visión en tiempo real',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Nueva capacidad de <strong>MISHEL</strong> enfocada en visión en tiempo real. El asistente puede observar
+      la pantalla, interpretar el contexto y comprender mejor lo que el usuario necesita hacer, reduciendo la
+      necesidad de explicar cada paso manualmente.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Visión de pantalla:</strong> lectura contextual de lo que ocurre en el entorno de trabajo.</li>
+      <li><strong>Acciones por objetivo:</strong> el usuario indica qué quiere lograr y MISHEL guía el proceso.</li>
+      <li><strong>Control local:</strong> apertura de aplicaciones, acceso a carpetas y ejecución de acciones con permisos.</li>
+      <li><strong>Asistencia más autónoma:</strong> mejora la fluidez para apoyar actividades reales en tiempo real.</li>
+    </ul>
+  `,
+  tags: ['MISHEL', 'Visión en Tiempo Real', 'Automatización', 'Asistente de Escritorio', 'IA', 'Windows', 'Proyecto Personal'],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+  {
+  title: 'PROYECTO PERSONAL — MISHEL + MAZE BOT — Asistencia IA más natural e integrada',
+  image: './gif/mishel_voz.png',
+  alt: 'MISHEL y MAZE BOT integrados para asistencia inteligente por texto, voz y avatar 3D',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Evolución de <strong>MISHEL</strong>, mi asistente personal con inteligencia artificial, junto con mejoras aplicadas a
+      <strong> MAZE BOT</strong>, mi plataforma de asistentes virtuales para páginas web y negocios digitales.
+      El objetivo fue lograr una experiencia más natural, rápida y útil en tiempo real.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Comprensión más fluida:</strong> MISHEL interpreta mejor instrucciones del usuario y se adapta al contexto de trabajo.</li>
+      <li><strong>Interacción por voz y texto:</strong> respuestas más cercanas, naturales y útiles para tareas diarias.</li>
+      <li><strong>Avatar 3D:</strong> presencia visual para una experiencia más humana e interactiva.</li>
+      <li><strong>Integración con MAZE BOT:</strong> mejoras reutilizadas en asistentes web para atender negocios, landing pages y plataformas.</li>
+      <li><strong>Escalabilidad:</strong> base preparada para que más usuarios puedan acceder a asistencia inteligente desde distintos entornos.</li>
+    </ul>
+  `,
+  tags: ['MISHEL', 'MAZE BOT', 'Inteligencia Artificial', 'Avatar 3D', 'Voz', 'Asistente Virtual', 'Automatización', 'Proyecto Personal'],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+
+  {
+  title: 'EMPRESA - SDI Maquinarias S.A.C. — Automatización y mejora de procesos operativos',
+  image: './gif/sdimejo.png',
+  alt: 'Automatización de procesos operativos para SDI Maquinarias con ventas, compras, producción, almacén y despacho',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Proyecto de mejora y automatización del sistema ERP de <strong>SDI Maquinarias S.A.C.</strong>, enfocado en
+      ordenar los procesos internos, reducir tareas manuales y conectar el flujo entre ventas, almacén, compras,
+      producción, despacho, facturación y administración.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Flujo ventas → operación:</strong> cotizaciones, órdenes de pedido, reservas de stock y seguimiento por estado.</li>
+      <li><strong>Compras integradas:</strong> requerimientos, atención parcial, proveedores, ingreso a almacén y trazabilidad.</li>
+      <li><strong>Producción conectada:</strong> órdenes de trabajo, hojas de costo, materiales, mano de obra y control de avances.</li>
+      <li><strong>Despacho y documentos:</strong> guías, entregas parciales, pendientes, facturación y cobranza relacionada.</li>
+      <li><strong>Administración:</strong> aprobación de nuevos materiales, maestro de artículos, reportes y control de datos.</li>
+      <li><strong>Base de datos central:</strong> lógica migrada al backend para evitar dependencias de almacenamiento local y soportar trabajo multiusuario.</li>
+    </ul>
+  `,
+  tags: ['SDI Maquinarias', 'ERP', 'Automatización', 'Procesos', 'Ventas', 'Compras', 'Producción', 'Almacén', 'React', 'Node.js', 'PostgreSQL'],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+  {
+  title: 'PROYECTO PERSONAL — MAZE BOT — Asistentes IA para sitios web',
+  image: './gif/chatbot.png',
+  alt: 'MAZE BOT integrado en una landing page como asistente inteligente para negocios',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      <strong>MAZE BOT</strong> es un asistente inteligente que puede integrarse en sitios web, portafolios,
+      plataformas y proyectos digitales. Su objetivo es ayudar a que una empresa no solo muestre información,
+      sino que también responda consultas, oriente visitantes y mejore la atención desde su propia página.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Integración web:</strong> asistente embebido como widget para páginas corporativas o landing pages.</li>
+      <li><strong>Atención automatizada:</strong> responde dudas frecuentes y guía al usuario según la información del negocio.</li>
+      <li><strong>Modo texto y voz:</strong> permite una comunicación más rápida, natural y cercana.</li>
+      <li><strong>Multi-rubro:</strong> aplicable a turismo, financieras, internet, inmobiliarias, academias, tiendas y portafolios.</li>
+      <li><strong>Valor comercial:</strong> puede funcionar como servicio adicional para desarrolladores o agencias.</li>
+    </ul>
+  `,
+  tags: ['MAZE BOT', 'Chatbot IA', 'Widget Web', 'Atención al Cliente', 'Voz', 'SaaS', 'React', 'Node.js'],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+  {
+  title: 'EMPRESA — Fibertel Huánuco / Fibertel Valle — Landing Page comercial',
+  image: './gif/fibertel2.gif',
+  alt: 'Landing page comercial de Fibertel Valle para internet de fibra óptica en Huánuco',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Landing page desarrollada para <strong>Fibertel Huánuco / Fibertel Valle</strong>, enfocada en presentar
+      planes de internet de fibra óptica, cobertura, medios de pago y contacto directo por WhatsApp.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Hero comercial:</strong> mensaje claro para captar hogares interesados en internet de fibra óptica.</li>
+      <li><strong>Planes visibles:</strong> estructura preparada para mostrar precios, beneficios y velocidad.</li>
+      <li><strong>Conversión por WhatsApp:</strong> botones directos para consulta y contratación.</li>
+      <li><strong>Identidad visual:</strong> diseño azul tecnológico alineado a la marca y a su mascota comercial.</li>
+      <li><strong>Asistente integrado:</strong> espacio para chatbot de atención que refuerza la experiencia del visitante.</li>
+      <li><strong>Diseño responsive:</strong> presentación adaptable para móvil y escritorio.</li>
+    </ul>
+  `,
+  tags: ['Landing Page', 'Fibertel', 'Internet Fibra Óptica', 'WhatsApp', 'Chatbot', 'Diseño Comercial', 'React', 'Vite'],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
+
+  {
+  title: 'PROYECTO PERSONAL — MAZE BOT — Landing Page comercial del producto',
+  image: './gif/mazebot2.gif',
+  alt: 'Landing page de MAZE BOT para promocionar asistentes inteligentes para negocios',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Landing page creada para presentar <strong>MAZE BOT</strong> como producto digital: un asistente inteligente
+      que puede agregarse a una página web para atender clientes, responder preguntas y generar confianza sin que
+      el negocio tenga que estar disponible todo el tiempo.
+    </p>
+    <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+      <li><strong>Propuesta clara:</strong> comunicación enfocada en negocios que necesitan atención web 24/7.</li>
+      <li><strong>Demostración visual:</strong> muestra el widget del asistente y sus estados de atención.</li>
+      <li><strong>Flujo comercial:</strong> secciones de beneficios, funcionamiento, empresas, FAQ y contacto.</li>
+      <li><strong>WhatsApp como CTA:</strong> contacto directo para contratar o solicitar información.</li>
+      <li><strong>Diseño moderno:</strong> estética limpia, tecnológica y alineada al producto.</li>
+    </ul>
+  `,
+  tags: ['Landing Page', 'MAZE BOT', 'Producto Digital', 'Chatbot IA', 'WhatsApp', 'Atención 24/7', 'React', 'Vite'],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' },
+  ],
+},
 
   {
   title: 'EMPRESA - COOPAC San Francisco — Sistema Integrado de Gestión Judicial (Versión Ampliada)',
