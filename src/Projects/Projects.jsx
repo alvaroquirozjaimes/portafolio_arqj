@@ -10,7 +10,66 @@ import controlAsistenciaQrImg from '../assets/projects/control-asistencia-qr.png
 import sdiAutomatizacionProcesosImg from '../assets/projects/sdi-automatizacion-procesos.png';
 
 const projects = [
-  
+
+{
+  title: 'EMPRESA — Hydromaq Solutions S.A.C. — ERP Industrial Automatizado',
+  image: './gif/hydromaq2.gif',
+  alt: 'ERP industrial automatizado para Hydromaq Solutions S.A.C.',
+  descriptionHTML: `
+    <p style="text-align: justify;">
+      Desarrollo y adecuación de un <strong>ERP industrial para Hydromaq Solutions S.A.C.</strong>,
+      tomando como base la arquitectura y experiencia del sistema implementado previamente para
+      <strong>SDI Maquinarias S.A.C.</strong>, pero incorporando mejoras importantes en automatización,
+      lógica de procesos, control operativo y gestión interna.
+    </p>
+
+    <p style="text-align: justify;">
+      El objetivo principal fue transformar el sistema en una herramienta más completa y eficiente,
+      permitiendo que los módulos trabajen de forma conectada y que muchas tareas que antes podían
+      requerir cálculos o validaciones manuales sean gestionadas directamente por la plataforma.
+    </p>
+
+    <ul style="text-align: justify; padding-left: 1.2rem; margin: .3rem 0 .8rem; line-height: 1.5;">
+      <li><strong>Ventas y cotizaciones:</strong> gestión de clientes, productos, cotizaciones, órdenes de pedido, estados y seguimiento comercial.</li>
+      <li><strong>Hoja de costo:</strong> cálculo de materiales, procesos, mano de obra, tratamientos, costos operativos y estructura de fabricación.</li>
+      <li><strong>Producción:</strong> generación y control de órdenes de trabajo, planificación de actividades y seguimiento del avance operativo.</li>
+      <li><strong>Compras:</strong> control de requerimientos, solicitudes, atención de materiales y relación con el flujo de almacén.</li>
+      <li><strong>Almacén e inventario:</strong> control de productos, stock, movimientos, disponibilidad y organización de materiales.</li>
+      <li><strong>Logística y despacho:</strong> seguimiento de entregas, guías, estados de despacho y control de pendientes.</li>
+      <li><strong>Administración:</strong> gestión de usuarios, permisos, maestros del sistema, reportes y control general de la información.</li>
+      <li><strong>Automatización de procesos:</strong> cálculos, actualización de estados, conexión entre áreas y reducción de tareas manuales dentro del flujo operativo.</li>
+    </ul>
+
+    <p style="text-align: justify; margin: 0;">
+      Esta mejora permite que Hydromaq Solutions S.A.C. trabaje con una plataforma más ordenada,
+      escalable y adaptada a su operación real, optimizando tiempos, reduciendo errores y mejorando
+      la coordinación entre ventas, producción, compras, almacén, logística, despacho y administración.
+    </p>
+  `,
+  tags: [
+    'Hydromaq Solutions',
+    'ERP Industrial',
+    'Automatización',
+    'Gestión Operativa',
+    'Ventas',
+    'Cotizaciones',
+    'Hoja de Costo',
+    'Producción',
+    'Compras',
+    'Almacén',
+    'Logística',
+    'Despacho',
+    'Administración',
+    'React',
+    'Node.js',
+    'PostgreSQL'
+  ],
+  links: [
+    { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    { type: 'github', href: '#', label: 'Ver Código' }
+  ]
+},
+
   {
   title: 'EMPRESA — APEX ST PRO — Plataforma de cursos y certificación digital con IA',
   image: './gif/apex.gif',
