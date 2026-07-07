@@ -8,8 +8,89 @@ import fibertelLandingImg from '../assets/projects/fibertel-landing.png';
 import mazeBotLandingImg from '../assets/projects/maze-bot-landing.png';
 import controlAsistenciaQrImg from '../assets/projects/control-asistencia-qr.png';
 import sdiAutomatizacionProcesosImg from '../assets/projects/sdi-automatizacion-procesos.png';
+import sherlyMoralesLandingImg from '../assets/projects/sherly-morales-landing.png';
+import erpGeneralImg from '../assets/projects/erp-general.png';
+import whatsappIaChatbotImg from '../assets/projects/whatsapp-ia-chatbot.png';
 
 const projects = [
+
+  {
+    title: 'PROYECTO PERSONAL — ERP GENERAL — Sistema adaptable para cualquier empresa',
+    image: erpGeneralImg,
+    alt: 'ERP general adaptable para empresas con inventario, facturación, compras, despacho, kardex, roles y dashboard',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Desarrollo de un <strong>sistema ERP general</strong> pensado para adaptarse a distintos tipos de negocio,
+        centralizando las áreas principales de operación, administración y control interno desde una sola plataforma.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Facturación electrónica:</strong> emisión de comprobantes SUNAT y control de documentos comerciales.</li>
+        <li><strong>Guías de remisión:</strong> generación y seguimiento de guías electrónicas vinculadas al despacho.</li>
+        <li><strong>Inventario y kardex:</strong> control de stock, movimientos, productos, ubicaciones y trazabilidad.</li>
+        <li><strong>Compras y aprobaciones:</strong> solicitudes, órdenes de pedido, atención parcial y gestión de proveedores.</li>
+        <li><strong>Despacho y entregas:</strong> seguimiento de salidas, entregas pendientes y estados operativos.</li>
+        <li><strong>Administración:</strong> usuarios, roles, permisos, dashboard general y reportes para la toma de decisiones.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        El sistema puede implementarse, venderse o alquilarse como base ERP, ajustándose a los procesos reales de cada empresa.
+      </p>
+    `,
+    tags: ['ERP General', 'SUNAT', 'Guías Electrónicas', 'Inventario', 'Kardex', 'Compras', 'Despacho', 'Roles', 'Dashboard', 'React', 'Node.js', 'PostgreSQL'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+      { type: 'github', href: '#', label: 'Ver Código' },
+    ],
+  },
+
+  {
+    title: 'PROYECTO PERSONAL — Chatbot WhatsApp IA — Atención automatizada para negocios',
+    image: whatsappIaChatbotImg,
+    alt: 'Chatbot para WhatsApp con inteligencia artificial, entrenamiento por negocio, productos, conversaciones y panel administrativo',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Plataforma de <strong>chatbot para WhatsApp con inteligencia artificial</strong>, orientada a automatizar la atención
+        de clientes, responder consultas frecuentes y trabajar con información propia de cada negocio.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Integración con WhatsApp:</strong> recepción de mensajes mediante webhook y respuesta automática desde el backend.</li>
+        <li><strong>IA entrenable por negocio:</strong> cada empresa puede cargar información para mejorar la precisión de las respuestas.</li>
+        <li><strong>Catálogo y recomendaciones:</strong> permite responder sobre productos o servicios según la necesidad del cliente.</li>
+        <li><strong>Conversaciones con contexto:</strong> historial de mensajes, control de sesiones y respuestas más coherentes.</li>
+        <li><strong>Intención de compra o pago:</strong> detecta cuando el cliente desea comprar, pagar o continuar una atención manual.</li>
+        <li><strong>Panel administrativo:</strong> configuración del negocio, productos, datos de entrenamiento y seguimiento de conversaciones.</li>
+      </ul>
+    `,
+    tags: ['WhatsApp IA', 'Chatbot', 'Webhook', 'Gemini', 'Automatización', 'Atención al Cliente', 'Catálogo', 'React', 'Node.js', 'PostgreSQL'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+      { type: 'github', href: '#', label: 'Ver Código' },
+    ],
+  },
+
+  {
+    title: 'LANDING PAGE — Sherly Morales — Sitio informativo con asistente IA',
+    image: sherlyMoralesLandingImg,
+    alt: 'Landing page informativa para Sherly Morales con noticias, propuestas, equipo de trabajo y asistente IA',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Landing page desarrollada para <strong>Sherly Morales</strong>, enfocada en presentar información pública de forma
+        clara, ordenada y accesible para visitantes interesados en conocer su perfil, noticias, equipo y propuestas.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Diseño institucional:</strong> estructura visual limpia, moderna y orientada a confianza.</li>
+        <li><strong>Contenido organizado:</strong> biografía, trayectoria, noticias, propuestas, equipo de trabajo y contacto.</li>
+        <li><strong>Enfoque local:</strong> presentación adaptada al contexto de Huánuco y a comunicación ciudadana.</li>
+        <li><strong>Asistente informativo:</strong> chatbot integrado para responder consultas usando la información del sitio.</li>
+        <li><strong>Responsive:</strong> navegación optimizada para escritorio y dispositivos móviles.</li>
+      </ul>
+    `,
+    tags: ['Landing Page', 'Sherly Morales', 'Huánuco', 'Asistente IA', 'Noticias', 'Propuestas', 'Diseño Responsive', 'React', 'Vite'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+      { type: 'github', href: '#', label: 'Ver Código' },
+    ],
+  },
+
 
 {
   title: 'EMPRESA — Hydromaq Solutions S.A.C. — ERP Industrial Automatizado',
