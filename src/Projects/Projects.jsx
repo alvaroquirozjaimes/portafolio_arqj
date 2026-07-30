@@ -15,6 +15,175 @@ import whatsappIaChatbotImg from '../assets/projects/whatsapp-ia-chatbot.png';
 const projects = [
 
   {
+    title: 'PROYECTO PERSONAL — MAZE BOT — Mejora de la landing: nuevo servicio de WhatsApp con IA y CRM',
+    image: './gif/mazebot-lading.gif',
+    alt: 'Landing de Maze Bot ampliada con la sección de WhatsApp con IA y una demo interactiva del panel de atención con CRM',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Mejora y adecuación de la landing de <strong>Maze Bot</strong> para incorporar el nuevo servicio del producto:
+        el <strong>asistente de WhatsApp con IA y su panel de atención con CRM</strong>. El sitio pasó de presentar solo
+        el asistente para páginas web a comunicar los dos servicios sin perder claridad ni volverse más pesado.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Nueva sección de WhatsApp:</strong> bloque propio con distintivo de <em>NUEVO</em> en el menú, que explica el servicio y muestra una conversación real de ejemplo, desde la consulta del cliente hasta la intención de compra.</li>
+        <li><strong>Demo interactiva del panel:</strong> simulación navegable del CRM — bandeja de conversaciones, filtros por estado (pendiente / atendido), etiquetado automático del contacto, pausa del bot cuando entra un asesor y envío de imágenes, PDF, audios y stickers.</li>
+        <li><strong>Empresas que confían:</strong> sección con los logos de los clientes del producto, en carrusel continuo.</li>
+        <li><strong>FAQ ampliada:</strong> nuevas preguntas sobre el canal de WhatsApp — API oficial de Meta, notas de voz transcritas y el paso de la conversación a una persona sin que el cliente repita nada.</li>
+        <li><strong>Rendimiento:</strong> las secciones pesadas se cargan de forma diferida, así la portada abre rápido aunque el sitio ahora tenga mucho más contenido.</li>
+        <li><strong>Contenido centralizado:</strong> todos los textos, preguntas y logos viven en un solo archivo de datos, lo que permite actualizar el sitio sin tocar los componentes.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        El resultado es una landing que ya no vende un chatbot de página web, sino una plataforma de atención al cliente con dos canales.
+      </p>
+    `,
+    tags: ['Maze Bot', 'Landing Page', 'WhatsApp Business API', 'CRM', 'Panel de Atención', 'Inteligencia Artificial', 'Demo Interactiva', 'Carga Diferida', 'Diseño Responsive', 'React', 'Vite'],
+    links: [
+      { type: 'demo', href: 'https://mazebot.mazecompress.com/#inicio', label: 'Ver Proyecto' },
+      { type: 'github', href: '#', label: 'Ver Código' },
+    ],
+  },
+
+  {
+    title: 'EMPRESA — CLÍNICA DR. VITOR — Historia Clínica y Hoja de Evaluación en formato oficial',
+    image: './gif/clinicavitor.gif',
+    alt: 'Historia clínica y hoja de evaluación digitales que replican el formato pre-impreso de la Clínica Dr. Vitor',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Ampliación del sistema de la <strong>Clínica Dr. Vitor</strong> para que los documentos que emite la plataforma sean
+        idénticos a los formatos pre-impresos que la clínica ya usaba en papel, de modo que el personal médico no tuviera
+        que cambiar su forma de trabajar ni volver a llenar nada a mano.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Historia clínica imprimible:</strong> réplica del formato físico — recuadro de H.C., filiación, antecedentes, funciones vitales, relato, examen físico, exámenes auxiliares, diagnóstico, plan de trabajo y tratamiento, respetando la cantidad de renglones de cada sección.</li>
+        <li><strong>Renglones con sentido:</strong> la numeración aparece solo donde hay contenido; el resto queda como línea punteada en blanco, tal como se ve una hoja llenada a mano.</li>
+        <li><strong>Hoja de evaluación:</strong> el segundo formato de la clínica para los controles de seguimiento, con sus bloques de FECHA, HORA y P/A, el texto sobre renglones y la firma del médico en cada control.</li>
+        <li><strong>Evaluaciones ligadas a su consulta:</strong> cada control queda asociado a la historia clínica que le corresponde, como en el papel, y se puede imprimir la hoja de evaluaciones de una consulta específica.</li>
+        <li><strong>Historial del paciente:</strong> línea de tiempo con las consultas y sus evaluaciones anidadas, en tarjetas compactas que se expanden al abrirlas.</li>
+        <li><strong>Receta y firma:</strong> los medicamentos recetados se anexan al tratamiento, y el pie lleva el nombre del médico, la especialidad y sus números de colegiatura.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        El resultado: el sistema imprime y la hoja sale igual al formato oficial de la clínica, lista para archivarse en el file del paciente.
+      </p>
+    `,
+    tags: ['Clínica Dr. Vitor', 'Historia Clínica', 'Hoja de Evaluación', 'Traumatología', 'Impresión de Formatos', 'Receta Médica', 'Seguimiento de Pacientes', 'React', 'Node.js', 'Sequelize', 'PostgreSQL'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+      { type: 'github', href: '#', label: 'Ver Código' },
+    ],
+  },
+
+  {
+    title: 'APLICACIÓN MÓVIL — COBRANZA EN CAMPO — Recaudación de socios desde el celular',
+    image: './gif/cobranza-app.gif',
+    alt: 'Aplicación móvil de cobranza en campo con zonas, búsqueda de socios, registro de depósitos y recaudado del día',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Aplicación móvil para los <strong>recaudadores que trabajan en campo</strong>: permite cobrar al socio en su propio
+        domicilio o negocio y registrar el depósito en el sistema central en ese mismo momento, reemplazando el cuaderno
+        y la hoja de ruta en papel.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Zonas de cobranza:</strong> pantalla inicial con las zonas asignadas y el acumulado cobrado del mes, separado en soles y dólares y dividido entre ahorros y aportes.</li>
+        <li><strong>Búsqueda de socios:</strong> buscador por nombre o documento dentro de la zona, con resultados que se van cargando por demanda.</li>
+        <li><strong>Registro del cobro:</strong> muestra las cuentas de ahorro del socio y permite ingresar el importe por cuenta; el depósito queda registrado al instante.</li>
+        <li><strong>Recaudado del día:</strong> resumen diario de los movimientos hechos por el cobrador, con totales en ambas monedas y selector de fecha para revisar días anteriores.</li>
+        <li><strong>Sesión segura:</strong> autenticación con token y cierre automático de sesión al expirar, más monitoreo de errores en producción.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        El recaudador sale a campo solo con el celular: cobra, registra y cuadra su día sin volver a la oficina a transcribir nada.
+      </p>
+    `,
+    tags: ['App Móvil', 'Cobranza en Campo', 'Recaudación', 'Zonas de Cobranza', 'Depósitos', 'Cuadre Diario', 'Oracle Database', 'JWT', 'Sentry', 'React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+      { type: 'github', href: '#', label: 'ESTE CODIGO NO LO ESTOY SUBIENDO A GITHUB' },
+    ],
+  },
+
+  {
+    title: 'APLICACIÓN MÓVIL — CONSULTA DE SOCIOS — Cuentas y movimientos en el celular',
+    image: './gif/consulta-app.gif',
+    alt: 'Aplicación móvil de consulta para socios con cuentas, saldos en soles y dólares, movimientos y detalle de operación',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Aplicación móvil que permite a cada <strong>socio revisar sus cuentas y movimientos desde su celular</strong>, sin
+        acercarse a la agencia ni depender del horario de atención. Se conecta directamente con la base de datos central
+        de la entidad, así que la información que ve el socio es la misma que maneja el sistema institucional.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Acceso por documento:</strong> ingreso con tipo y número de documento, con sesión protegida por token y rutas privadas.</li>
+        <li><strong>Mis cuentas:</strong> listado de las cuentas del socio con su saldo individual y el saldo total consolidado en soles y dólares.</li>
+        <li><strong>Movimientos por cuenta:</strong> historial con filtros rápidos por periodo y rango de fechas personalizado, con carga paginada.</li>
+        <li><strong>Detalle de la operación:</strong> vista ampliada de cada movimiento con su tipo de operación, fecha, moneda e importe.</li>
+        <li><strong>Pensada para el celular:</strong> lectura clara de importes, navegación de un solo toque y tiempos de respuesta cortos.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        El socio consulta su saldo y sus últimos movimientos en cualquier momento, y la agencia reduce la atención presencial por consultas simples.
+      </p>
+    `,
+    tags: ['App Móvil', 'Consulta de Socios', 'Cuentas y Saldos', 'Movimientos', 'Multimoneda', 'Oracle Database', 'JWT', 'React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+      { type: 'github', href: '#', label: 'ESTE CODIGO NO LO ESTOY SUBIENDO A GITHUB' },
+    ],
+  },
+
+  {
+    title: 'PROYECTO PERSONAL — MAZE WSP — CRM de WhatsApp con IA para atención de clientes',
+    image: './gif/mazebot-wsp.gif',
+    alt: 'CRM de WhatsApp con inteligencia artificial para centralizar y automatizar la atención de clientes',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        <strong>CRM para WhatsApp con inteligencia artificial</strong>, pensado para que un negocio centralice toda su
+        atención al cliente en una sola bandeja y deje de perder mensajes entre celulares y personas distintas.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Bandeja centralizada:</strong> todas las conversaciones de WhatsApp en un solo panel, con el historial completo de cada cliente.</li>
+        <li><strong>Atención con IA:</strong> respuestas automáticas entrenadas con la información real del negocio — servicios, precios, horarios y preguntas frecuentes.</li>
+        <li><strong>Gestión de contactos:</strong> ficha del cliente, seguimiento de sus consultas y estado de cada atención.</li>
+        <li><strong>Paso a un asesor:</strong> cuando la consulta lo requiere, la conversación continúa con una persona sin perder el contexto.</li>
+        <li><strong>Panel administrativo:</strong> configuración del negocio, datos de entrenamiento del asistente y seguimiento de las conversaciones.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        Convierte WhatsApp en un canal de atención ordenado y medible, en lugar de un teléfono lleno de mensajes sueltos.
+      </p>
+    `,
+    tags: ['Maze WSP', 'CRM', 'WhatsApp', 'Inteligencia Artificial', 'Atención al Cliente', 'Automatización', 'Conversaciones', 'Panel Administrativo', 'React', 'Node.js', 'PostgreSQL'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+      { type: 'github', href: '#', label: 'Ver Código' },
+    ],
+  },
+
+  {
+    title: 'PROYECTO PERSONAL — ERP GENERAL MÓVIL — El ERP en el bolsillo',
+    image: './gif/erp-movil.gif',
+    alt: 'Versión móvil del ERP General con inventario, aprobaciones, despacho y dashboard desde el celular',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Versión móvil del <strong>ERP General</strong>, pensada para el personal que no trabaja frente a una computadora:
+        almacén, despacho, jefaturas que aprueban y gerencia que necesita ver los números desde donde esté.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Inventario en mano:</strong> consulta de stock, productos y ubicaciones desde el celular, en el mismo almacén.</li>
+        <li><strong>Aprobaciones en el momento:</strong> solicitudes y órdenes de compra que se revisan y aprueban sin esperar a volver al escritorio.</li>
+        <li><strong>Despacho y entregas:</strong> seguimiento de salidas, entregas pendientes y actualización de estados en ruta.</li>
+        <li><strong>Comprobantes:</strong> consulta de documentos emitidos y su estado.</li>
+        <li><strong>Dashboard móvil:</strong> los indicadores principales del negocio en una vista adaptada a pantallas pequeñas.</li>
+        <li><strong>Misma base, otro dispositivo:</strong> comparte datos, usuarios, roles y permisos con el ERP de escritorio.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        La operación deja de detenerse porque alguien no está en su computadora: el proceso continúa desde el celular.
+      </p>
+    `,
+    tags: ['ERP Móvil', 'Inventario', 'Aprobaciones', 'Compras', 'Despacho', 'Dashboard', 'Roles y Permisos', 'React', 'Node.js', 'PostgreSQL'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+      { type: 'github', href: '#', label: 'Ver Código' },
+    ],
+  },
+
+  {
     title: 'PROYECTO PERSONAL — ERP GENERAL — Sistema adaptable para cualquier empresa',
     image: erpGeneralImg,
     alt: 'ERP general adaptable para empresas con inventario, facturación, compras, despacho, kardex, roles y dashboard',
