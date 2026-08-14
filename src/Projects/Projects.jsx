@@ -18,7 +18,7 @@ const projects = [
 
   {
     title: 'PROYECTO PERSONAL — MAZE TOUR — Plataforma turística para descubrir y organizar viajes',
-    image: mazeTourImg,
+    image: './gif/mazetour.gif',
     alt: 'Maze Tour, plataforma turística con destinos, mapas, hoteles, restaurantes, Full Days, favoritos y asistente inteligente multidioma',
     descriptionHTML: `
       <p style="text-align: justify;">
@@ -44,37 +44,12 @@ const projects = [
     ],
   },
 
-  {
-    title: 'PROYECTO PERSONAL — ERP GENERAL MÓVIL — Gestión empresarial desde el celular',
-    image: './gif/erp-movil.gif',
-    alt: 'ERP General adaptado a dispositivos móviles para gestionar inventario, aprobaciones, compras, despacho e indicadores desde el celular',
-    descriptionHTML: `
-      <p style="text-align: justify;">
-        Adecuación del <strong>ERP General a dispositivos móviles</strong>, pensada para que la operación no dependa de estar frente a una computadora.
-        Desde el celular se pueden revisar tareas pendientes, consultar información y continuar procesos clave del negocio en el momento en que se necesitan.
-      </p>
-      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
-        <li><strong>Inventario en mano:</strong> consulta de stock, productos y ubicaciones desde el celular, en el mismo almacén.</li>
-        <li><strong>Aprobaciones en el momento:</strong> solicitudes y órdenes de compra que se revisan y aprueban sin esperar a volver al escritorio.</li>
-        <li><strong>Despacho y entregas:</strong> seguimiento de salidas, entregas pendientes y actualización de estados en ruta.</li>
-        <li><strong>Comprobantes:</strong> consulta de documentos emitidos y su estado.</li>
-        <li><strong>Dashboard móvil:</strong> los indicadores principales del negocio en una vista adaptada a pantallas pequeñas.</li>
-        <li><strong>Misma base, otro dispositivo:</strong> comparte datos, usuarios, roles y permisos con el ERP de escritorio.</li>
-      </ul>
-      <p style="text-align: justify; margin: 0;">
-        La operación deja de detenerse porque alguien no está en su computadora: el proceso continúa desde el celular.
-      </p>
-    `,
-    tags: ['ERP Móvil', 'Gestión Empresarial', 'Inventario', 'Aprobaciones', 'Compras', 'Despacho', 'Indicadores', 'Operación en Campo', 'Roles y Permisos'],
-    links: [
-      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    ],
-  },
+  
 
 
   {
     title: 'EMPRESA — CLÍNICA DR. VITOR — Sistema de Gestión de Órdenes Médicas',
-    image: ordenesMedicasImg,
+    image: './gif/ordenes.gif',
     alt: 'Sistema de gestión de órdenes médicas con pacientes, centros, conceptos, estados, saldos y seguimiento de atención',
     descriptionHTML: `
       <p style="text-align: justify;">
@@ -127,7 +102,32 @@ const projects = [
       { type: 'demo', href: 'https://mazebot.mazecompress.com/#inicio', label: 'Ver Proyecto' },
     ],
   },
-
+{
+    title: 'PROYECTO PERSONAL — ERP GENERAL MÓVIL — Gestión empresarial desde el celular',
+    image: './gif/erp-movil.gif',
+    alt: 'ERP General adaptado a dispositivos móviles para gestionar inventario, aprobaciones, compras, despacho e indicadores desde el celular',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Adecuación del <strong>ERP General a dispositivos móviles</strong>, pensada para que la operación no dependa de estar frente a una computadora.
+        Desde el celular se pueden revisar tareas pendientes, consultar información y continuar procesos clave del negocio en el momento en que se necesitan.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Inventario en mano:</strong> consulta de stock, productos y ubicaciones desde el celular, en el mismo almacén.</li>
+        <li><strong>Aprobaciones en el momento:</strong> solicitudes y órdenes de compra que se revisan y aprueban sin esperar a volver al escritorio.</li>
+        <li><strong>Despacho y entregas:</strong> seguimiento de salidas, entregas pendientes y actualización de estados en ruta.</li>
+        <li><strong>Comprobantes:</strong> consulta de documentos emitidos y su estado.</li>
+        <li><strong>Dashboard móvil:</strong> los indicadores principales del negocio en una vista adaptada a pantallas pequeñas.</li>
+        <li><strong>Misma base, otro dispositivo:</strong> comparte datos, usuarios, roles y permisos con el ERP de escritorio.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        La operación deja de detenerse porque alguien no está en su computadora: el proceso continúa desde el celular.
+      </p>
+    `,
+    tags: ['ERP Móvil', 'Gestión Empresarial', 'Inventario', 'Aprobaciones', 'Compras', 'Despacho', 'Indicadores', 'Operación en Campo', 'Roles y Permisos'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    ],
+  },
   {
     title: 'EMPRESA — CLÍNICA DR. VITOR — Historia Clínica y Hoja de Evaluación en formato oficial',
     image: './gif/clinicavitor.gif',
