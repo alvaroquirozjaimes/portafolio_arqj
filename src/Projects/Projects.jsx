@@ -11,8 +11,94 @@ import sdiAutomatizacionProcesosImg from '../assets/projects/sdi-automatizacion-
 import sherlyMoralesLandingImg from '../assets/projects/sherly-morales-landing.png';
 import erpGeneralImg from '../assets/projects/erp-general.png';
 import whatsappIaChatbotImg from '../assets/projects/whatsapp-ia-chatbot.png';
+import mazeTourImg from '../assets/projects/maze-tour.png';
+import ordenesMedicasImg from '../assets/projects/ordenes-medicas.png';
 
 const projects = [
+
+  {
+    title: 'PROYECTO PERSONAL — MAZE TOUR — Plataforma turística para descubrir y organizar viajes',
+    image: mazeTourImg,
+    alt: 'Maze Tour, plataforma turística con destinos, mapas, hoteles, restaurantes, Full Days, favoritos y asistente inteligente multidioma',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Evolución integral de <strong>Maze Tour</strong>, una plataforma turística creada para que viajeros y visitantes puedan
+        descubrir lugares, encontrar servicios cercanos y orientarse con mayor facilidad durante su recorrido por el Perú.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Destinos mejor organizados:</strong> navegación por departamentos y zonas para encontrar lugares turísticos de manera más clara y rápida.</li>
+        <li><strong>Hoteles y restaurantes:</strong> fichas con información, imágenes y servicios para complementar la planificación del viaje.</li>
+        <li><strong>Full Days:</strong> experiencias y recorridos turísticos presentados dentro de la misma plataforma.</li>
+        <li><strong>Mapas y ubicaciones:</strong> visualización de puntos turísticos y servicios, con herramientas para facilitar la orientación y consulta de rutas.</li>
+        <li><strong>Favoritos:</strong> posibilidad de guardar lugares, hoteles, restaurantes y experiencias para revisarlos después.</li>
+        <li><strong>Asistente turístico inteligente:</strong> chatbot con soporte para múltiples idiomas, pensado para orientar a visitantes y responder consultas durante su viaje.</li>
+        <li><strong>Experiencia móvil:</strong> interfaz renovada para que la plataforma sea más amigable, rápida e intuitiva también desde el celular.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        MAZE TOUR continúa evolucionando como una guía digital que reúne información turística, ubicación y asistencia en un solo lugar.
+      </p>
+    `,
+    tags: ['Maze Tour', 'Turismo', 'Destinos', 'Mapas y Ubicaciones', 'Hoteles', 'Restaurantes', 'Full Days', 'Favoritos', 'Asistente Multidioma'],
+    links: [
+      { type: 'demo', href: 'https://peru.mazetour.com', label: 'Ver Proyecto' },
+    ],
+  },
+
+  {
+    title: 'PROYECTO PERSONAL — ERP GENERAL MÓVIL — Gestión empresarial desde el celular',
+    image: './gif/erp-movil.gif',
+    alt: 'ERP General adaptado a dispositivos móviles para gestionar inventario, aprobaciones, compras, despacho e indicadores desde el celular',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Adecuación del <strong>ERP General a dispositivos móviles</strong>, pensada para que la operación no dependa de estar frente a una computadora.
+        Desde el celular se pueden revisar tareas pendientes, consultar información y continuar procesos clave del negocio en el momento en que se necesitan.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Inventario en mano:</strong> consulta de stock, productos y ubicaciones desde el celular, en el mismo almacén.</li>
+        <li><strong>Aprobaciones en el momento:</strong> solicitudes y órdenes de compra que se revisan y aprueban sin esperar a volver al escritorio.</li>
+        <li><strong>Despacho y entregas:</strong> seguimiento de salidas, entregas pendientes y actualización de estados en ruta.</li>
+        <li><strong>Comprobantes:</strong> consulta de documentos emitidos y su estado.</li>
+        <li><strong>Dashboard móvil:</strong> los indicadores principales del negocio en una vista adaptada a pantallas pequeñas.</li>
+        <li><strong>Misma base, otro dispositivo:</strong> comparte datos, usuarios, roles y permisos con el ERP de escritorio.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        La operación deja de detenerse porque alguien no está en su computadora: el proceso continúa desde el celular.
+      </p>
+    `,
+    tags: ['ERP Móvil', 'Gestión Empresarial', 'Inventario', 'Aprobaciones', 'Compras', 'Despacho', 'Indicadores', 'Operación en Campo', 'Roles y Permisos'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    ],
+  },
+
+
+  {
+    title: 'EMPRESA — CLÍNICA DR. VITOR — Sistema de Gestión de Órdenes Médicas',
+    image: ordenesMedicasImg,
+    alt: 'Sistema de gestión de órdenes médicas con pacientes, centros, conceptos, estados, saldos y seguimiento de atención',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Sistema desarrollado para la <strong>Clínica Dr. Vitor</strong>, orientado al <strong>registro, control y seguimiento de órdenes médicas</strong>, centralizando la información
+        del paciente, los conceptos asociados, el centro de atención, el estado de la orden y su seguimiento administrativo.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Registro de órdenes:</strong> creación y administración de órdenes con código, fecha, paciente, documento y centro correspondiente.</li>
+        <li><strong>Conceptos por orden:</strong> consulta de los conceptos o servicios asociados desde el mismo listado.</li>
+        <li><strong>Control de cobro:</strong> visualización del total y del saldo pendiente para facilitar el seguimiento administrativo.</li>
+        <li><strong>Estados de atención:</strong> control del avance de cada orden y registro de la fecha de atención.</li>
+        <li><strong>Búsqueda y filtros:</strong> consulta por código, paciente o documento, además de filtros por estado, cobro, centro y rango de fechas.</li>
+        <li><strong>Gestión de centros:</strong> administración de los centros utilizados para organizar y clasificar las órdenes.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        La plataforma permite consultar rápidamente qué órdenes existen, a quién corresponden, en qué estado se encuentran y qué acciones quedan pendientes.
+      </p>
+    `,
+    tags: ['Órdenes Médicas', 'Pacientes', 'Centros de Atención', 'Seguimiento', 'Estados', 'Control de Cobro', 'Filtros', 'Control Administrativo'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    ],
+  },
+
 
   {
     title: 'PROYECTO PERSONAL — MAZE BOT — Mejora de la landing: nuevo servicio de WhatsApp con IA y CRM',
@@ -150,32 +236,6 @@ const projects = [
     ],
   },
 
-  {
-    title: 'PROYECTO PERSONAL — ERP GENERAL MÓVIL — El ERP en el bolsillo',
-    image: './gif/erp-movil.gif',
-    alt: 'Versión móvil del ERP General con inventario, aprobaciones, despacho y dashboard desde el celular',
-    descriptionHTML: `
-      <p style="text-align: justify;">
-        Versión móvil del <strong>ERP General</strong>, pensada para el personal que no trabaja frente a una computadora:
-        almacén, despacho, jefaturas que aprueban y gerencia que necesita ver los números desde donde esté.
-      </p>
-      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
-        <li><strong>Inventario en mano:</strong> consulta de stock, productos y ubicaciones desde el celular, en el mismo almacén.</li>
-        <li><strong>Aprobaciones en el momento:</strong> solicitudes y órdenes de compra que se revisan y aprueban sin esperar a volver al escritorio.</li>
-        <li><strong>Despacho y entregas:</strong> seguimiento de salidas, entregas pendientes y actualización de estados en ruta.</li>
-        <li><strong>Comprobantes:</strong> consulta de documentos emitidos y su estado.</li>
-        <li><strong>Dashboard móvil:</strong> los indicadores principales del negocio en una vista adaptada a pantallas pequeñas.</li>
-        <li><strong>Misma base, otro dispositivo:</strong> comparte datos, usuarios, roles y permisos con el ERP de escritorio.</li>
-      </ul>
-      <p style="text-align: justify; margin: 0;">
-        La operación deja de detenerse porque alguien no está en su computadora: el proceso continúa desde el celular.
-      </p>
-    `,
-    tags: ['ERP Móvil', 'Inventario', 'Aprobaciones', 'Compras', 'Despacho', 'Dashboard', 'Roles y Permisos', 'Operación en Campo', 'Gestión Empresarial'],
-    links: [
-      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    ],
-  },
 
   {
     title: 'PROYECTO PERSONAL — ERP GENERAL — Sistema adaptable para cualquier empresa',
