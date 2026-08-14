@@ -36,10 +36,9 @@ const projects = [
         El resultado es una landing que ya no vende un chatbot de página web, sino una plataforma de atención al cliente con dos canales.
       </p>
     `,
-    tags: ['Maze Bot', 'Landing Page', 'WhatsApp Business API', 'CRM', 'Panel de Atención', 'Inteligencia Artificial', 'Demo Interactiva', 'Carga Diferida', 'Diseño Responsive', 'React', 'Vite'],
+    tags: ['Maze Bot', 'WhatsApp Business', 'CRM', 'Inteligencia Artificial', 'Panel de Atención', 'Demo Interactiva', 'Atención al Cliente', 'Integración Web', 'Rendimiento'],
     links: [
       { type: 'demo', href: 'https://mazebot.mazecompress.com/#inicio', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
 
@@ -65,10 +64,9 @@ const projects = [
         El resultado: el sistema imprime y la hoja sale igual al formato oficial de la clínica, lista para archivarse en el file del paciente.
       </p>
     `,
-    tags: ['Clínica Dr. Vitor', 'Historia Clínica', 'Hoja de Evaluación', 'Traumatología', 'Impresión de Formatos', 'Receta Médica', 'Seguimiento de Pacientes', 'React', 'Node.js', 'Sequelize', 'PostgreSQL'],
+    tags: ['Clínica Dr. Vitor', 'Historia Clínica', 'Hoja de Evaluación', 'Seguimiento de Pacientes', 'Receta Médica', 'Impresión de Formatos', 'Traumatología', 'Gestión Clínica'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
 
@@ -93,10 +91,9 @@ const projects = [
         El recaudador sale a campo solo con el celular: cobra, registra y cuadra su día sin volver a la oficina a transcribir nada.
       </p>
     `,
-    tags: ['App Móvil', 'Cobranza en Campo', 'Recaudación', 'Zonas de Cobranza', 'Depósitos', 'Cuadre Diario', 'Oracle Database', 'JWT', 'Sentry', 'React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express'],
+    tags: ['App Móvil', 'Cobranza en Campo', 'Recaudación', 'Zonas de Cobranza', 'Depósitos', 'Cuadre Diario', 'Socios', 'Multimoneda', 'Sincronización'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'ESTE CODIGO NO LO ESTOY SUBIENDO A GITHUB' },
     ],
   },
 
@@ -121,10 +118,9 @@ const projects = [
         El socio consulta su saldo y sus últimos movimientos en cualquier momento, y la agencia reduce la atención presencial por consultas simples.
       </p>
     `,
-    tags: ['App Móvil', 'Consulta de Socios', 'Cuentas y Saldos', 'Movimientos', 'Multimoneda', 'Oracle Database', 'JWT', 'React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express'],
+    tags: ['App Móvil', 'Consulta de Socios', 'Cuentas y Saldos', 'Movimientos', 'Multimoneda', 'Historial Financiero', 'Acceso Seguro', 'Consulta en Tiempo Real'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'ESTE CODIGO NO LO ESTOY SUBIENDO A GITHUB' },
     ],
   },
 
@@ -148,10 +144,9 @@ const projects = [
         Convierte WhatsApp en un canal de atención ordenado y medible, en lugar de un teléfono lleno de mensajes sueltos.
       </p>
     `,
-    tags: ['Maze WSP', 'CRM', 'WhatsApp', 'Inteligencia Artificial', 'Atención al Cliente', 'Automatización', 'Conversaciones', 'Panel Administrativo', 'React', 'Node.js', 'PostgreSQL'],
+    tags: ['Maze WSP', 'CRM', 'WhatsApp', 'Inteligencia Artificial', 'Atención al Cliente', 'Automatización', 'Gestión de Contactos', 'Conversaciones', 'Panel Administrativo'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
 
@@ -176,10 +171,9 @@ const projects = [
         La operación deja de detenerse porque alguien no está en su computadora: el proceso continúa desde el celular.
       </p>
     `,
-    tags: ['ERP Móvil', 'Inventario', 'Aprobaciones', 'Compras', 'Despacho', 'Dashboard', 'Roles y Permisos', 'React', 'Node.js', 'PostgreSQL'],
+    tags: ['ERP Móvil', 'Inventario', 'Aprobaciones', 'Compras', 'Despacho', 'Dashboard', 'Roles y Permisos', 'Operación en Campo', 'Gestión Empresarial'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
 
@@ -204,10 +198,9 @@ const projects = [
         El sistema puede implementarse, venderse o alquilarse como base ERP, ajustándose a los procesos reales de cada empresa.
       </p>
     `,
-    tags: ['ERP General', 'SUNAT', 'Guías Electrónicas', 'Inventario', 'Kardex', 'Compras', 'Despacho', 'Roles', 'Dashboard', 'React', 'Node.js', 'PostgreSQL'],
+    tags: ['ERP General', 'SUNAT', 'Guías Electrónicas', 'Inventario', 'Kardex', 'Compras', 'Despacho', 'Facturación', 'Roles y Permisos', 'Dashboard'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
 
@@ -229,10 +222,9 @@ const projects = [
         <li><strong>Panel administrativo:</strong> configuración del negocio, productos, datos de entrenamiento y seguimiento de conversaciones.</li>
       </ul>
     `,
-    tags: ['WhatsApp IA', 'Chatbot', 'Webhook', 'Gemini', 'Automatización', 'Atención al Cliente', 'Catálogo', 'React', 'Node.js', 'PostgreSQL'],
+    tags: ['WhatsApp IA', 'Chatbot', 'Automatización', 'Atención al Cliente', 'Catálogo', 'Conversaciones', 'Intención de Compra', 'Panel Administrativo', 'IA Entrenable'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
 
@@ -253,10 +245,9 @@ const projects = [
         <li><strong>Responsive:</strong> navegación optimizada para escritorio y dispositivos móviles.</li>
       </ul>
     `,
-    tags: ['Landing Page', 'Sherly Morales', 'Huánuco', 'Asistente IA', 'Noticias', 'Propuestas', 'Diseño Responsive', 'React', 'Vite'],
+    tags: ['Landing Page', 'Sherly Morales', 'Huánuco', 'Asistente IA', 'Noticias', 'Propuestas', 'Diseño Institucional', 'Experiencia Móvil'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
 
@@ -296,27 +287,9 @@ const projects = [
       la coordinación entre ventas, producción, compras, almacén, logística, despacho y administración.
     </p>
   `,
-  tags: [
-    'Hydromaq Solutions',
-    'ERP Industrial',
-    'Automatización',
-    'Gestión Operativa',
-    'Ventas',
-    'Cotizaciones',
-    'Hoja de Costo',
-    'Producción',
-    'Compras',
-    'Almacén',
-    'Logística',
-    'Despacho',
-    'Administración',
-    'React',
-    'Node.js',
-    'PostgreSQL'
-  ],
+  tags: ['Hydromaq Solutions', 'ERP Industrial', 'Automatización', 'Gestión Operativa', 'Ventas', 'Cotizaciones', 'Hoja de Costo', 'Producción', 'Compras', 'Logística'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' }
   ]
 },
 
@@ -338,10 +311,9 @@ const projects = [
       <li><strong>Roles y diseño responsive:</strong> administración, aula virtual, catálogo público y adaptación a móvil.</li>
     </ul>
   `,
-  tags: ['APEX ST PRO', 'E-learning', 'Certificados QR', 'IA', 'Temarios Automáticos', 'Google Drive', 'React', 'Node.js', 'PostgreSQL'],
+  tags: ['APEX ST PRO', 'E-learning', 'Certificados QR', 'IA', 'Temarios Automáticos', 'Google Drive', 'Cursos Virtuales', 'Portal del Estudiante', 'Certificación Digital'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -361,13 +333,12 @@ const projects = [
       <li><strong>Panel administrativo:</strong> alumnos, aulas, horarios, calendarios, justificaciones y usuarios.</li>
       <li><strong>Reportes filtrados:</strong> asistencia diaria e histórica por alumno, aula, fecha o rango de fechas.</li>
       <li><strong>Acceso para padres:</strong> consulta web del historial de asistencia del estudiante.</li>
-      <li><strong>Arquitectura multiusuario:</strong> frontend React, backend Node/Express y datos persistidos en PostgreSQL.</li>
+      <li><strong>Arquitectura multiusuario:</strong> información centralizada, acceso simultáneo y control de usuarios para trabajar de forma segura desde distintos equipos.</li>
     </ul>
   `,
-  tags: ['I.E.E. Juan José Crespo y Castillo', 'Ambo', 'Control de Asistencia', 'QR', 'Institución Educativa', 'Reportes', 'Padres', 'React', 'Node.js', 'PostgreSQL'],
+  tags: ['Control de Asistencia', 'Código QR', 'Institución Educativa', 'Reportes', 'Acceso para Padres', 'Alumnos y Aulas', 'Horarios', 'Justificaciones', 'Gestión Escolar'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -388,10 +359,9 @@ const projects = [
       <li><strong>Asistencia más autónoma:</strong> mejora la fluidez para apoyar actividades reales en tiempo real.</li>
     </ul>
   `,
-  tags: ['MISHEL', 'Visión en Tiempo Real', 'Automatización', 'Asistente de Escritorio', 'IA', 'Windows', 'Proyecto Personal'],
+  tags: ['MISHEL', 'Visión en Tiempo Real', 'Automatización', 'Asistente de Escritorio', 'IA', 'Control Contextual', 'Acciones por Objetivo', 'Windows'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -413,10 +383,9 @@ const projects = [
       <li><strong>Escalabilidad:</strong> base preparada para que más usuarios puedan acceder a asistencia inteligente desde distintos entornos.</li>
     </ul>
   `,
-  tags: ['MISHEL', 'MAZE BOT', 'Inteligencia Artificial', 'Avatar 3D', 'Voz', 'Asistente Virtual', 'Automatización', 'Proyecto Personal'],
+  tags: ['MISHEL', 'MAZE BOT', 'Inteligencia Artificial', 'Avatar 3D', 'Voz', 'Asistente Virtual', 'Automatización', 'Interacción Natural'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -440,10 +409,9 @@ const projects = [
       <li><strong>Base de datos central:</strong> lógica migrada al backend para evitar dependencias de almacenamiento local y soportar trabajo multiusuario.</li>
     </ul>
   `,
-  tags: ['SDI Maquinarias', 'ERP', 'Automatización', 'Procesos', 'Ventas', 'Compras', 'Producción', 'Almacén', 'React', 'Node.js', 'PostgreSQL'],
+  tags: ['SDI Maquinarias', 'ERP', 'Automatización', 'Procesos', 'Ventas', 'Compras', 'Producción', 'Almacén', 'Trazabilidad', 'Gestión Operativa'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -465,10 +433,9 @@ const projects = [
       <li><strong>Valor comercial:</strong> puede funcionar como servicio adicional para desarrolladores o agencias.</li>
     </ul>
   `,
-  tags: ['MAZE BOT', 'Chatbot IA', 'Widget Web', 'Atención al Cliente', 'Voz', 'SaaS', 'React', 'Node.js'],
+  tags: ['MAZE BOT', 'Chatbot IA', 'Widget Web', 'Atención al Cliente', 'Voz', 'SaaS', 'Integración Web', 'Multi-rubro', 'Atención Automatizada'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -490,10 +457,9 @@ const projects = [
       <li><strong>Diseño responsive:</strong> presentación adaptable para móvil y escritorio.</li>
     </ul>
   `,
-  tags: ['Landing Page', 'Fibertel', 'Internet Fibra Óptica', 'WhatsApp', 'Chatbot', 'Diseño Comercial', 'React', 'Vite'],
+  tags: ['Landing Page', 'Fibertel', 'Internet Fibra Óptica', 'WhatsApp', 'Chatbot', 'Diseño Comercial', 'Planes de Internet', 'Captación de Clientes'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -515,10 +481,9 @@ const projects = [
       <li><strong>Diseño moderno:</strong> estética limpia, tecnológica y alineada al producto.</li>
     </ul>
   `,
-  tags: ['Landing Page', 'MAZE BOT', 'Producto Digital', 'Chatbot IA', 'WhatsApp', 'Atención 24/7', 'React', 'Vite'],
+  tags: ['Landing Page', 'MAZE BOT', 'Producto Digital', 'Chatbot IA', 'WhatsApp', 'Atención 24/7', 'Demo del Producto', 'Captación Comercial'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -541,14 +506,9 @@ const projects = [
       <li><strong>Usuarios y Carga de Cartera:</strong> permisos granulares por módulo y ejecución del proceso Oracle por fecha de cierre.</li>
     </ul>
   `,
-  tags: [
-    'Sistema Legal', 'Cartera Judicial', 'Dashboard', 'Matriz de Créditos', 'Reporte de Abogados',
-    'Gastos Judiciales', 'Gestión de Garantías', 'Historial de Modificaciones', 'Flujo de Aprobaciones',
-    'Auditoría', 'Exportación Excel', 'PDF', 'Oracle', 'Vista Materializada', 'Roles y Permisos', 'React', 'Node.js'
-  ],
+  tags: ['Sistema Legal', 'Cartera Judicial', 'Dashboard', 'Matriz de Créditos', 'Reporte de Abogados', 'Gastos Judiciales', 'Gestión de Garantías', 'Auditoría', 'Exportación Excel', 'Roles y Permisos'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -571,10 +531,9 @@ const projects = [
       <li><strong>Multi-escenario:</strong> adaptable a facturación, gestión documental, análisis legal, registros internos o entornos clínicos.</li>
     </ul>
   `,
-  tags: ['Asistente Virtual', 'Biblioteca Local', 'Lectura de Documentos', 'PDF', 'Excel', 'Word', 'IA Aplicada', 'Automatización', 'Windows', 'Proyecto Personal'],
+  tags: ['Asistente Virtual', 'Biblioteca Local', 'Lectura de Documentos', 'PDF', 'Excel', 'Word', 'IA Aplicada', 'Automatización', 'Consulta de Archivos'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -602,10 +561,9 @@ const projects = [
       El objetivo principal fue optimizar procesos, reducir tareas manuales y mejorar la coordinación entre las diferentes áreas.
     </p>
   `,
-  tags: ['ERP', 'Adaptación de Sistema', 'Automatización', 'Producción', 'Ventas', 'Compras', 'Logística', 'Despacho', 'Facturación', 'React', 'Node.js', 'PostgreSQL'],
+  tags: ['ERP Industrial', 'Adaptación de Sistema', 'Automatización', 'Producción', 'Ventas', 'Compras', 'Logística', 'Despacho', 'Facturación', 'Gestión Operativa'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 {
@@ -628,10 +586,9 @@ const projects = [
       <li><strong>IA Conversacional:</strong> integración de inteligencia artificial para ofrecer atención más fluida, contextual y orientada al cierre comercial.</li>
     </ul>
   `,
-  tags: ['WhatsApp API', 'Multi-empresa', 'Atención al Cliente', 'Gestión Comercial', 'Control de Pagos', 'Respuestas Automáticas', 'Dashboard', 'Tiempo Real', 'Inteligencia Artificial', 'React', 'Node.js', 'PostgreSQL'],
+  tags: ['Atención Comercial', 'Multiempresa', 'WhatsApp', 'Inteligencia Artificial', 'Gestión Comercial', 'Control de Pagos', 'Respuestas Automáticas', 'Dashboard', 'Tiempo Real'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
   {
@@ -652,10 +609,9 @@ const projects = [
       <li><strong>Experiencia personalizada:</strong> acerca a MISHEL a una experiencia más autónoma, personalizada y funcional.</li>
     </ul>
   `,
-  tags: ['Asistente Virtual', 'Aprendizaje de Acciones', 'Automatización', 'Avatar 3D', 'Inteligencia Artificial', 'Voz', 'Windows', 'Proyecto Personal'],
+  tags: ['Asistente Virtual', 'Aprendizaje de Acciones', 'Automatización', 'Avatar 3D', 'Inteligencia Artificial', 'Voz', 'Memoria de Acciones', 'Windows'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -678,10 +634,9 @@ const projects = [
       <li><strong>Trazabilidad total:</strong> cada área mantiene control y visibilidad del flujo operativo completo.</li>
     </ul>
   `,
-  tags: ['ERP', 'Automatización', 'Producción', 'Logística', 'Ventas', 'Compras', 'Contabilidad', 'React', 'Node.js', 'PostgreSQL'],
+  tags: ['ERP', 'Automatización', 'Producción', 'Logística', 'Ventas', 'Compras', 'Contabilidad', 'Gestión Operativa', 'Flujos Integrados'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -703,10 +658,9 @@ const projects = [
       <li><strong>Dashboard en tiempo real:</strong> KPIs de clientes, recaudación, averías y estado de servicios por sede.</li>
     </ul>
   `,
-  tags: ['ISP', 'Gestión de Red', 'Mapa Interactivo', 'WhatsApp', 'Dashboard', 'Roles y Permisos', 'Tiempo Real', 'React', 'Node.js', 'PostgreSQL'],
+  tags: ['ISP', 'Gestión de Red', 'Mapa Interactivo', 'WhatsApp', 'Dashboard', 'Roles y Permisos', 'Tiempo Real', 'Clientes', 'Infraestructura de Red'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -728,10 +682,9 @@ const projects = [
       <li><strong>Descarga y aprobación:</strong> el usuario puede descargar o seguir iterando el diseño.</li>
     </ul>
   `,
-  tags: ['Inteligencia Artificial', 'Personalización Visual', 'React', 'Node.js', 'IA Aplicada', 'Diseño', 'Proyecto Personal'],
+  tags: ['Inteligencia Artificial', 'Personalización Visual', 'IA Aplicada', 'Diseño', 'Generación Visual', 'Experiencia de Usuario', 'Proyecto Personal'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -757,10 +710,9 @@ const projects = [
       <li><strong>IA integrada:</strong> respuestas inteligentes y contextuales.</li>
     </ul>
   `,
-  tags: ['Asistente Virtual', 'Avatar 3D', 'Inteligencia Artificial', 'Voz', 'Automatización', 'Windows', 'Proyecto Personal'],
+  tags: ['Asistente Virtual', 'Avatar 3D', 'Inteligencia Artificial', 'Voz', 'Automatización', 'Windows', 'Interacción Natural', 'Control del Sistema'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -780,23 +732,12 @@ const projects = [
       <li><strong>Convenios y respaldos:</strong> sección orientada a reforzar confianza institucional.</li>
       <li><strong>Promociones:</strong> planes y ofertas presentadas de forma clara y atractiva.</li>
       <li><strong>Diseño corporativo:</strong> identidad visual alineada a la marca con colores corporativos, fondos oscuros y tarjetas claras.</li>
-      <li><strong>Tecnología moderna:</strong> implementada con <strong>React + Vite</strong>, lista para integrarse al ecosistema digital actual.</li>
+      <li><strong>Experiencia optimizada:</strong> navegación rápida, estructura moderna y adaptación a distintos dispositivos.</li>
     </ul>
   `,
-  tags: [
-    'Landing Page',
-    'React',
-    'Vite',
-    'Educación',
-    'Certificaciones',
-    'QR',
-    'Diseño Corporativo',
-    'Captación de Leads',
-    'UI/UX'
-  ],
+  tags: ['Landing Page', 'Educación', 'Certificaciones', 'Código QR', 'Diseño Corporativo', 'Captación de Leads', 'UI/UX', 'Promociones', 'Experiencia Móvil'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -820,21 +761,9 @@ const projects = [
       <li><strong>Roles y accesos:</strong> control por perfil para Admin, Almacén, Compras, Ventas, Producción, RRHH y Operario.</li>
     </ul>
   `,
-  tags: [
-    'ERP',
-    'Gestión Industrial',
-    'Logística',
-    'Inventario',
-    'Kardex',
-    'Ventas',
-    'Producción',
-    'Facturación',
-    'Panel Operario',
-    'Roles y Permisos'
-  ],
+  tags: ['ERP', 'Gestión Industrial', 'Logística', 'Inventario', 'Kardex', 'Ventas', 'Producción', 'Facturación', 'Panel Operario', 'Roles y Permisos'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -859,20 +788,9 @@ const projects = [
       <li><strong>Interacción flexible:</strong> el cliente puede elegir si conversar con el negocio o con su agente inteligente.</li>
     </ul>
   `,
-  tags: [
-    'Mensajería en Tiempo Real',
-    'Socket.IO',
-    'Inteligencia Artificial',
-    'Chat Empresarial',
-    'Catálogo de Productos',
-    'Estados',
-    'Privacidad',
-    'Proyecto Personal',
-    'WhatsApp-like UI'
-  ],
+  tags: ['Mensajería en Tiempo Real', 'Inteligencia Artificial', 'Chat Empresarial', 'Catálogo de Productos', 'Estados', 'Privacidad', 'Contactos', 'Perfiles de Negocio', 'Asistente IA'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -895,19 +813,9 @@ const projects = [
       <li><strong>Usuarios y accesos:</strong> gestión de cuentas y permisos según rol.</li>
     </ul>
   `,
-  tags: [
-    'Sistema Web',
-    'Noticias',
-    'Gestión de Contenido',
-    'CMS',
-    'Panel Administrativo',
-    'Streaming',
-    'Programación TV',
-    'Usuarios y Permisos'
-  ],
+  tags: ['Sistema Web', 'Noticias', 'Gestión de Contenido', 'CMS', 'Panel Administrativo', 'Streaming', 'Programación TV', 'Usuarios y Permisos', 'Medio Digital'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -929,21 +837,9 @@ const projects = [
       <li><strong>Optimización de rendimiento:</strong> uso de vista materializada y procedimientos almacenados para mejorar carga y reportes.</li>
     </ul>
   `,
-  tags: [
-    'Sistema Legal',
-    'Cartera Judicial',
-    'Búsquedas Avanzadas',
-    'Roles y Permisos',
-    'Auditoría',
-    'Reportes',
-    'Excel',
-    'Vista Materializada',
-    'Procedimientos Almacenados',
-    'Optimización'
-  ],
+  tags: ['Sistema Legal', 'Cartera Judicial', 'Búsquedas Avanzadas', 'Roles y Permisos', 'Auditoría', 'Reportes', 'Excel', 'Optimización', 'Seguimiento Legal'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -974,21 +870,9 @@ const projects = [
       y adecuaciones específicas al flujo operativo real de la empresa.
     </p>
   `,
-  tags: [
-    'ERP',
-    'Manufactura',
-    'Inventario',
-    'Kardex',
-    'Compras',
-    'Producción',
-    'Facturación Electrónica',
-    'Roles y Permisos',
-    'Dashboard',
-    'Sistema Empresarial'
-  ],
+  tags: ['ERP', 'Manufactura', 'Inventario', 'Kardex', 'Compras', 'Producción', 'Facturación Electrónica', 'Roles y Permisos', 'Dashboard', 'Gestión Empresarial'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -1014,19 +898,9 @@ const projects = [
       <li><strong>Base para integración futura:</strong> preparado para conectarse al sistema integral de acreditación y control de accesos.</li>
     </ul>
   `,
-  tags: [
-    'Inteligencia Artificial',
-    'Gestión Documentaria',
-    'OCR',
-    'Automatización',
-    'Control de Contratistas',
-    'Seguridad Empresarial',
-    'Sistema de Acreditación',
-    'IA Aplicada'
-  ],
+  tags: ['Inteligencia Artificial', 'Gestión Documentaria', 'OCR', 'Automatización', 'Control de Contratistas', 'Seguridad Empresarial', 'Sistema de Acreditación', 'Control de Ingresos'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -1051,19 +925,9 @@ const projects = [
       <li><strong>Control y seguridad:</strong> ejecución validada para evitar envíos accidentales.</li>
     </ul>
   `,
-  tags: [
-    'Agenda Inteligente',
-    'Automatización',
-    'WhatsApp API',
-    'Email',
-    'Chatbot',
-    'Programación de Tareas',
-    'Sistema Web',
-    'Proyecto Personal'
-  ],
+  tags: ['Agenda Inteligente', 'Automatización', 'WhatsApp', 'Email', 'Chatbot', 'Programación de Tareas', 'Recordatorios', 'Disponibilidad', 'Organización Personal'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -1108,19 +972,9 @@ const projects = [
 
     
   `,
-  tags: [
-    'Asistente IA',
-    'Automatización',
-    'Lenguaje Natural',
-    'Windows',
-    'Chatbot',
-    'Seguridad',
-    'Control del Sistema',
-    'Proyecto Personal'
-  ],
+  tags: ['Asistente IA', 'Automatización', 'Lenguaje Natural', 'Windows', 'Chatbot', 'Seguridad', 'Control del Sistema', 'Ejecución de Acciones', 'Asistente Local'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -1145,19 +999,9 @@ const projects = [
       garantizando continuidad de datos y procesos entre sistemas.
     </p>
   `,
-  tags: [
-    'Sistema Legal',
-    'Cartera Judicial',
-    'Búsquedas Avanzadas',
-    'Auditoría',
-    'Reportes',
-    'Roles y Permisos',
-    'Dashboard',
-    'Integración de Sistemas'
-  ],
+  tags: ['Sistema Legal', 'Cartera Judicial', 'Búsquedas Avanzadas', 'Auditoría', 'Reportes', 'Roles y Permisos', 'Dashboard', 'Integración de Sistemas', 'Seguimiento de Casos'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -1181,22 +1025,9 @@ const projects = [
       <li><strong>Chatbot integrado:</strong> asistencia rápida para resolver dudas dentro del sistema.</li>
     </ul>
   `,
-  tags: [
-    'Ventas',
-    'Catálogo',
-    'Cotizaciones',
-    'WhatsApp',
-    'Facturación Electrónica',
-    'Nubefact',
-    'RENIEC',
-    'SUNAT',
-    'Dashboard',
-    'Electron',
-    'Chatbot'
-  ],
+  tags: ['Ventas', 'Catálogo', 'Cotizaciones', 'WhatsApp', 'Facturación Electrónica', 'Nubefact', 'RENIEC', 'SUNAT', 'Dashboard', 'Chatbot'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -1218,19 +1049,9 @@ const projects = [
       <li><strong>Paneles y reportes:</strong> métricas para decisiones administrativas y financieras.</li>
     </ul>
   `,
-  tags: [
-    'Sistema Clínico',
-    'Gestión de Pacientes',
-    'Historias Clínicas',
-    'Citas Médicas',
-    'Caja y Cobranza',
-    'Facturación Electrónica',
-    'Inventario',
-    'Reportes y Dashboard'
-  ],
+  tags: ['Sistema Clínico', 'Gestión de Pacientes', 'Historias Clínicas', 'Citas Médicas', 'Caja y Cobranza', 'Facturación Electrónica', 'Inventario', 'Reportes y Dashboard', 'Atención Médica'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -1252,13 +1073,9 @@ const projects = [
     </p>
     
   `,
-  tags: [
-    'IA', 'Chatbot', 'Asistentes virtuales', 'Atención al cliente',
-    'Automatización', 'Plataforma web', 'Multi-negocio'
-  ],
+  tags: ['IA', 'Chatbot', 'Asistentes Virtuales', 'Atención al Cliente', 'Automatización', 'Plataforma Web', 'Multi-negocio', 'Entrenamiento por Empresa'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Más detalles del proyecto' },
   ],
 },
 
@@ -1278,24 +1095,15 @@ const projects = [
       <strong>modelos de certificados</strong> y <strong>carreras por área</strong>, una sección de 
       <strong>convenios y respaldos institucionales</strong>, planes promocionales y un footer completo con datos legales. 
       Todo el diseño respeta la identidad visual de Aprende Perú (rojos corporativos, fondos oscuros y tarjetas blancas) 
-      y está implementado con <strong>React + Vite</strong>, listo para integrarse con el ecosistema actual de la marca.
+      y está preparado para integrarse con el ecosistema digital actual de la marca.
     </p>
     <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
      
     </ul>
   `,
-  tags: [
-    'Landing page',
-    'Educación',
-    'Certificados con QR',
-    'React',
-    'Vite',
-    'UI/UX',
-    'Marketing educativo'
-  ],
+  tags: ['Landing Page', 'Educación', 'Certificados con QR', 'Marketing Educativo', 'Captación de Leads', 'Cursos y Diplomados', 'Diseño Institucional', 'Promociones'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver código del proyecto' },
   ],
 },
 
@@ -1305,39 +1113,34 @@ const projects = [
   alt: 'Sistema web para consultar y gestionar bases de datos con IA',
   descriptionHTML: `
     <p style="text-align: justify;">
-      MAZE DB es una herramienta web que permite <strong>conectarse a bases de datos PostgreSQL</strong> y 
+      MAZE DB es una herramienta web que permite <strong>conectarse a bases de datos relacionales</strong> y 
       consultarlas usando <strong>lenguaje natural</strong>. Nació de la necesidad de explorar y modificar datos 
-      de proyectos como MAZE TOUR sin depender siempre de clientes SQL tradicionales o recordar consultas complejas.
+      de proyectos como MAZE TOUR sin depender siempre de herramientas técnicas externas ni recordar consultas complejas.
     </p>
     <p style="text-align: justify;">
       El sistema integra <strong>IA (Gemini)</strong> para transformar lo que escribes en español (o inglés) 
-      en <strong>consultas SQL reales</strong>, mostrando tanto el código generado como los resultados en una 
+      en <strong>consultas estructuradas</strong>, mostrando tanto la consulta generada como los resultados en una 
       interfaz clara y visual. Ideal para desarrolladores, analistas y equipos que quieren trabajar sus datos 
       de forma más rápida, intuitiva y controlada.
     </p>
     <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
-      <li><strong>Conexión dinámica a PostgreSQL:</strong> Configuración de host, puerto, base de datos, usuario y contraseña directamente desde la interfaz.</li>
+      <li><strong>Conexión dinámica:</strong> Configuración de host, puerto, base de datos, usuario y contraseña directamente desde la interfaz.</li>
       <li><strong>Chat con la base de datos:</strong> Escribe preguntas como <em>“qué tablas tengo”</em> o 
-          <em>“muéstrame los hoteles con más reservas”</em> y la IA genera el <strong>SQL correspondiente</strong>.</li>
+          <em>“muéstrame los hoteles con más reservas”</em> y la IA genera la <strong>consulta correspondiente</strong>.</li>
       <li><strong>Consultas avanzadas:</strong> Soporta <strong>JOINs</strong>, filtros, agregaciones, subconsultas y 
           lógica compleja para análisis de datos reales.</li>
       <li><strong>Modo lectura y modo escritura:</strong> Permite trabajar solo con <strong>SELECT</strong> 
           o habilitar de forma controlada <strong>INSERT / UPDATE / DELETE</strong>, con validaciones de seguridad.</li>
-      <li><strong>SQL visible y copiable:</strong> Cada respuesta muestra la <strong>consulta generada</strong> 
-          y un botón para copiarla y reutilizarla en otros entornos o clientes SQL.</li>
+      <li><strong>Consulta visible y copiable:</strong> Cada respuesta muestra la <strong>consulta generada</strong> 
+          y un botón para copiarla y reutilizarla en otros entornos o herramientas de datos.</li>
       <li><strong>Detección inteligente de tablas:</strong> La IA puede entender peticiones en español aunque las 
-          tablas y columnas estén en inglés, apoyándose en el catálogo de <code>information_schema</code>.</li>
-      <li><strong>Arquitectura moderna:</strong> Frontend en <strong>React + Vite</strong> con interfaz tipo chat, 
-          y backend en <strong>Node.js + Express</strong> integrado con <strong>PostgreSQL</strong> y la API de <strong>Gemini</strong>.</li>
+          tablas y columnas estén en inglés, apoyándose en la estructura interna de la base de datos.</li>
+      <li><strong>Integración inteligente:</strong> interfaz tipo chat conectada con <strong>Gemini</strong> para interpretar preguntas y generar consultas sobre los datos.</li>
     </ul>
   `,
-  tags: [
-    'React', 'Node.js', 'PostgreSQL', 'Inteligencia Artificial', 'SQL',
-    'Gemini', 'Fullstack', 'Herramienta interna', 'Productividad', 'Data'
-  ],
+  tags: ['Inteligencia Artificial', 'Gemini', 'Consulta de Datos', 'Lenguaje Natural', 'Bases de Datos', 'Productividad', 'Herramienta Interna', 'Análisis de Datos', 'Consultas Inteligentes'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -1367,24 +1170,13 @@ const projects = [
       <li>Gestión de préstamos con generación automática de cronogramas de cuotas.</li>
       <li>Exportación de cronogramas de pago en PDF por préstamo, con diseño tipo estado de cuenta.</li>
       <li>Portal cliente para consultar préstamos, cuotas y registrar pagos con distintos métodos.</li>
-      <li>Backend con Node.js, Express y Sequelize (PostgreSQL/MySQL) y frontend en React + Vite.</li>
+      <li>Arquitectura centralizada con base de datos relacional, roles y validaciones para una operación segura.</li>
       <li>Autenticación JWT, middleware de roles y diseño UI/UX adaptado al rubro financiero.</li>
     </ul>
   `,
-  tags: [
-    'Sistema interno',
-    'Finanzas',
-    'Gestión de créditos',
-    'Cronogramas de pago',
-    'React',
-    'Node.js',
-    'Express',
-    'Sequelize',
-    'UI/UX'
-  ],
+  tags: ['Sistema Interno', 'Finanzas', 'Gestión de Créditos', 'Cronogramas de Pago', 'Cobranzas', 'Clientes', 'Portal del Cliente', 'Reportes', 'Roles y Permisos'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver código del proyecto' },
   ],
 },
 
@@ -1403,17 +1195,13 @@ const projects = [
       <li><strong>Vista previa en tiempo real:</strong> Comparación antes y después, mostrando tamaño original versus tamaño optimizado.</li>
       <li><strong>Soporte para múltiples formatos:</strong> Procesamiento de imágenes en <strong>JPG</strong>, <strong>PNG</strong> y <strong>WEBP</strong>, entre otros.</li>
       <li><strong>Subida simple:</strong> Carga mediante <em>drag &amp; drop</em> o selección de archivos, con manejo de múltiples imágenes.</li>
-      <li><strong>Arquitectura moderna:</strong> Frontend en <strong>React</strong> y backend en <strong>Node.js</strong> con procesamiento en servidor, 
+      <li><strong>Procesamiento optimizado:</strong> compresión ejecutada en servidor para reducir el peso de los archivos, 
           pensado para integrarse en otros proyectos o paneles administrativos.</li>
     </ul>
   `,
-  tags: [
-    'React', 'Node.js', 'Optimización de imágenes', 'Frontend', 'Compresión',
-    'Performance web', 'Herramienta interna', 'Productividad'
-  ],
+  tags: ['Optimización de Imágenes', 'Compresión', 'Reducción de Peso', 'Vista Previa', 'Procesamiento por Lotes', 'Rendimiento Web', 'Productividad', 'Herramienta Online'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -1434,16 +1222,12 @@ const projects = [
       <li><strong>Tráilers y películas:</strong> Sección para descubrir tráilers y fichas de películas con sinopsis, géneros y recomendaciones.</li>
       <li><strong>Experiencia de lectura cómoda:</strong> Modo lectura, navegación fluida, organización por categorías y duración.</li>
       <li><strong>Interacción con el usuario:</strong> Sistema de favoritos, vista detallada de cada historia y enfoque en usabilidad móvil y desktop.</li>
-      <li><strong>Arquitectura moderna:</strong> Desarrollado con <strong>React</strong> y <strong>Node.js</strong> (API REST), preparado para escalar en número de historias, tráilers y usuarios.</li>
+      <li><strong>Estructura escalable:</strong> preparada para crecer en número de historias, tráilers y usuarios sin perder organización.</li>
     </ul>
   `,
-  tags: [
-    'React', 'Node.js', 'Express', 'Historias cortas', 'Tráilers',
-    'Películas', 'Storytelling', 'UI/UX', 'Responsive'
-  ],
+  tags: ['Historias Cortas', 'Tráilers', 'Películas', 'Storytelling', 'Biblioteca Digital', 'Recomendaciones', 'Lectura Online', 'Contenido Multimedia', 'Experiencia Móvil'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -1459,15 +1243,12 @@ const projects = [
       <li><strong>Gestión automatizada:</strong> Control en tiempo real de inventarios, cotizaciones y pedidos.</li>
       <li><strong>Paneles visuales:</strong> Reportes y estadísticas dinámicas para una toma de decisiones eficiente.</li>
       <li><strong>Acceso para clientes:</strong> Consulta de stock y estado de pedidos en línea.</li>
-      <li><strong>Arquitectura escalable:</strong> Desarrollado con <strong>React</strong>, <strong>Node.js</strong> y <strong>PostgreSQL</strong>, adaptado al flujo operativo de la empresa.</li>
+      <li><strong>Arquitectura escalable:</strong> adaptada al flujo operativo de la empresa y preparada para crecer junto con el volumen de inventario y pedidos.</li>
     </ul>
   `,
-  tags: [
-    'React', 'Node.js', 'PostgreSQL', 'Express', 'Dashboard', 'Inventarios', 'Cotizaciones', 'Logística', 'B2B'
-  ],
+  tags: ['Dashboard', 'Inventarios', 'Cotizaciones', 'Logística', 'B2B', 'Repuestos', 'Pedidos', 'Control de Stock', 'Reportes'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -1480,19 +1261,16 @@ const projects = [
       <strong>"QUE SUERTE"</strong> es una plataforma digital desarrollada para <strong>Huánuco de Boleto</strong>, enfocada en ofrecer sorteos seguros, divertidos y transparentes desde cualquier dispositivo.
     </p>
     <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
-      <li><strong>Tecnología moderna:</strong> React, Node.js, Sequelize y PostgreSQL para alto rendimiento.</li>
+      <li><strong>Experiencia ágil:</strong> navegación rápida, validación de tickets y gestión de sorteos desde una sola plataforma.</li>
       <li><strong>Pagos integrados:</strong> Participación mediante <strong>Yape</strong> y <strong>Plin</strong>.</li>
       <li><strong>Validación instantánea:</strong> Códigos únicos para verificar tickets en tiempo real.</li>
       <li><strong>Transparencia total:</strong> Sorteos transmitidos en <strong>YouTube Live</strong>.</li>
       <li><strong>Gestión completa:</strong> Dashboard administrativo para sorteos, pagos y ganadores.</li>
     </ul>
   `,
-  tags: [
-    'React', 'Node.js', 'PostgreSQL', 'Tailwind CSS', 'Yape', 'Plin', 'Twilio API', 'YouTube Live', 'Dashboard'
-  ],
+  tags: ['Sorteos Digitales', 'Yape', 'Plin', 'Twilio API', 'YouTube Live', 'Dashboard', 'Validación de Tickets', 'Pagos Digitales', 'Gestión de Ganadores'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -1502,20 +1280,19 @@ const projects = [
   alt: 'Guía paso a paso para mejorar el descanso nocturno infantil',
   descriptionHTML: `
     <p style="text-align: justify;">
-      "Sueños Tranquilos" es una plataforma digital diseñada y desarrollada para una empresa de Bolivia, que tiene como objetivo ayudar a los padres a establecer rutinas nocturnas efectivas y saludables para sus bebés. Este sistema fue construido utilizando React y Vite para garantizar una experiencia de usuario rápida y fluida, y se integró con herramientas de marketing digital como el evento CAPI para el seguimiento de conversiones.
+      "Sueños Tranquilos" es una plataforma digital diseñada y desarrollada para una empresa de Bolivia, que tiene como objetivo ayudar a los padres a establecer rutinas nocturnas efectivas y saludables para sus bebés. El sistema prioriza una experiencia rápida y fluida, y se integró con herramientas de marketing digital como CAPI para el seguimiento de conversiones.
     </p>
     <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
-      <li><strong>Plataforma interactiva:</strong> Desarrollada con React y Vite para asegurar un rendimiento óptimo y tiempos de carga rápidos.</li>
-      <li><strong>Diseño responsivo:</strong> Uso de Tailwind CSS para garantizar que la página se adapte a diferentes tamaños de pantalla y dispositivos, brindando una experiencia agradable en móviles, tabletas y escritorios.</li>
+      <li><strong>Plataforma interactiva:</strong> navegación simple, contenido guiado y tiempos de carga rápidos.</li>
+      <li><strong>Diseño responsivo:</strong> adaptación a diferentes tamaños de pantalla para brindar una experiencia agradable en móviles, tabletas y escritorios.</li>
       <li><strong>Eventos de marketing:</strong> Integración con Facebook CAPI, permitiendo el seguimiento preciso de conversiones y la mejora continua de las campañas publicitarias.</li>
       <li><strong>Botón de WhatsApp flotante:</strong> Implementación de un botón flotante para facilitar la comunicación directa con los usuarios interesados en la guía, creando una experiencia más interactiva y personalizada.</li>
       <li><strong>Acceso digital inmediato:</strong> Los usuarios pueden comprar y descargar la guía digital al instante, mejorando la experiencia de compra sin esperas innecesarias.</li>
     
   `,
-  tags: ['React', 'Vite', 'Tailwind CSS', 'Facebook CAPI', 'WhatsApp API', 'Generación de leads', 'Landing Page', 'Tecnología Web', 'Empresa Boliviana'],
+  tags: ['Guía Digital', 'Descanso Infantil', 'Rutinas Nocturnas', 'Facebook CAPI', 'WhatsApp', 'Generación de Leads', 'Landing Page', 'Marketing Digital', 'Experiencia Móvil'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-    { type: 'github', href: '#', label: 'Ver Código' },
   ],
 },
 
@@ -1537,19 +1314,18 @@ const projects = [
       Tecnologías y Lenguajes utilizados:
     </p>
     <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
-      <li><strong>React:</strong> Framework utilizado para construir la interfaz de usuario del sistema.</li>
-      <li><strong>Vite:</strong> Herramienta de construcción y desarrollo utilizada para mejorar el rendimiento y la velocidad de la aplicación.</li>
-      <li><strong>JavaScript:</strong> Lenguaje principal utilizado para la programación del proyecto y la integración de funcionalidades interactivas.</li>
+      <li><strong>Interfaz interactiva:</strong> experiencia visual diseñada para explorar información científica de forma clara y dinámica.</li>
+      <li><strong>Rendimiento:</strong> navegación y carga optimizadas para una experiencia fluida durante la demostración.</li>
+      <li><strong>Interactividad:</strong> visualizaciones, navegación y componentes dinámicos para comunicar los datos de forma atractiva.</li>
       <li><strong>API de Gemini:</strong> Usada para integrar el procesamiento de datos y análisis de información, aportando potencia de procesamiento en tiempo real.</li>
       <li><strong>APIs de Terra MORDIS:</strong> Integración con los datos satelitales del satélite Terra para proporcionar información precisa sobre el medio ambiente y la relación con las comunidades humanas.</li>
       <li><strong>Google Forms:</strong> Utilizado para la recopilación de información y la gestión de respuestas durante el proceso de la hackatón.</li>
       <li><strong>Chatbot:</strong> Un sistema inteligente integrado en el proyecto para responder preguntas relacionadas con el reto de la NASA y proporcionar una experiencia interactiva.</li>
     </ul>
   `,
-  tags: ['Hackatón', 'NASA', 'Interactividad', 'Datos Satelitales', 'Ciencia', 'Tecnología', 'Chatbot', 'Colaboración Interdisciplinaria', 'React', 'Vite', 'JavaScript', 'Gemini API', 'Terra MORDIS', 'Google Forms'],
+  tags: ['Hackatón', 'NASA', 'Interactividad', 'Datos Satelitales', 'Ciencia', 'Chatbot', 'Colaboración Interdisciplinaria', 'Gemini API', 'Terra MODIS', 'Visualización de Datos'],
   links: [
     { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' }, // Agrega el enlace al video de demostración o presentación
-    { type: 'github', href: '#', label: 'Ver Código' }, // Agrega el enlace al repositorio si está disponible
   ],
 },
 
@@ -1574,10 +1350,9 @@ const projects = [
       </ul>
 
     `,
-    tags: ['React','Tailwind','Node.js','Express.js','PostgreSQL','Sequelize','JWT','QRCode','Google Drive API','IA Generativa'],
+    tags: ['Educación', 'Gestión de Cursos', 'Certificados QR', 'Google Drive', 'IA Generativa', 'Portal del Estudiante', 'Catálogo Académico', 'Roles y Permisos', 'Certificación Digital'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
 
@@ -1600,10 +1375,9 @@ const projects = [
         <em>Reduce tiempos, evita errores y profesionaliza el proceso de certificación.</em>
       </p>
     `,
-    tags: ['React','Node.js','Express.js','PostgreSQL','Sequelize','PDF-lib','QRCode','Google Drive API','IA Generativa'],
+    tags: ['Certificación Inteligente', 'Certificados PDF', 'Código QR', 'Google Drive', 'IA Generativa', 'Plantillas', 'Temarios Automáticos', 'Validación Pública', 'Automatización'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
 
@@ -1624,10 +1398,9 @@ const projects = [
       </ul>
    
     `,
-    tags: ['React','Tailwind','Node.js','Express.js','PostgreSQL','Sequelize','JWT','QRCode','Google Drive API'],
+    tags: ['Gestión de Cursos', 'Certificados QR', 'Google Drive', 'Catálogo Académico', 'Inscripciones', 'Pagos', 'Portal del Estudiante', 'Roles y Permisos', 'Certificación Digital'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
 
@@ -1647,10 +1420,9 @@ const projects = [
       </ul>
 
     `,
-    tags: ['React','Vite','React Router','CSS Modules','SEO'],
+    tags: ['Sitio Corporativo', 'Construcción', 'Servicios', 'Proyectos', 'Certificaciones', 'SEO', 'Contacto Comercial', 'Captación de Clientes'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
 
@@ -1673,10 +1445,9 @@ const projects = [
       </ul>
     
     `,
-    tags: ['React','Vite','Node.js','Express','PostgreSQL','Sequelize','Nubefact','APISNET','JWT'],
+    tags: ['Logística', 'Gestión de Envíos', 'Seguimiento', 'Tarifas', 'Pagos', 'Facturación Electrónica', 'Nubefact', 'APISNET', 'Guías', 'Sucursales'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
 
@@ -1699,10 +1470,9 @@ const projects = [
         Desarrollado para una empresa en México; pensado para ferreterías y retail.
       </p>
     `,
-    tags: ['React','Vite','Node.js','Express','PostgreSQL','Sequelize','OCR','PDF','Excel'],
+    tags: ['Cotizaciones IA', 'Comparador de Proveedores', 'OCR', 'PDF', 'Excel', 'Comparación de Precios', 'Historial de Cotizaciones', 'Compras', 'Análisis de Proveedores'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
 
@@ -1723,22 +1493,21 @@ const projects = [
       </ul>
   
     `,
-    tags: ['React','Vite','Node.js','Express','PostgreSQL','Sequelize','SSE','OpenAI','Gemini','Claude'],
+    tags: ['Asistente de Desarrollo', 'Multi-IA', 'OpenAI', 'Gemini', 'Claude', 'Análisis de Proyectos', 'Detección de Errores', 'Documentación', 'Sugerencias de Mejora'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
 
   {
     id: 5,
-    title: 'ACTUALIZACIÓN PORTAFOLIO - CAMBIO A REACT VITE',
+    title: 'ACTUALIZACIÓN PORTAFOLIO — Rediseño y mejora de experiencia',
     image: './gif/portafolio2.gif',
     alt: 'Portafolio Personal',
     descriptionHTML: `
       <p style="text-align: justify; margin-bottom: .5rem;">
         Portafolio personal con secciones de inicio, tecnologías, formación, experiencia, proyectos y contacto.
-        Migrado de HTML/CSS a React + Vite manteniendo el estilo original.
+        Rediseñado manteniendo el estilo original, pero con una navegación más fluida y una estructura más ordenada para presentar los proyectos.
       </p>
       <ul style="text-align: justify; padding-left: 1.2rem; margin: .2rem 0 .8rem; line-height: 1.5;">
         <li>SPA con anclas (#) y scroll suave.</li>
@@ -1746,10 +1515,9 @@ const projects = [
         <li>Formulario de contacto (opcional) con Google Apps Script.</li>
       </ul>
     `,
-    tags: ['React.js','Vite','CSS','JavaScript'],
+    tags: ['Portafolio Personal', 'Rediseño Web', 'Experiencia de Usuario', 'Buscador de Proyectos', 'Paginación', 'Navegación Fluida', 'Formulario de Contacto', 'Google Apps Script'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: 'https://github.com/<tu-usuario>/<tu-repo>',        label: 'Ver en GitHub' },
     ],
   },
 
@@ -1773,10 +1541,9 @@ const projects = [
         <strong>🚀 Impacto:</strong> Mejora conversión al previsualizar en 3D y facilita la gestión.
       </p>
     `,
-    tags: ['React','Vite','Node.js','Express.js','PostgreSQL','Sequelize','React Router','Axios','Three.js','@react-three/fiber','OAuth Google'],
+    tags: ['E-Commerce', 'Visualizador 3D', 'Catálogo', 'Carrito', 'Checkout', 'Panel Administrativo', 'OAuth Google', 'Modelos 3D', 'Reportes'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: 'https://github.com/tuusuario/ecommerce-3d', label: 'Ver Código' },
     ],
   },
 
@@ -1795,10 +1562,9 @@ const projects = [
         <li>Login con Google (OAuth 2.0).</li>
       </ul>
     `,
-    tags: ['React','Vite','Node.js','Express.js','PostgreSQL','Sequelize','React Router','Axios','Chatbot IA','OAuth Google'],
+    tags: ['Turismo', 'Lugares Turísticos', 'Hoteles', 'Restaurantes', 'Filtros Avanzados', 'Chatbot IA', 'Favoritos', 'OAuth Google', 'Guía Digital'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: 'https://github.com/tuusuario/viaja-y-explora', label: 'Ver Código' },
     ],
   },
 
@@ -1811,10 +1577,9 @@ const projects = [
         Gestión integral de cursos virtuales: publicación, asignación a estudiantes y emisión de certificados PDF con QR y almacenamiento en Drive.
       </p>
     `,
-    tags: ['React','Tailwind CSS','Node.js','Express.js','PostgreSQL','Sequelize','PDF-lib','QRCode','Google Drive API'],
+    tags: ['Cursos Virtuales', 'Certificados PDF', 'Código QR', 'Google Drive', 'Gestión de Estudiantes', 'Catálogo Académico', 'Certificación Digital', 'Validación de Certificados'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
 
@@ -1831,10 +1596,9 @@ const projects = [
         <li>Temario por IA, firma digital, DNI, código único y QR.</li>
       </ul>
     `,
-    tags: ['IA Generativa','PDF-lib','QRCode','Google Drive API','Node.js','Express.js','React','Sequelize'],
+    tags: ['IA Generativa', 'Certificados PDF', 'Código QR', 'Google Drive', 'Temarios Personalizados', 'Firma Digital', 'Validación Pública', 'Automatización'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
 
@@ -1847,10 +1611,9 @@ const projects = [
         CRUD de inmuebles, subida de imágenes, búsquedas avanzadas, roles y dashboards personalizados. Diseño 100% responsivo.
       </p>
     `,
-    tags: ['React.js','React Router DOM','Tailwind CSS','Axios','Lucide React','React Icons','Node.js','Express.js','PostgreSQL','Sequelize','JWT','Bcrypt','Multer','Dotenv','path','fs'],
+    tags: ['Gestión Inmobiliaria', 'Inmuebles', 'Galería de Imágenes', 'Búsquedas Avanzadas', 'Roles y Permisos', 'Dashboard', 'Diseño Responsive', 'Administración de Propiedades'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'Ver Código' },
     ],
   },
 
@@ -1863,10 +1626,9 @@ const projects = [
         Conecta <strong>recicladores</strong> y <strong>ayudantes</strong> con puntos por residuos; chat, roles, perfiles y canje.
       </p>
     `,
-    tags: ['React','Vite','Node.js','Express.js','Socket.IO','Multer','PostgreSQL','Sequelize','JWT'],
+    tags: ['Reciclaje', 'Sistema de Puntos', 'Chat en Tiempo Real', 'Roles', 'Perfiles', 'Canje de Puntos', 'Gestión de Residuos', 'Innovación Social'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: 'https://github.com/tuusuario/recicla-y-gana', label: 'Ver Código' },
     ],
   },
 
@@ -1879,10 +1641,9 @@ const projects = [
         Autenticación JWT, CRUD de tareas, vistas por fecha, calendario, progreso diario y asistente IA <strong>ZENDO</strong>.
       </p>
     `,
-    tags: ['React.js','Tailwind CSS','JavaScript (ES6+)','React-datepicker','Moment.js','Axios','Node.js','Express.js','PostgreSQL','JWT','Bcrypt.js','Dotenv'],
+    tags: ['Gestión de Tareas', 'Calendario', 'Progreso Diario', 'Asistente IA', 'Autenticación', 'Organización Personal', 'Prioridades', 'Productividad'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: 'https://github.com/alvaroquirozjaimes/INTELLIGENT-TASK-MANAGER', label: 'Ver Código' },
     ],
   },
 
@@ -1895,10 +1656,9 @@ const projects = [
         Consulta segura de cuentas y movimientos; integra en tiempo real la app de cobranza usada en campo.
       </p>
     `,
-    tags: ['React.js','Vite','React Router DOM','Tailwind CSS','Axios/Fetch','Node.js','Express','JWT','PostgreSQL'],
+    tags: ['Consulta de Socios', 'Cuentas y Saldos', 'Movimientos', 'Historial Financiero', 'Acceso Seguro', 'Sincronización', 'Consulta en Tiempo Real', 'Servicios Financieros'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'ESTE CODIGO NO LO ESTOY SUBIENDO A GITHUB' },
     ],
   },
 
@@ -1911,10 +1671,9 @@ const projects = [
         Gestión de zonas, socios, movimientos y resúmenes de cobranza diaria/mensual. Pensado para móviles.
       </p>
     `,
-    tags: ['React.js','Tailwind CSS','JavaScript (ES6+)','Node.js','Express.js','PostgreSQL','JWT','Bcrypt.js','Dotenv'],
+    tags: ['Cobranza', 'Zonas de Cobranza', 'Socios', 'Movimientos', 'Resumen Diario', 'Resumen Mensual', 'Experiencia Móvil', 'Recaudación', 'Gestión Financiera'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'ESTE CODIGO NO LO ESTOY SUBIENDO A GITHUB' },
     ],
   },
 
@@ -1931,10 +1690,9 @@ const projects = [
         <li><strong>Cobranza:</strong> registro de pagos sincronizado.</li>
       </ul>
     `,
-    tags: ['React.js','Vite','React Router DOM','Tailwind CSS','Axios/Fetch','Node.js','Express.js','JWT','PostgreSQL','Docker'],
+    tags: ['Gestión Financiera', 'Consulta de Socios', 'Cobranza', 'Movimientos en Tiempo Real', 'Registro de Pagos', 'Cuentas y Saldos', 'Sincronización', 'Apps Integradas'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: '#', label: 'ESTE CODIGO NO LO ESTOY SUBIENDO A GITHUB' },
     ],
   },
 
@@ -1947,10 +1705,9 @@ const projects = [
         Gestión de libros con búsqueda en tiempo real, validaciones y control de errores frontend/backend.
       </p>
     `,
-    tags: ['Java 17','Spring Boot','JDBC','MySQL','React','Axios','CSS Personalizado','Maven','DBngin'],
+    tags: ['Gestión de Biblioteca', 'Libros', 'Búsqueda en Tiempo Real', 'Validaciones', 'Control de Errores', 'Catálogo', 'Gestión de Registros'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: 'https://github.com/alvaroquirozjaimes/BIBLIOTECA', label: 'Ver Código' },
     ],
   },
 
@@ -1963,10 +1720,9 @@ const projects = [
         Mensajería en tiempo real con Socket.IO, Firebase Auth, chat global/privado, modo oscuro y notificaciones.
       </p>
     `,
-    tags: ['HTML5','CSS3','JavaScript (ESM)','emoji-picker-element','Node.js','Express','Socket.IO','MySQL','Firebase Authentication','DBngin'],
+    tags: ['Chat en Tiempo Real', 'Chat Global', 'Chat Privado', 'Notificaciones', 'Modo Oscuro', 'Autenticación', 'Mensajería', 'Usuarios'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: 'https://github.com/alvaroquirozjaimes/CHAT-PRO', label: 'Ver Código' },
     ],
   },
 
@@ -1979,10 +1735,9 @@ const projects = [
         Portafolio diseñado y desarrollado desde cero para mostrar habilidades, experiencia y proyectos.
       </p>
     `,
-    tags: ['HTML','CSS','JavaScript'],
+    tags: ['Portafolio Personal', 'Proyectos', 'Experiencia', 'Formación', 'Habilidades', 'Contacto', 'Diseño Web'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: 'https://github.com/alvaroquirozjaimes/mi-portafolio', label: 'Ver Código' },
     ],
   },
 
@@ -1995,10 +1750,9 @@ const projects = [
         Consumo de API pública para listar y filtrar Pokémons por nombre o tipo.
       </p>
     `,
-    tags: ['HTML','CSS','JavaScript','API Externa (Pokemon API)'],
+    tags: ['Pokémon', 'Buscador', 'Filtros por Tipo', 'API Pública', 'Catálogo', 'Consulta en Tiempo Real'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: 'https://github.com/alvaroquirozjaimes/pokedex', label: 'Ver Código' },
     ],
   },
 
@@ -2011,10 +1765,9 @@ const projects = [
         Landing moderna y responsiva con menú, contacto y galería.
       </p>
     `,
-    tags: ['HTML','CSS','JavaScript'],
+    tags: ['Restaurante', 'Landing Page', 'Menú Digital', 'Galería', 'Contacto', 'Diseño Responsive', 'Experiencia Móvil'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: 'https://github.com/alvaroquirozjaimes/restaurante', label: 'Ver Código' },
     ],
   },
 
@@ -2027,10 +1780,9 @@ const projects = [
         Catálogo, carrito y gestión de pedidos base para retail.
       </p>
     `,
-    tags: ['HTML','CSS','JavaScript'],
+    tags: ['E-Commerce', 'Tienda de Ropa', 'Catálogo', 'Carrito', 'Pedidos', 'Retail', 'Experiencia de Compra'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: 'https://github.com/alvaroquirozjaimes/e-commerce', label: 'Ver Código' },
     ],
   },
 
@@ -2043,10 +1795,9 @@ const projects = [
         Control de presupuesto mensual y servicios de suscripción.
       </p>
     `,
-    tags: ['Vite.js','React 18','Vercel'],
+    tags: ['Presupuesto Mensual', 'Suscripciones', 'Finanzas Personales', 'Control de Gastos', 'Planificación', 'Seguimiento Mensual'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: 'https://github.com/alvaroquirozjaimes/suscripciones-streaming', label: 'Ver Código' },
     ],
   },
 
@@ -2056,13 +1807,12 @@ const projects = [
     alt: 'Catálogo de Películas',
     descriptionHTML: `
       <p style="text-align: justify;">
-        CRUD de películas con Node.js y MySQL.
+        Catálogo de películas con creación, edición, eliminación y consulta de registros.
       </p>
     `,
-    tags: ['Node.js','MySQL','HTML','CSS','JavaScript','DBngin'],
+    tags: ['Catálogo de Películas', 'Gestión de Películas', 'Altas y Edición', 'Búsqueda', 'Catálogo', 'Administración de Contenido'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: 'https://github.com/alvaroquirozjaimes/catalogo_peliculas', label: 'Ver Código' },
     ],
   },
 
@@ -2072,13 +1822,12 @@ const projects = [
     alt: 'App Buscador de GIFs',
     descriptionHTML: `
       <p style="text-align: justify;">
-        Búsqueda y visualización de GIFs en tiempo real con React.
+        Búsqueda y visualización de GIFs en tiempo real mediante una API externa.
       </p>
     `,
-    tags: ['React','JavaScript','API de GIFs','HTML','CSS'],
+    tags: ['Buscador de GIFs', 'GIFs', 'Búsqueda en Tiempo Real', 'API de GIFs', 'Galería', 'Contenido Multimedia'],
     links: [
       { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
-      { type: 'github', href: 'https://github.com/alvaroquirozjaimes/BuscarGif', label: 'Ver Código' },
     ],
   }
 ];
@@ -2100,9 +1849,7 @@ export default function Projects() {
   const toggle = (globalIndex) => {
     setExpanded((prev) => ({ ...prev, [globalIndex]: !prev[globalIndex] }));
   };
-
-  const renderLinkIcon = (type) =>
-    type === 'github' ? 'fab fa-github' : 'fas fa-external-link-alt';
+  const renderLinkIcon = () => 'fas fa-external-link-alt';
 
   const openModal = (project) => setOpenProject(project);
   const closeModal = () => setOpenProject(null);

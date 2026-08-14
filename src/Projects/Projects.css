@@ -125,8 +125,6 @@
   box-shadow: 0 4px 14px rgba(34,197,94,0.3);
 }
 .project-btn.demo:hover { box-shadow: 0 8px 24px rgba(34,197,94,0.5); }
-.project-btn.github { background: var(--surface-3); color: var(--ink); border: 1px solid var(--border); }
-
 /* ─── Pagination ─── */
 .pagination-controls {
   display: flex; align-items: center; justify-content: center;
