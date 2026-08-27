@@ -13,8 +13,93 @@ import erpGeneralImg from '../assets/projects/erp-general.png';
 import whatsappIaChatbotImg from '../assets/projects/whatsapp-ia-chatbot.png';
 import mazeTourImg from '../assets/projects/maze-tour.png';
 import ordenesMedicasImg from '../assets/projects/ordenes-medicas.png';
+import astradePortfolioImg from '../assets/projects/astrade-portfolio.png';
+import smartpro360PortfolioImg from '../assets/projects/smartpro360-portfolio.png';
+import graziaSpaPortfolioImg from '../assets/projects/grazia-spa-portfolio.png';
 
 const projects = [
+
+
+  {
+    title: 'EMPRESA — GRAZIA SPA — Sistema Integral de Ventas, Inventario y Facturación',
+    image: graziaSpaPortfolioImg,
+    alt: 'Sistema empresarial para GRAZIA SPA con ventas directas, clientes, inventario, facturación y control de caja',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Sistema desarrollado para <strong>GRAZIA SPA</strong>, orientado a centralizar la operación comercial del negocio y agilizar
+        las ventas de productos y servicios desde una sola plataforma.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Venta directa:</strong> búsqueda del cliente, selección de productos o servicios y registro de la venta sin depender de una cita previa.</li>
+        <li><strong>Clientes:</strong> registro y consulta de información con búsqueda de DNI o RUC para facilitar el llenado de datos.</li>
+        <li><strong>Inventario:</strong> administración centralizada de productos, insumos, servicios, categorías y precios.</li>
+        <li><strong>Facturación:</strong> emisión de boletas y facturas desde el mismo flujo de venta, con manejo del IGV según la operación.</li>
+        <li><strong>Caja:</strong> consulta de ingresos y movimientos para llevar un mejor control de las operaciones realizadas.</li>
+        <li><strong>Reportes:</strong> seguimiento de información comercial y acceso rápido al contacto del cliente mediante WhatsApp cuando corresponde.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        La solución reúne ventas, clientes, inventario, comprobantes y caja en un solo sistema para reducir procesos manuales y mantener la gestión del negocio organizada.
+      </p>
+    `,
+    tags: ['GRAZIA SPA', 'Ventas', 'Clientes', 'Inventario', 'Productos y Servicios', 'Facturación', 'Caja', 'Reportes', 'DNI y RUC', 'WhatsApp'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    ],
+  },
+
+  {
+    title: 'EMPRESA — ASTRADE — Sistema de Gestión Académica y Generación de Certificados con IA',
+    image: astradePortfolioImg,
+    alt: 'Sistema para ASTRADE con gestión de cursos, participantes, temarios, certificados PDF, códigos QR e integración con Google Drive',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Sistema implementado para <strong>ASTRADE</strong>, enfocado en centralizar la gestión de cursos, participantes, temarios y certificados,
+        reduciendo tareas repetitivas dentro del proceso académico y administrativo.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Gestión académica:</strong> organización de cursos, participantes y contenidos desde un panel central.</li>
+        <li><strong>Certificados inteligentes:</strong> generación de certificados a partir de plantillas y datos registrados en el sistema.</li>
+        <li><strong>Temarios asistidos:</strong> apoyo de inteligencia artificial para crear y completar contenidos de cursos.</li>
+        <li><strong>PDF con código QR:</strong> emisión de certificados preparados para validación y consulta.</li>
+        <li><strong>Google Drive:</strong> almacenamiento y subida automática de los certificados generados.</li>
+        <li><strong>Control y reportes:</strong> consulta de certificados emitidos, último código utilizado y seguimiento de información por fechas.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        Una plataforma orientada a mantener el proceso de certificación ordenado, trazable y mucho menos dependiente de tareas manuales.
+      </p>
+    `,
+    tags: ['ASTRADE', 'Gestión Académica', 'Cursos', 'Participantes', 'Certificados', 'Inteligencia Artificial', 'Temarios', 'PDF', 'Código QR', 'Google Drive', 'Reportes'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    ],
+  },
+
+  {
+    title: 'EMPRESA — SMARTPRO360 — Plataforma de Gestión Académica y Certificación con IA',
+    image: smartpro360PortfolioImg,
+    alt: 'Plataforma académica para SMARTPRO360 con cursos, clases, estudiantes, módulos, temarios y certificados con inteligencia artificial',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Plataforma desarrollada para <strong>SMARTPRO360</strong>, orientada a administrar la formación académica y el proceso de certificación
+        desde una sola solución, con herramientas para organizar cursos, clases, estudiantes y contenidos.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Gestión de cursos:</strong> registro, organización y reutilización de cursos y contenidos académicos.</li>
+        <li><strong>Clases y módulos:</strong> estructura de contenidos para mantener el avance formativo organizado.</li>
+        <li><strong>Estudiantes:</strong> administración de participantes y relación con los cursos disponibles.</li>
+        <li><strong>Certificados con IA:</strong> apoyo para generar certificados y crear temarios de manera más rápida.</li>
+        <li><strong>PDF y código QR:</strong> generación de documentos con mecanismos de validación.</li>
+        <li><strong>Google Drive:</strong> almacenamiento automático de certificados para facilitar su respaldo y consulta.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        El objetivo es centralizar la gestión académica y reducir el trabajo manual asociado a cursos, contenidos y certificaciones.
+      </p>
+    `,
+    tags: ['SMARTPRO360', 'Gestión Académica', 'Cursos', 'Clases', 'Estudiantes', 'Módulos', 'Certificados', 'Inteligencia Artificial', 'Temarios', 'Código QR', 'Google Drive'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    ],
+  },
 
   {
     title: 'PROYECTO PERSONAL — MAZE TOUR — Plataforma turística para descubrir y organizar viajes',
