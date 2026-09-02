@@ -21,6 +21,35 @@ const projects = [
 
 
   {
+    title: 'EMPRESA — CLÍNICA DR. SÁNCHEZ — Plataforma de Ventas Online y Gestión Comercial',
+    image: './gif/dr-sanchez.gif',
+    alt: 'Plataforma de ventas online para Clínica Dr. Sánchez con catálogo médico, inventario, pedidos, pagos y comprobantes',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Plataforma desarrollada para <strong>Clínica Dr. Sánchez</strong>, orientada a digitalizar la venta de productos médicos
+        y centralizar la gestión comercial desde el catálogo hasta el pago y seguimiento de cada pedido.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Catálogo médico:</strong> organización de productos por categorías y subcategorías, con marcas, presentaciones, variantes e imágenes.</li>
+        <li><strong>Inventario y stock:</strong> control de existencias, movimientos, lotes y fechas de vencimiento para mantener una gestión más precisa de los productos.</li>
+        <li><strong>Compra online:</strong> carrito de compras, cupones, pedidos y seguimiento del proceso comercial desde una experiencia pensada para el cliente.</li>
+        <li><strong>Pagos:</strong> integración del flujo de pago con tarjeta mediante Qulqi y alternativas como Yape o Plin con carga de comprobante.</li>
+        <li><strong>Boletas y facturas:</strong> selección del tipo de comprobante y autocompletado de datos mediante DNI o RUC para agilizar el registro del cliente.</li>
+        <li><strong>Medicamentos con receta:</strong> soporte para productos que requieren receta y validación dentro del flujo de compra.</li>
+        <li><strong>Reseñas por producto:</strong> calificaciones y comentarios vinculados directamente a cada producto para mejorar la experiencia de compra.</li>
+        <li><strong>Roles y administración:</strong> accesos diferenciados para cliente, vendedor y administrador, con gestión de catálogo, usuarios, pedidos e información comercial.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        La solución reúne comercio electrónico, inventario, pagos y administración en una sola plataforma adaptada al rubro de productos médicos.
+      </p>
+    `,
+    tags: ['Clínica Dr. Sánchez', 'E-Commerce', 'Productos Médicos', 'Categorías y Subcategorías', 'Marcas', 'Inventario', 'Lotes', 'Pedidos', 'Qulqi', 'Yape y Plin', 'Boleta y Factura', 'DNI y RUC', 'Reseñas', 'Roles'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    ],
+  },
+
+  {
     title: 'EMPRESA — GRAZIA SPA — Sistema Integral de Ventas, Inventario y Facturación',
     image: graziaSpaPortfolioImg,
     alt: 'Sistema empresarial para GRAZIA SPA con ventas directas, clientes, inventario, facturación y control de caja',
@@ -2117,24 +2146,38 @@ export default function Projects() {
       </div>
 
       {openProject && (
-        <>
-          <div className="modal-overlay" role="dialog" aria-modal="true">
-            <div className="project-modal">
-            {/* PANTALLA 1: imagen clickeable para cerrar */}
-            <div className="modal-hero" onClick={closeModal} title="Toca para cerrar">
-              <img
-                src={openProject.image}
-                alt={openProject.alt || openProject.title}
-                className="modal-hero-img"
-              />
-              {/* Flecha "bajar para ver más" */}
-              <div className="modal-scroll-hint">
-                <span>Ver detalles</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        <div
+          className="modal-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-label={openProject.title}
+          onClick={closeModal}
+        >
+          <div className="project-modal" onClick={(e) => e.stopPropagation()}>
+            <button
+              type="button"
+              className="modal-close-btn"
+              onClick={closeModal}
+              aria-label="Cerrar vista completa del proyecto"
+              title="Cerrar"
+            >
+              ×
+            </button>
+
+            <div className="modal-hero">
+              <div className="modal-image-wrap">
+                <img
+                  src={openProject.image}
+                  alt={openProject.alt || openProject.title}
+                  className="modal-hero-img"
+                />
+              </div>
+
+              <div className="modal-image-caption">
+                <span>Vista completa del proyecto</span>
               </div>
             </div>
 
-            {/* PANTALLA 2: contenido al hacer scroll */}
             <div className="modal-body">
               <h3 className="project-title">{openProject.title}</h3>
 
@@ -2164,8 +2207,7 @@ export default function Projects() {
               </div>
             </div>
           </div>
-          </div>
-        </>
+        </div>
       )}
     </section>
   );
