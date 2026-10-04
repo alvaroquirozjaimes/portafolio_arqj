@@ -20,11 +20,11 @@ const Hero = () => {
 
             <div className="hero-stats">
               <div className="hero-stat">
-                <span className="hero-stat-num">84+</span>
+                <span className="hero-stat-num">85+</span>
                 <span className="hero-stat-label">Proyectos desarrollados</span>
               </div>
               <div className="hero-stat">
-                <span className="hero-stat-num">8+</span>
+                <span className="hero-stat-num">5+</span>
                 <span className="hero-stat-label">Años de experiencia</span>
               </div>
             </div>

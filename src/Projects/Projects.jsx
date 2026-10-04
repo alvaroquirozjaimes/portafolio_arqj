@@ -16,8 +16,91 @@ import ordenesMedicasImg from '../assets/projects/ordenes-medicas.png';
 import astradePortfolioImg from '../assets/projects/astrade-portfolio.png';
 import smartpro360PortfolioImg from '../assets/projects/smartpro360-portfolio.png';
 import graziaSpaPortfolioImg from '../assets/projects/grazia-spa-portfolio.png';
+import edupro360PortfolioImg from '../assets/projects/edupro360-portfolio.png';
+import educacorpPeruPortfolioImg from '../assets/projects/educacorp-peru-portfolio.png';
+import mazenovaPortfolioImg from '../assets/projects/mazenova-portfolio.png';
 
 const projects = [
+
+
+  {
+    title: 'EDUPRO360 — Plataforma de Formación, Certificación y Gestión de Envíos',
+    image: edupro360PortfolioImg,
+    alt: 'Plataforma EDUPRO360 para cursos, certificados, aula virtual y gestión de envíos',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Plataforma desarrollada para <strong>EDUPRO360</strong>, orientada a integrar la presentación de cursos, el proceso de certificación y la gestión administrativa en una experiencia web moderna y adaptable a dispositivos móviles.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Catálogo de cursos:</strong> publicación de programas formativos con información organizada para facilitar la consulta de los estudiantes.</li>
+        <li><strong>Certificación digital:</strong> generación y visualización de certificados en PDF con código QR para su validación.</li>
+        <li><strong>Google Drive:</strong> almacenamiento automático de certificados y documentos generados desde la plataforma.</li>
+        <li><strong>Gestión de envíos:</strong> registro de solicitudes, comprobantes, estados y seguimiento desde los perfiles de alumno y administrador.</li>
+        <li><strong>Aula virtual:</strong> acceso centralizado para estudiantes y navegación adaptada a la identidad visual de EDUPRO360.</li>
+        <li><strong>Panel administrativo:</strong> herramientas para administrar cursos, certificados, usuarios y procesos asociados.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        La solución centraliza formación, certificación y seguimiento administrativo en una plataforma diseñada para reducir procesos manuales y mejorar la experiencia del estudiante.
+      </p>
+    `,
+    tags: ['EDUPRO360', 'Cursos', 'Aula Virtual', 'Certificados PDF', 'Código QR', 'Google Drive', 'Gestión de Envíos', 'Panel Administrativo', 'React', 'Node.js'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    ],
+  },
+
+  {
+    title: 'EDUCA CORP PERÚ — Plataforma de Capacitación, Certificación y Gestión Académica',
+    image: educacorpPeruPortfolioImg,
+    alt: 'Plataforma Educa Corp Perú para capacitación, cursos, certificados y gestión académica',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        Plataforma implementada para <strong>Educa Corp Perú</strong>, enfocada en presentar su oferta de capacitación y administrar el proceso de emisión, consulta y entrega de certificados desde un mismo entorno.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Portal institucional:</strong> landing page profesional con cursos, certificaciones, información corporativa y acceso para estudiantes.</li>
+        <li><strong>Emisión de certificados:</strong> generación de documentos personalizados a partir de plantillas y datos registrados en el sistema.</li>
+        <li><strong>Validación con QR:</strong> certificados preparados para consulta y verificación digital.</li>
+        <li><strong>Google Drive:</strong> almacenamiento centralizado de certificados para facilitar respaldo, consulta y entrega.</li>
+        <li><strong>Gestión de envíos:</strong> módulo para registrar solicitudes, adjuntar voucher y controlar estados de aprobación o rechazo.</li>
+        <li><strong>Administración:</strong> gestión de cursos, plantillas, certificados y procesos internos desde un panel central.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        El proyecto combina presencia institucional y herramientas administrativas para mantener el proceso de capacitación y certificación organizado, trazable y escalable.
+      </p>
+    `,
+    tags: ['Educa Corp Perú', 'Capacitación', 'Cursos', 'Certificados', 'Código QR', 'Google Drive', 'Gestión de Envíos', 'Plantillas', 'Panel Administrativo', 'React', 'Node.js'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    ],
+  },
+
+  {
+    title: 'PROYECTO PERSONAL — MAZENOVA — Plataforma Integral de Formación y Certificación Digital',
+    image: mazenovaPortfolioImg,
+    alt: 'Proyecto personal MazeNova para cursos, certificados digitales, códigos QR, reportes y gestión académica',
+    descriptionHTML: `
+      <p style="text-align: justify;">
+        <strong>MazeNova</strong> es un proyecto personal desarrollado como una plataforma propia de formación y certificación digital, reuniendo en un solo sistema la gestión de cursos, certificados, reportes y herramientas comerciales.
+      </p>
+      <ul style="text-align: justify; padding-left: 1.2rem; margin:.3rem 0 .8rem; line-height:1.5;">
+        <li><strong>Gestión de certificados:</strong> emisión, consulta y administración de certificados digitales mediante plantillas personalizadas.</li>
+        <li><strong>Códigos de serie:</strong> control de numeración para mantener cada certificado identificado y organizado.</li>
+        <li><strong>PDF y código QR:</strong> generación de documentos verificables y preparados para consulta desde el visor público.</li>
+        <li><strong>Google Drive:</strong> almacenamiento automático de los archivos generados para centralizar su respaldo.</li>
+        <li><strong>Reportes y auditoría:</strong> seguimiento de emisiones y certificados eliminados para mantener trazabilidad del proceso.</li>
+        <li><strong>Ruleta promocional:</strong> herramienta configurable para campañas, descuentos y captación de potenciales estudiantes.</li>
+        <li><strong>Portal de cursos:</strong> catálogo con buscador, categorías y acceso al aula virtual desde una interfaz responsive.</li>
+      </ul>
+      <p style="text-align: justify; margin: 0;">
+        MazeNova representa una solución propia y escalable que integra formación, certificación, automatización documental y herramientas de gestión en una sola plataforma.
+      </p>
+    `,
+    tags: ['Proyecto Personal', 'MazeNova', 'Cursos', 'Certificados Digitales', 'Código QR', 'Google Drive', 'Códigos de Serie', 'Reportes', 'Auditoría', 'Ruleta', 'React', 'Node.js'],
+    links: [
+      { type: 'demo', href: 'https://www.linkedin.com/in/%C3%A1lvaro-rafael-quiroz-jaimes-168a081a8/', label: 'Ver Proyecto' },
+    ],
+  },
 
 
   {
